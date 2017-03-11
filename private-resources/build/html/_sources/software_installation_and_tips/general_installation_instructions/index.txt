@@ -1,0 +1,7 @@
+Installation Instructions for Cross-Platform Software
+=====================================================
+
+.. toctree::
+   :maxdepth: 0
+
+   git
