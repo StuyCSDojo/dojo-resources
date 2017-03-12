@@ -1,6 +1,6 @@
-[submodule "private-resources/sphinx_rtd_theme"]
-	path = private-resources/sphinx_rtd_theme
+[submodule "private_resources/sphinx_rtd_theme"]
+	path = private_resources/sphinx_rtd_theme
 	url = git@github.com:rtfd/sphinx_rtd_theme.git
-[submodule "public-resources/sphinx_rtd_theme"]
-	path = public-resources/sphinx_rtd_theme
+[submodule "public_resources/sphinx_rtd_theme"]
+	path = public_resources/sphinx_rtd_theme
 	url = git@github.com:rtfd/sphinx_rtd_theme.git

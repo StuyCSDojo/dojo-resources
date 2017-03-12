@@ -1,0 +1,602 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+            <title>Introduction to Emacs &mdash; dojo-resources 0.0.1 documentation</title>
+        
+
+        
+        
+
+        
+
+        
+        
+            
+
+        
+
+        
+        
+            <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+        
+
+        
+
+        
+
+        <link rel="stylesheet" href="../../../_static/bootstrap-glyphicons.css" type="text/css" />
+        <link rel="stylesheet" href="../../../_static/main.css" type="text/css" />
+        <link rel="stylesheet" href="../../../_static/button.css" type="text/css" />
+        <script
+            src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+            integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc="
+            crossorigin="anonymous"></script>
+        <script src="../../../_static/button.js"></script>
+        <script src="../../../_static/set_target.js"></script>
+                <link rel="index" title="Index"
+                      href="../../../genindex.html"/>
+                <link rel="search" title="Search" href="../../../search.html"/>
+            <link rel="top" title="dojo-resources 0.0.1 documentation" href="../../../index.html"/>
+                <link rel="up" title="Tutorials for Using Various Software" href="../index.html"/>
+                <link rel="next" title="Intro to Computer Science 1" href="../../../stuycs/useful_links.html"/>
+                <link rel="prev" title="Tutorials for Using Various Software" href="../index.html"/> 
+
+        
+        <script src="../../../_static/js/modernizr.min.js"></script>
+
+    </head>
+
+    <body class="wy-body-for-nav" role="document">
+
+         
+        <div class="wy-grid-for-nav">
+
+            
+            <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+                <div class="wy-side-scroll">
+                    <div class="wy-side-nav-search">
+                        
+
+                            
+                                    <a href="../../../index.html" class="icon icon-home"> dojo-resources
+                            
+
+                            
+                                    </a>
+
+                                    
+                                        
+                                        
+                                            <div class="version">
+                                                0.0.1
+                                            </div>
+                                        
+                                    
+
+                                    
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+                        
+                    </div>
+
+                    <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                        
+                            
+                            
+                                <p class="caption"><span class="caption-text">Language Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://docs.racket-lang.org/">Racket</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://ccl.northwestern.edu/netlogo/docs/dictionary.html">NetLogo</a></li>
+<li class="toctree-l1"><a class="reference external" href="http://www.w3schools.com/">HTML W3schools</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://docs.python.org/2/library/index.html">Python 2.7</a></li>
+<li class="toctree-l1"><a class="reference external" href="http://rgruet.free.fr/PQR27/PQR2.7.html">Python 2.7 Quick Reference</a></li>
+<li class="toctree-l1"><a class="reference external" href="http://docs.oracle.com/javase/7/docs/api/">Java 7 API</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://docs.oracle.com/javase/7/docs/api">Java 7 AP subset API</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://processing.org/reference">Processing</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Guides and Tutorials</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../stuycs/stuycs_guides.html">StuyCS Guides</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../stuycs/stuycs_guides.html#which-course-are-you-taking">Which Course Are You Taking?</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../stuycs/stuycs_guides.html#intro-to-computer-science-1">Intro to Computer Science 1</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../stuycs/intro_cs1/recursion_introduction.html">Introduction to Recursion</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../stuycs/stuycs_guides.html#intro-to-computer-science-2">Intro to Computer Science 2</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../stuycs/intro_cs2/python.html">Python</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../stuycs/stuycs_guides.html#ap-computer-science">AP Computer Science</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../stuycs/apcs/recursion_refresher.html">Recursion: A Refresher</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../stuycs/stuycs_guides.html#system-level-programming">System Level Programming</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../stuycs/systems/systems.html">Systems</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../stuycs/stuycs_guides.html#computer-graphics">Computer Graphics</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../stuycs/graphics/image_magick.html">Installing ImageMagick</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../stuycs/stuycs_guides.html#software-development">Software Development</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../stuycs/softdev/softdev.html">Softdev</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../software.html">Software and Tools</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../installation_instructions/index.html">Installing Software</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../installation_instructions/index.html#programming-tools">Programming Tools</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../installation_instructions/programming_tools/git.html">Installing Git</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2 current"><a class="reference internal" href="../index.html">Tutorials for Using Various Software</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="../index.html#programming-tools">Programming Tools</a><ul class="current">
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Introduction to Emacs</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Useful Links</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../stuycs/useful_links.html">Intro to Computer Science 1</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../stuycs/useful_links.html#intro-to-computer-science-2">Intro to Computer Science 2</a><ul>
+<li class="toctree-l2"><a class="reference external" href="http://pythontutor.com/">Python Visualizer</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../stuycs/useful_links.html#ap-computer-science">AP Computer Science</a><ul>
+<li class="toctree-l2"><a class="reference external" href="https://dojo.stuycs.org/nqueens-sketchpad">NQueens SketchPad</a></li>
+<li class="toctree-l2"><a class="reference external" href="https://dojo.stuycs.org/knights-tour-sketchpad">Knight Tours SketchPad</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../stuycs/useful_links.html#systems-level-programming">Systems Level Programming</a><ul>
+<li class="toctree-l2"><a class="reference external" href="http://cdecl.org/">C-English Translator</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../stuycs/useful_links.html#computer-graphics">Computer Graphics</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../stuycs/useful_links.html#software-development">Software Development</a><ul>
+<li class="toctree-l2"><a class="reference external" href="https://jsfiddle.net/">JS Fiddle</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../stuycs/useful_links.html#general-software">General Software</a><ul>
+<li class="toctree-l2"><a class="reference external" href="http://www.w3schools.com/">Emacs Wiki</a></li>
+<li class="toctree-l2"><a class="reference external" href="http://vim.wikia.com/wiki/Vim_Tips_Wiki">Vim Tips Wiki</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Extra</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../image.html">StuyCS</a></li>
+</ul>
+
+                            
+                        
+                    </div>
+                </div>
+                
+            </nav>
+
+            <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+                
+                <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+                    
+                        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+                        <a href="../../../index.html">dojo-resources</a>
+                    
+                </nav>
+
+
+
+                
+                <div class="wy-nav-content">
+                    <div class="rst-content">
+                        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html">Resources</a> &raquo;</li>
+        
+          <li><a href="../../software.html">Software and Tools</a> &raquo;</li>
+        
+          <li><a href="../index.html">Tutorials for Using Various Software</a> &raquo;</li>
+        
+      <li>Introduction to Emacs</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+                        <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+                            <div itemprop="articleBody">
+                                
+  <div class="section" id="introduction-to-emacs">
+<h1>Introduction to Emacs<a class="headerlink" href="#introduction-to-emacs" title="Permalink to this headline">¶</a></h1>
+<p><em>Written by PChan on 2016-12-08</em></p>
+<ul class="simple">
+<li><a class="reference internal" href="#emacs-what-is-emacs"><span class="std std-ref">What is Emacs</span></a></li>
+<li><a class="reference internal" href="#emacs-using-emacs"><span class="std std-ref">Using Emacs</span></a></li>
+<li><a class="reference internal" href="#emacs-emacs-keybinding"><span class="std std-ref">Emacs Keybinding</span></a></li>
+<li><a class="reference internal" href="#emacs-text-navigation"><span class="std std-ref">Emacs Text Navigation</span></a></li>
+<li><a class="reference internal" href="#emacs-text-editing"><span class="std std-ref">Text Editing</span></a></li>
+<li><a class="reference internal" href="#emacs-search-and-replace"><span class="std std-ref">Searching and Replacing</span></a></li>
+<li><a class="reference internal" href="#emacs-frames-and-windows"><span class="std std-ref">Frames and Windows</span></a></li>
+<li><a class="reference internal" href="#emacs-buffers"><span class="std std-ref">Buffers</span></a></li>
+<li><a class="reference internal" href="#emacs-and-now"><span class="std std-ref">And Now...</span></a></li>
+</ul>
+<div class="section" id="what-is-emacs">
+<span id="emacs-what-is-emacs"></span><h2>What is Emacs<a class="headerlink" href="#what-is-emacs" title="Permalink to this headline">¶</a></h2>
+<p>Emacs is a multi-purpose extensible text editor built upon Elisp (think Scheme).  If you are interested in
+trying out Emacs, check out the <span class="xref std std-ref">installing_emacs</span> guide.</p>
+</div>
+<div class="section" id="using-emacs">
+<span id="emacs-using-emacs"></span><h2>Using Emacs<a class="headerlink" href="#using-emacs" title="Permalink to this headline">¶</a></h2>
+<p>Let us go over the key notations in Emacs</p>
+<div class="highlight-none"><div class="highlight"><pre><span></span>C-    (press and hold) the Control/Ctrl key
+M-    (press and hold) the Meta/Alt key
+S-    (press and hold) the Shift key
+DEL   backspace key, sometimes written as &lt;backspace&gt;
+RET   Return or Enter key
+SPC   Space bar/Space key
+ESC   Escape key
+TAB   Tab key
+</pre></div>
+</div>
+<p><code class="docutils literal"><span class="pre">C-x</span> <span class="pre">C-f</span></code> means whild holding down the <code class="docutils literal"><span class="pre">Ctrl</span></code> key, press the <code class="docutils literal"><span class="pre">x</span></code> key and then press the <code class="docutils literal"><span class="pre">f</span></code> key
+<br />
+<code class="docutils literal"><span class="pre">M-x</span></code> means while holding down the <code class="docutils literal"><span class="pre">Alt</span></code> key or the <code class="docutils literal"><span class="pre">Meta</span></code> key, press the <code class="docutils literal"><span class="pre">x</span></code> key</p>
+<p>Some common Emacs commands:</p>
+<div class="highlight-none"><div class="highlight"><pre><span></span>Key        Commands                      What it does
+C-x C-c    save-buffers-kill-terminal    Exit Emacs
+C-x C-s    save-buffer                   Save file
+C-x C-f    find-file                     Open file or create it if it does not exists
+C-h C-h    help-for-help                 Open up the help window
+C-g        keyboard-quit                 Quit a partially entered command
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">To execute commands in the second column, you would do <code class="docutils literal"><span class="pre">M-x</span> <span class="pre">&lt;command&gt;</span></code></p>
+</div>
+</div>
+<div class="section" id="emacs-keybinding">
+<span id="emacs-emacs-keybinding"></span><h2>Emacs Keybinding<a class="headerlink" href="#emacs-keybinding" title="Permalink to this headline">¶</a></h2>
+<p>There are quite a few and easy rules to remember regarding Emacs binding</p>
+<ul class="simple">
+<li><code class="docutils literal"><span class="pre">C-x</span></code> is the default global prefix</li>
+<li><code class="docutils literal"><span class="pre">C-c</span></code> prefix is typically used for user-defined commands</li>
+<li><code class="docutils literal"><span class="pre">C-&lt;number&gt;</span></code> passes a number to a command, usually used to specify how many times to repeat a command</li>
+</ul>
+<p>Think of <em>prefix</em> as a key sequence that tells Emacs to interpret the next set of keystrokes differently.
+For example, the global Emacs prefix, <code class="docutils literal"><span class="pre">C-x</span></code>, comes before the default Emacs commands.  To open a file,
+you would do <code class="docutils literal"><span class="pre">C-x</span></code> and then <code class="docutils literal"><span class="pre">C-f</span></code> (f is for file).</p>
+</div>
+<div class="section" id="emacs-text-navigation">
+<span id="id1"></span><h2>Emacs Text Navigation<a class="headerlink" href="#emacs-text-navigation" title="Permalink to this headline">¶</a></h2>
+<p>In Emacs, <em>point</em> refers to the location of the cursor.  In most cases, <em>point</em> and cursor can be used
+interchangeably.</p>
+<p>Productivity is increased when you use the keyboard instead of the mouse.  Here are the basic navigation
+keybindings in Emacs that are also used by popular shells such as bash or zsh:</p>
+<div class="highlight-none"><div class="highlight"><pre><span></span>Key        Commands                      What it does
+C-f        forward-char                  Move point forward one character
+C-b        backward-char                 Move point backward one character
+C-p        previous-line                 Move point up one line
+C-n        next-line                     Move point down one line
+C-a        beginning-of-line             Move point to the beginning of the current line
+C-e        end-of-line                   Move point to the end of the current line
+M-f        forward-word                  Move point forward one word
+M-b        backward-word                 Move point backward one word
+</pre></div>
+</div>
+<p>Some additional navigation commands that are only available in Emacs:</p>
+<div class="highlight-none"><div class="highlight"><pre><span></span>Key        Commands                      What it does
+M-a        backward-sentence             Move point to the beginning of current sentence
+M-e        forward-sentence              Move point to the end of the current sentence
+M-&lt;        beginning-of-buffer           Move point to the beginning of the current buffer
+M-&gt;        end-of-buffer                 Move point to the end of the current buffer
+</pre></div>
+</div>
+<p><strong>Exercise:</strong> Practice the commands above a couple of times to get a feel for them.</p>
+</div>
+<div class="section" id="text-editing">
+<span id="emacs-text-editing"></span><h2>Text Editing<a class="headerlink" href="#text-editing" title="Permalink to this headline">¶</a></h2>
+<p>It is nice to know how to move around, but what about copying, cutting, pasting, or undoing?  In Emacs,
+cutting is known as <em>killing</em> and pasting is known as <em>yanking</em>.</p>
+<p>Here are some basic Emacs editing key bindings (some also work in the terminal):</p>
+<div class="highlight-none"><div class="highlight"><pre><span></span>Key        Commands                      What it does
+DEL        delete-backward-char          Delete the highlighted region or character before the point
+C-d        delete-char                   Delete the character at point (Same as the delete key)
+M-\        delete-horizontal-space       Delete all spaces and tabs around point
+M-SPC      just-one-space                Delete all spaces and tabs around point except for one space
+M-d        kill-word                     Kill to the end of a word starting at point
+M-DEL      backward-kill-word            Kill to the beginning of a word starting at point
+C-S-DEL    kill-whole-line               Kill the entire line (only non-terminal Emacs)
+C-k        kill-line                     Kill to the end of the line
+M-k        kill-sentence                 Kill to the end of sentence
+C-x DEL    backward-kill-sentence        Kill to the beginning of sentence
+C-w        kill-region                   Kill the highlighted region
+</pre></div>
+</div>
+<div class="admonition important">
+<p class="first admonition-title">Important</p>
+<p class="last"><em>Delete</em> and <em>kill</em> means two different things.  When you <em>delete</em> something, it is gone <strong>forever!!</strong>
+When you <em>kill</em> something, it is saved to the <em>kill ring</em> which can be thought of as the clipboard.</p>
+</div>
+<p>Great, but how would you paste something?</p>
+<div class="highlight-none"><div class="highlight"><pre><span></span>Key        Commands                      What it does
+C-y        yank                          Yank the most recent kill into the buffer
+M-y        yank-pop                      Replace the yanked text with an earlier kill
+</pre></div>
+</div>
+<p><code class="docutils literal"><span class="pre">C-y</span></code> is your normal paste operation.  However, Emacs keeps a history of all your previous <em>kills</em> and
+you can retrieve those via <code class="docutils literal"><span class="pre">M-y</span></code>.  If you were to cut or copy something from another application more
+recently than your last kill, <code class="docutils literal"><span class="pre">C-y</span></code> would <em>yank</em> from the clipboard.</p>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last"><code class="docutils literal"><span class="pre">M-y</span></code> can only be used after a previous <code class="docutils literal"><span class="pre">M-y</span></code> or a <code class="docutils literal"><span class="pre">C-y</span></code>.  After doing <code class="docutils literal"><span class="pre">M-y</span></code>, successive
+<code class="docutils literal"><span class="pre">C-y</span></code> will <em>yank</em> the same thing instead of your most recent <em>kill</em>.  After reaching the beginning
+of the <em>kill ring</em>, executing <code class="docutils literal"><span class="pre">M-y</span></code> would wrap back to the most recent <em>kill</em>.</p>
+</div>
+<p>Emacs uses the following command to copy:</p>
+<div class="highlight-none"><div class="highlight"><pre><span></span>Key        Commands                      What it does
+M-w        kill-ring-save                Copy the highlighted region
+</pre></div>
+</div>
+<p>We keep saying <em>highlighted region</em>, but how would you highlight a region without using the mouse?  The
+answer is:</p>
+<div class="highlight-none"><div class="highlight"><pre><span></span>Key        Commands                      What it does
+C-SPC      set-mark-command              Toggle the activation of the mark
+</pre></div>
+</div>
+<p>When you press <code class="docutils literal"><span class="pre">C-SPC</span></code> the first time, Emacs set the mark at <em>point</em>.  When you move the <em>point</em> around,
+the region between the <em>point</em> and the location of the mark is highlighted.  To get rid of the mark, press
+it twice: <code class="docutils literal"><span class="pre">C-SPC</span> <span class="pre">C-SPC</span></code>.</p>
+<p><strong>Exercise:</strong> Now create a text file in Emacs and type something in it.  Practice highlighting different
+regions and using Emacs shortcuts to delete, <em>kill</em>, and <em>yank</em> text around.</p>
+<p>Now you may be wondering, how would undo your most recent change.  The following command would solve your
+issue:</p>
+<div class="highlight-none"><div class="highlight"><pre><span></span>Key        Commands                      What it does
+C-/        undo                          Undo your most recent change (or redo them)
+C-x u      undo                          Undo your most recent change (or redo them)
+</pre></div>
+</div>
+<p>When you press <code class="docutils literal"><span class="pre">C-/</span></code> or <code class="docutils literal"><span class="pre">C-x</span> <span class="pre">u</span></code>, you undo your most recent change.  Any command other than the
+<code class="docutils literal"><span class="pre">undo</span></code> command would break the undo sequence and push the entire sequence of undo commands as a single
+set of changes.  For example, to reverse an undo, you might press <code class="docutils literal"><span class="pre">C-f</span></code> and then press <code class="docutils literal"><span class="pre">C-/</span></code> or
+<code class="docutils literal"><span class="pre">C-x</span> <span class="pre">u</span></code>.</p>
+</div>
+<div class="section" id="searching-and-replacing">
+<span id="emacs-search-and-replace"></span><h2>Searching and Replacing<a class="headerlink" href="#searching-and-replacing" title="Permalink to this headline">¶</a></h2>
+<p>One of the most important operation when editing text is find and replace.  In Emacs, searching is done
+via:</p>
+<div class="highlight-none"><div class="highlight"><pre><span></span>Key        Commands                      What it does
+C-s        isearch-forward               Perform an incremental search from point onward
+C-r        isearch-backward              Perform an incremental search backward from point
+</pre></div>
+</div>
+<p>When you press <code class="docutils literal"><span class="pre">C-s</span></code>, you would notice that Emacs start searching the moment you enter a single
+character.  It also highlights all instances of the query.  Pressing <code class="docutils literal"><span class="pre">C-s</span></code> again would move the point to
+the next instance of the query.  Pressing <code class="docutils literal"><span class="pre">C-r</span></code> would move the point to the previous instance of the
+query.  Cancel the search hby pressing <code class="docutils literal"><span class="pre">C-g</span></code>.</p>
+<p><strong>Exercise:</strong> Open up a large text file or create a new file and dump a large amount of text in it.
+Practice using <code class="docutils literal"><span class="pre">C-s</span></code> and <code class="docutils literal"><span class="pre">C-r</span></code> to search through the file.</p>
+<p>Replacing in Emacs is done via:</p>
+<div class="highlight-none"><div class="highlight"><pre><span></span>Key                    Commands                      What it does
+M-%  (Meta-Shift-5)    query-replace                 Replace a string with a different string
+</pre></div>
+</div>
+<p>Each instance of the query would prompt you for one of the following characters:</p>
+<div class="highlight-none"><div class="highlight"><pre><span></span>SPC                   replace the current occurence with the new string
+y
+
+DEL                   skip the current occurence
+delete
+n
+
+C-g                   exit without doing any more replacement
+RET
+q
+
+.                     replace the current occurence and then exit
+!                     replace all remaining occurences without prompting
+^                     go back to the previous occurence
+</pre></div>
+</div>
+<p>If you press <code class="docutils literal"><span class="pre">M-%</span></code> after doing <code class="docutils literal"><span class="pre">C-s</span></code> or <code class="docutils literal"><span class="pre">C-r</span></code>, it would look for the current search string and
+prompt you for the replacement (Find and replace).</p>
+<p><strong>Exercise:</strong> Open up a large text file and practice these new commands.</p>
+</div>
+<div class="section" id="frames-and-windows">
+<span id="emacs-frames-and-windows"></span><h2>Frames and Windows<a class="headerlink" href="#frames-and-windows" title="Permalink to this headline">¶</a></h2>
+<img alt="../../../_images/emacs-terminology.png" src="../../../_images/emacs-terminology.png" />
+<p>In Emacs, GUI windows are refer to as <em>frames</em>.  Each Emacs <em>window</em> contains a <em>buffer</em>.  When editing
+files, it may be helpful to look at multiple files at the same time.  To do this, we use the following
+commands:</p>
+<div class="highlight-none"><div class="highlight"><pre><span></span>Key      Commands              What it does
+C-x 2    split-window-below    Split the current window in half vertically
+C-x 3    split-window-right    Split the current window in half horizontally
+</pre></div>
+</div>
+<p>After splitting the <em>window</em>, you will notice that both <em>windows</em> contain the same content.  This is
+hardly useful.  To change that, we will need to know the following command:</p>
+<div class="highlight-none"><div class="highlight"><pre><span></span>Key      Commands              What it does
+C-x o    other-window          Move the cursor to the other window
+</pre></div>
+</div>
+<img alt="../../../_images/emacs-split-window.jpg" src="../../../_images/emacs-split-window.jpg" />
+<p>To get the same layout as the picture above, execute the following commands in a new instance of Emacs:</p>
+<div class="highlight-none"><div class="highlight"><pre><span></span>Key      Commands
+C-x 2    split-window-below
+C-x o    other-window
+C-x 3    split-window-right
+</pre></div>
+</div>
+<p><strong>Exercise:</strong> Use what you learn just now to move the point/cursor to the top <em>window</em>.</p>
+</div>
+<div class="section" id="buffers">
+<span id="emacs-buffers"></span><h2>Buffers<a class="headerlink" href="#buffers" title="Permalink to this headline">¶</a></h2>
+<p>When you open a file in Emacs, the file is contained in a separate <em>buffer</em>, which is a temporary copy of
+your file that you may modify as you please.  To keep the changes, you would call the <code class="docutils literal"><span class="pre">save-buffer</span></code>
+command, which is bound to <code class="docutils literal"><span class="pre">C-x</span> <span class="pre">C-s</span></code>.  If you wish to save it under a different name (think &#8220;Save as&#8221;
+in other editors), you would call the <code class="docutils literal"><span class="pre">write-buffer</span></code> command, which is bound to <code class="docutils literal"><span class="pre">C-x</span> <span class="pre">C-w</span></code>.</p>
+<p>To <em>kill</em> a <em>buffer</em>, use <code class="docutils literal"><span class="pre">C-x</span> <span class="pre">k</span></code> or call the <code class="docutils literal"><span class="pre">kill-buffer</span></code> command.  Then, press <code class="docutils literal"><span class="pre">RET</span></code> to <em>kill</em>
+the current <em>buffer</em>.  You may also type the name of the <em>buffer</em> you wish to <em>kill</em> followed by <code class="docutils literal"><span class="pre">RET</span></code>.
+<em>Buffer</em> names are typically the same as the file name.</p>
+<div class="admonition important">
+<p class="first admonition-title">Important</p>
+<p class="last"><em>Files</em> and <em>buffers</em> are two distinct concepts.  <em>Buffers</em> refer to the temporary content of a file,
+while <em>files</em> refer to the physical file on your disk.  <em>Killing</em> a <em>buffer</em> does not delete the actual
+physical file.</p>
+</div>
+<p>The switch to a different <em>buffer</em>, use the <code class="docutils literal"><span class="pre">switch-to-buffer</span></code> command which is bound to <code class="docutils literal"><span class="pre">C-x</span> <span class="pre">b</span></code>.</p>
+<p><strong>Here is an exercise for you:</strong></p>
+<ul class="simple">
+<li>Open/Create the file hi.txt</li>
+<li>Modify hi.txt</li>
+<li>Open/Create the file bye.txt</li>
+<li>Switch back to the buffer named hi.txt</li>
+</ul>
+<p>Notice that any modifications you made to the original <em>buffer</em> (ie hi.txt) is still there.  This is
+because the content of a buffer is stored in memory after the initial read which is faster than reading
+the file from disk every single time.</p>
+</div>
+<div class="section" id="and-now">
+<span id="emacs-and-now"></span><h2>And Now...<a class="headerlink" href="#and-now" title="Permalink to this headline">¶</a></h2>
+<p>Use what you learn about <em>buffers</em> and <em>windows</em> to boost your productivity.  Learn the shortcuts to
+maximize your productivity! :)</p>
+<p>Here are some additional resources to expand your Emacs knowledge:</p>
+<blockquote>
+<div><ul class="simple">
+<li>Start with the <a class="reference external" href="https://emacswiki.org/">Emacs Wiki</a>.  You might need to scroll down a bit for the
+meaningful information.</li>
+</ul>
+</div></blockquote>
+</div>
+</div>
+
+
+                            </div>
+                            <div class="articleComments">
+                                
+                            </div>
+                        </div>
+                        <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../../../stuycs/useful_links.html" class="btn btn-neutral float-right" title="Intro to Computer Science 1" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../index.html" class="btn btn-neutral" title="Tutorials for Using Various Software" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, PChan, Kenneth, Shakil, Jake, Leo, WX.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+                    </div>
+                </div>
+                
+            </section>
+            
+        </div>
+	
+	<div class="rst-versions" data-toggle="rst-versions">
+	    <form action="/logout" id="button_form">
+            </form>
+	</div>
+        
+
+
+        
+
+            <script type="text/javascript">
+             var DOCUMENTATION_OPTIONS = {
+                 URL_ROOT:'../../../',
+                 VERSION:'0.0.1',
+                 COLLAPSE_INDEX:false,
+                 FILE_SUFFIX:'.html',
+                 HAS_SOURCE:  true,
+                 SOURCELINK_SUFFIX: ''
+             };
+            </script>
+                <script type="text/javascript" src="../../../_static/jquery.js"></script>
+                <script type="text/javascript" src="../../../_static/underscore.js"></script>
+                <script type="text/javascript" src="../../../_static/doctools.js"></script>
+
+        
+
+        
+        
+            <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+        
+
+        
+        
+            <script type="text/javascript">
+             jQuery(function () {
+                 SphinxRtdTheme.StickyNav.enable();
+             });
+            </script>
+         
+
+    </body>
+</html>

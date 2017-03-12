@@ -1,2 +1,0 @@
-Mac OSX-Only Software
-=====================
