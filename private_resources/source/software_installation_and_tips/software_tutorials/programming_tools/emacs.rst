@@ -9,13 +9,14 @@ Introduction to Emacs
 
 * :ref:`emacs_what_is_emacs`
 * :ref:`emacs_using_emacs`
-* :ref:`emacs_emacs_keybinding`
-* :ref:`emacs_text_navigation`
-* :ref:`emacs_text_editing`
-* :ref:`emacs_search_and_replace`
+
+  * :ref:`emacs_emacs_keybinding`
+  * :ref:`emacs_text_navigation`
+  * :ref:`emacs_text_editing`
+  * :ref:`emacs_search_and_replace`
 * :ref:`emacs_frames_and_windows`
 * :ref:`emacs_buffers`
-* :ref:`emacs_and_now`
+* :ref:`emacs_now_what`
 
 .. highlight:: none
   
@@ -62,7 +63,7 @@ Some common Emacs commands:
 .. _emacs_emacs_keybinding:
 
 Emacs Keybinding
-----------------
+^^^^^^^^^^^^^^^^
 There are quite a few and easy rules to remember regarding Emacs binding
 
 * ``C-x`` is the default global prefix
@@ -70,13 +71,13 @@ There are quite a few and easy rules to remember regarding Emacs binding
 * ``C-<number>`` passes a number to a command, usually used to specify how many times to repeat a command
 
 Think of *prefix* as a key sequence that tells Emacs to interpret the next set of keystrokes differently.
-For example, the global Emacs prefix, ``C-x``, comes before the default Emacs commands.  To open a file,
+For example, the global Emacs *prefix*, ``C-x``, comes before the default Emacs commands.  To open a file,
 you would do ``C-x`` and then ``C-f`` (f is for file).
 
 .. _emacs_text_navigation:
 
 Emacs Text Navigation
----------------------
+^^^^^^^^^^^^^^^^^^^^^
 In Emacs, *point* refers to the location of the cursor.  In most cases, *point* and cursor can be used
 interchangeably.
 
@@ -108,7 +109,7 @@ Some additional navigation commands that are only available in Emacs:
 .. _emacs_text_editing:
 
 Text Editing
-------------
+^^^^^^^^^^^^
 It is nice to know how to move around, but what about copying, cutting, pasting, or undoing?  In Emacs,
 cutting is known as *killing* and pasting is known as *yanking*.
 
@@ -184,7 +185,7 @@ set of changes.  For example, to reverse an undo, you might press ``C-f`` and th
 .. _emacs_search_and_replace:
 
 Searching and Replacing
------------------------
+^^^^^^^^^^^^^^^^^^^^^^^
 One of the most important operation when editing text is find and replace.  In Emacs, searching is done
 via:
 ::
@@ -196,7 +197,7 @@ via:
 When you press ``C-s``, you would notice that Emacs start searching the moment you enter a single
 character.  It also highlights all instances of the query.  Pressing ``C-s`` again would move the point to
 the next instance of the query.  Pressing ``C-r`` would move the point to the previous instance of the
-query.  Cancel the search hby pressing ``C-g``.
+query.  Cancel the search by pressing ``C-g``.
 
 **Exercise:** Open up a large text file or create a new file and dump a large amount of text in it.
 Practice using ``C-s`` and ``C-r`` to search through the file.
@@ -282,7 +283,7 @@ the current *buffer*.  You may also type the name of the *buffer* you wish to *k
    while *files* refer to the physical file on your disk.  *Killing* a *buffer* does not delete the actual
    physical file.
 
-The switch to a different *buffer*, use the ``switch-to-buffer`` command which is bound to ``C-x b``.
+To switch to a different *buffer*, use the ``switch-to-buffer`` command which is bound to ``C-x b``.
 
 **Here is an exercise for you:**
 
@@ -295,10 +296,10 @@ Notice that any modifications you made to the original *buffer* (ie hi.txt) is s
 because the content of a buffer is stored in memory after the initial read which is faster than reading
 the file from disk every single time.
 
-.. _emacs_and_now:
+.. _emacs_now_what:
 
-And Now...
-----------
+Now What...
+-----------
 Use what you learn about *buffers* and *windows* to boost your productivity.  Learn the shortcuts to
 maximize your productivity! :)
 
