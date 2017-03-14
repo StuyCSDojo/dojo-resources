@@ -9,6 +9,8 @@ def private_resources(filename='index.html'):
     path = join('private_resources/build/html', filename)
     return app.send_static_file(path)
 
+@app.route('/public/resources/')
+@app.route('/public/resources/<path:filename>')
 def public_resources(filename='index.html'):
     path = join('public_resources/build/html', filename)
     return app.send_static_file(path)
