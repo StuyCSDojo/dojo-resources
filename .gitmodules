@@ -4,3 +4,15 @@
 [submodule "public_resources/sphinx_rtd_theme"]
 	path = public_resources/sphinx_rtd_theme
 	url = git@github.com:rtfd/sphinx_rtd_theme.git
+[submodule "public_resources/source/stuycs/useful_links/nqueens-sketchpad"]
+	path = public_resources/source/stuycs/useful_links/nqueens-sketchpad
+	url = git@github.com:hhzrabbit/nqueens-sketchpad.git
+[submodule "public_resources/source/stuycs/useful_links/knights-tour-sketchpad"]
+	path = public_resources/source/stuycs/useful_links/knights-tour-sketchpad
+	url = git@github.com:pchan37/knights-tour-sketchpad.git
+[submodule "private_resources/source/stuycs/useful_links/knights-tour-sketchpad"]
+	path = private_resources/source/stuycs/useful_links/knights-tour-sketchpad
+	url = git@github.com:pchan37/knights-tour-sketchpad.git
+[submodule "private_resources/source/stuycs/useful_links/nqueens-sketchpad"]
+	path = private_resources/source/stuycs/useful_links/nqueens-sketchpad
+	url = git@github.com:hhzrabbit/nqueens-sketchpad.git
