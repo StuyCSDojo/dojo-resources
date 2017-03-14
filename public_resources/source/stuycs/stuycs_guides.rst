@@ -1,15 +1,13 @@
 StuyCS Guides
 =============
 
-Which Course Are You Taking?
-----------------------------
-  * :ref:`intro_cs1`
-  * :ref:`intro_cs2`
-  * :ref:`apcs`
-  * :ref:`systems`
-  * :ref:`graphics`
-  * :ref:`softdev`
-
+* :ref:`intro_cs1`
+* :ref:`intro_cs2`
+* :ref:`apcs`
+* :ref:`systems`
+* :ref:`graphics`
+* :ref:`softdev`
+    
 .. _intro_cs1:
 
 Intro to Computer Science 1

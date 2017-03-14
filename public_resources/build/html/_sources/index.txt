@@ -1,1 +1,1 @@
- Welcome to Dojo Resources!   Language Documentation   Racket NetLogo Python 2.7 Python 2.7 Quick Reference Java 7 API Java 7 AP subset API Processing  Guides and Tutorials    
+ Welcome to Dojo Resources!   Language Documentation   Racket NetLogo Web W3schools Python 2.7 Python 2.7 Quick Reference Java 7 API Java 7 AP subset API Processing  Guides and Tutorials    

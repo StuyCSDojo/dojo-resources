@@ -12,14 +12,15 @@ Intro to Computer Science 2
 .. toctree::
    :maxdepth: 1
 
-   W3schools <http://www.w3schools.com/>
-
+   Python Visualizer <http://pythontutor.com/>
+	      
 AP Computer Science
 ^^^^^^^^^^^^^^^^^^^
 
 .. toctree::
    :maxdepth: 1
 
+   Java Visualizer <http://cscircles.cemc.uwaterloo.ca/java_visualize/>
    NQueens SketchPad <https://dojo.stuycs.org/nqueens-sketchpad>
    Knight Tours SketchPad <https://dojo.stuycs.org/knights-tour-sketchpad>
    

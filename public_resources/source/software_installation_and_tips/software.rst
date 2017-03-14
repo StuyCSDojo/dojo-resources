@@ -2,11 +2,11 @@ Software and Tools
 ==================
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
    
    installation_instructions/index
    
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
    
    software_tutorials/index

@@ -1,0 +1,536 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+            <title>Introduction to Git &mdash; dojo-resources 0.0.1 documentation</title>
+        
+
+        
+        
+
+        
+
+        
+        
+            
+
+        
+
+        
+        
+            <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+        
+
+        
+
+        
+
+        <link rel="stylesheet" href="../../../_static/bootstrap-glyphicons.css" type="text/css" />
+        <link rel="stylesheet" href="../../../_static/main.css" type="text/css" />
+        <link rel="stylesheet" href="../../../_static/button.css" type="text/css" />
+        <script
+            src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+            integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc="
+            crossorigin="anonymous"></script>
+        <script src="../../../_static/button.js"></script>
+        <script src="../../../_static/set_target.js"></script>
+                <link rel="index" title="Index"
+                      href="../../../genindex.html"/>
+                <link rel="search" title="Search" href="../../../search.html"/>
+            <link rel="top" title="dojo-resources 0.0.1 documentation" href="../../../index.html"/>
+                <link rel="up" title="Tutorials for Using Various Software" href="../index.html"/>
+                <link rel="next" title="How to Use the Terminal" href="terminal.html"/>
+                <link rel="prev" title="Introduction to Emacs" href="emacs.html"/> 
+
+        
+        <script src="../../../_static/js/modernizr.min.js"></script>
+
+    </head>
+
+    <body class="wy-body-for-nav" role="document">
+
+         
+        <div class="wy-grid-for-nav">
+
+            
+            <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+                <div class="wy-side-scroll">
+                    <div class="wy-side-nav-search">
+                        
+
+                            
+                                    <a href="../../../index.html" class="icon icon-home"> dojo-resources
+                            
+
+                            
+                                    </a>
+
+                                    
+                                        
+                                        
+                                            <div class="version">
+                                                0.0.1
+                                            </div>
+                                        
+                                    
+
+                                    
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+                        
+                    </div>
+
+                    <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                        
+                            
+                            
+                                <p class="caption"><span class="caption-text">Language Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://docs.racket-lang.org/">Racket</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://ccl.northwestern.edu/netlogo/docs/dictionary.html">NetLogo</a></li>
+<li class="toctree-l1"><a class="reference external" href="http://www.w3schools.com/">Web W3schools</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://docs.python.org/2/library/index.html">Python 2.7</a></li>
+<li class="toctree-l1"><a class="reference external" href="http://rgruet.free.fr/PQR27/PQR2.7.html">Python 2.7 Quick Reference</a></li>
+<li class="toctree-l1"><a class="reference external" href="http://docs.oracle.com/javase/7/docs/api/">Java 7 API</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://docs.oracle.com/javase/7/docs/api">Java 7 AP subset API</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://processing.org/reference">Processing</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Guides and Tutorials</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../stuycs/network.html">Network</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../stuycs/network/firefox_already_running.html">Firefox Already Running Error</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../stuycs/network/proxy_settings.html">Stuy Proxy Settings</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../stuycs/stuycs_guides.html">StuyCS Guides</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../stuycs/stuycs_guides.html#intro-to-computer-science-1">Intro to Computer Science 1</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../stuycs/intro_cs1/recursion_introduction.html">Introduction to Recursion</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../stuycs/intro_cs1/recursion_introduction.html#definitions">Definitions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../stuycs/intro_cs1/recursion_introduction.html#tips-for-finding-the-recursive-reduction">Tips for Finding the Recursive Reduction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../stuycs/intro_cs1/recursion_introduction.html#tips-for-finding-the-base-case">Tips for Finding the Base Case</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../stuycs/intro_cs1/recursion_introduction.html#what-is-a-recursive-function">What is a Recursive Function</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../stuycs/intro_cs1/recursion_introduction.html#tips-for-writing-recursive-functions">Tips for Writing Recursive Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../stuycs/intro_cs1/recursion_introduction.html#sample-workflow-for-recursion">Sample Workflow for Recursion</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../stuycs/intro_cs1/recursion_introduction.html#what-is-an-iterative-style-recursive-function">What is an Iterative-Style Recursive Function</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../stuycs/intro_cs1/recursion_introduction.html#what-are-state-variables">What are State Variables</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../stuycs/intro_cs1/recursion_introduction.html#tips-for-writing-iterative-style-recursive-functions">Tips for Writing Iterative-Style Recursive Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../stuycs/intro_cs1/recursion_introduction.html#sample-workflow-for-iterative-style-recursion">Sample Workflow for Iterative-Style Recursion</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../stuycs/stuycs_guides.html#intro-to-computer-science-2">Intro to Computer Science 2</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../stuycs/intro_cs2/python.html">Python</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../stuycs/stuycs_guides.html#ap-computer-science">AP Computer Science</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../stuycs/apcs/recursion_refresher.html">Recursion: A Refresher</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../stuycs/apcs/recursion_refresher.html#definitions">Definitions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../stuycs/apcs/recursion_refresher.html#tips-for-finding-the-recursive-reduction">Tips for Finding the Recursive Reduction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../stuycs/apcs/recursion_refresher.html#tips-for-finding-the-base-case">Tips for Finding the Base Case</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../stuycs/apcs/recursion_refresher.html#what-is-a-recursive-function">What is a Recursive Function</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../stuycs/apcs/recursion_refresher.html#example-of-recursion">Example of Recursion</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../stuycs/apcs/recursion_refresher.html#what-is-an-iterative-style-recursive-function">What is an Iterative-Style Recursive Function</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../stuycs/apcs/recursion_refresher.html#what-are-state-variables">What are State Variables</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../stuycs/apcs/recursion_refresher.html#example-of-iterative-style-recursion">Example of Iterative Style Recursion</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../stuycs/stuycs_guides.html#system-level-programming">System Level Programming</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../stuycs/systems/systems.html">Systems</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../stuycs/stuycs_guides.html#computer-graphics">Computer Graphics</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../stuycs/graphics/image_magick.html">Installing ImageMagick</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../stuycs/stuycs_guides.html#software-development">Software Development</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../stuycs/softdev/softdev.html">Softdev</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../software.html">Software and Tools</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../installation_instructions/index.html">Installing Software</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../installation_instructions/index.html#programming-tools">Programming Tools</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../installation_instructions/programming_tools/git.html">Installing Git</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../installation_instructions/index.html#system-tools">System Tools</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../installation_instructions/system_tools/homebrew.html">Installing Homebrew</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2 current"><a class="reference internal" href="../index.html">Tutorials for Using Various Software</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../index.html#languages">Languages</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../languages/bash.html">Introduction to Bash</a></li>
+</ul>
+</li>
+<li class="toctree-l3 current"><a class="reference internal" href="../index.html#programming-tools">Programming Tools</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="emacs.html">Introduction to Emacs</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Introduction to Git</a></li>
+<li class="toctree-l4"><a class="reference internal" href="terminal.html">How to Use the Terminal</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Useful Links</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../stuycs/useful_links.html">Intro to Computer Science 1</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../stuycs/useful_links.html#intro-to-computer-science-2">Intro to Computer Science 2</a><ul>
+<li class="toctree-l2"><a class="reference external" href="http://pythontutor.com/">Python Visualizer</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../stuycs/useful_links.html#ap-computer-science">AP Computer Science</a><ul>
+<li class="toctree-l2"><a class="reference external" href="http://cscircles.cemc.uwaterloo.ca/java_visualize/">Java Visualizer</a></li>
+<li class="toctree-l2"><a class="reference external" href="https://dojo.stuycs.org/nqueens-sketchpad">NQueens SketchPad</a></li>
+<li class="toctree-l2"><a class="reference external" href="https://dojo.stuycs.org/knights-tour-sketchpad">Knight Tours SketchPad</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../stuycs/useful_links.html#systems-level-programming">Systems Level Programming</a><ul>
+<li class="toctree-l2"><a class="reference external" href="http://cdecl.org/">C-English Translator</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../stuycs/useful_links.html#computer-graphics">Computer Graphics</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../stuycs/useful_links.html#software-development">Software Development</a><ul>
+<li class="toctree-l2"><a class="reference external" href="https://jsfiddle.net/">JS Fiddle</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../stuycs/useful_links.html#general-software">General Software</a><ul>
+<li class="toctree-l2"><a class="reference external" href="http://www.w3schools.com/">Emacs Wiki</a></li>
+<li class="toctree-l2"><a class="reference external" href="http://vim.wikia.com/wiki/Vim_Tips_Wiki">Vim Tips Wiki</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Extra</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../image.html">StuyCS</a></li>
+</ul>
+
+                            
+                        
+                    </div>
+                </div>
+                
+            </nav>
+
+            <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+                
+                <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+                    
+                        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+                        <a href="../../../index.html">dojo-resources</a>
+                    
+                </nav>
+
+
+
+                
+                <div class="wy-nav-content">
+                    <div class="rst-content">
+                        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html">Resources</a> &raquo;</li>
+        
+          <li><a href="../../software.html">Software and Tools</a> &raquo;</li>
+        
+          <li><a href="../index.html">Tutorials for Using Various Software</a> &raquo;</li>
+        
+      <li>Introduction to Git</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+                        <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+                            <div itemprop="articleBody">
+                                
+  <div class="section" id="introduction-to-git">
+<h1>Introduction to Git<a class="headerlink" href="#introduction-to-git" title="Permalink to this headline">¶</a></h1>
+<p><em>Written by PChan on 2016-12-08</em></p>
+<ul class="simple">
+<li><a class="reference internal" href="#git-what-is-git"><span class="std std-ref">What is Git</span></a></li>
+<li><a class="reference internal" href="#git-general-definitions"><span class="std std-ref">General Definitions</span></a></li>
+<li><a class="reference internal" href="#git-recommended-workflow"><span class="std std-ref">Git WorkFlow ProTips</span></a></li>
+<li><a class="reference internal" href="#git-basic-operations"><span class="std std-ref">Git Basic Operations</span></a></li>
+</ul>
+<div class="section" id="what-is-git">
+<span id="git-what-is-git"></span><h2>What is Git<a class="headerlink" href="#what-is-git" title="Permalink to this headline">¶</a></h2>
+<p>Git is a version control system that allows programmers to share their work with others, contribute to
+other projects, and allows you to keep track of your progress.  To install Git, check out the
+<a class="reference internal" href="../../installation_instructions/programming_tools/git.html#installing-git"><span class="std std-ref">Installing Git</span></a> guide.</p>
+</div>
+<div class="section" id="general-definitions">
+<span id="git-general-definitions"></span><h2>General Definitions<a class="headerlink" href="#general-definitions" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><p class="first">A <strong>file</strong> may refer to both regular files and directories</p>
+</li>
+<li><p class="first">A <strong>repository</strong> is a GitHub project folder containing your project files and metadata regarding the
+version history</p>
+</li>
+<li><p class="first"><strong>Cloning Link/Repo Link</strong> comes in two forms: SSH links and HTTPS links</p>
+<ul>
+<li><p class="first"><strong>HTTPS links</strong></p>
+<ul>
+<li><p class="first">Allows anyone to clone your repository as long as it is public</p>
+</li>
+<li><p class="first">Prompts you for your GitHub credentials when you push</p>
+</li>
+<li><p class="first">Same as the web address of your repository</p>
+</li>
+<li><p class="first">To grab the HTTPS link, either copy the url of the repo page or follow the instructions below:</p>
+<ul class="simple">
+<li>Click on the green button that says &#8220;Clone or download&#8221;</li>
+<li>Make sure it says &#8220;Clone with HTTPS&#8221; in bold; otherwise, click on the &#8220;Use HTTPS&#8221; link at the top
+right of the box</li>
+<li>Copy the link via Ctrl-C or click on the button to the right of the url</li>
+</ul>
+</li>
+<li><p class="first">General Structure:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/&lt;</span><span class="n">username</span><span class="o">&gt;/&lt;</span><span class="n">repo_name</span><span class="o">&gt;</span><span class="p">(</span><span class="o">.</span><span class="n">git</span><span class="p">)</span>
+</pre></div>
+</div>
+</li>
+</ul>
+</li>
+<li><p class="first"><strong>SSH links</strong></p>
+<ul>
+<li><p class="first">Only usable if you set up your SSH Keys</p>
+</li>
+<li><p class="first">Faster and more secure authentication</p>
+</li>
+<li><p class="first">To grab the SSH link, follow the instructions below:</p>
+<ul class="simple">
+<li>Click on the green button that says &#8220;Clone or download&#8221;</li>
+<li>Make sure it says &#8220;Clone with SSH&#8221; in bold; otherwise, click on the &#8220;Use SSH&#8221; link at the top
+right of the box</li>
+<li>Copy the link via Ctrl-C or click on the button to the right of the url</li>
+</ul>
+</li>
+<li><p class="first">General Structure:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">git</span><span class="nd">@github</span><span class="o">.</span><span class="n">com</span><span class="p">:</span><span class="o">&lt;</span><span class="n">username</span><span class="o">&gt;/&lt;</span><span class="n">repo_name</span><span class="o">&gt;.</span><span class="n">git</span>
+</pre></div>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p class="first"><strong>Upstream</strong> is the online copy of your repository, the state of your repo on GitHub</p>
+</li>
+</ul>
+</div>
+<div class="section" id="git-workflow-protips">
+<span id="git-recommended-workflow"></span><h2>Git WorkFlow ProTips<a class="headerlink" href="#git-workflow-protips" title="Permalink to this headline">¶</a></h2>
+<p>When working with partners, try not to modify the same files at the same time.  This leads to merge
+conflicts.  Aim to work on separate files.</p>
+<p>Before making any additional changes:</p>
+<blockquote>
+<div><ul>
+<li><p class="first">Pull all changes to avoid merge conflicts</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ git pull
+</pre></div>
+</div>
+</li>
+</ul>
+</div></blockquote>
+<div class="admonition important">
+<p class="first admonition-title">Important</p>
+<p class="last">Remember to pull before you make additional changes.</p>
+</div>
+<p>After making your changes:</p>
+<blockquote>
+<div><ul>
+<li><p class="first">Make sure to commit and push your changes upstream or your teacher will not see it!</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ git add &lt;filename&gt;
+$ git commit -am &quot;&lt;your commit message&gt;&quot;
+$ git push
+</pre></div>
+</div>
+</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="git-basic-operations">
+<span id="id1"></span><h2>Git Basic Operations<a class="headerlink" href="#git-basic-operations" title="Permalink to this headline">¶</a></h2>
+<p><strong>Cloning a repo:</strong> Make a local copy of the repository.</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ git clone &lt;repo_link&gt;
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Repo links are defined above</p>
+</div>
+<p><strong>Pulling from upstream:</strong> Sync your local copy with upstream by downloading and merging any changes.
+Always do this before you make any changes to your repo, or else merge conflicts will hound you to death.</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ git pull
+</pre></div>
+</div>
+<div class="admonition important">
+<p class="first admonition-title">Important</p>
+<p class="last">Again, remember to <strong>PULL</strong> before you make additional changes.</p>
+</div>
+<p><strong>Find the status of your repo:</strong> Check if you have added new files, modified any files, or need to
+commit.</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ git status
+</pre></div>
+</div>
+<p><strong>Add changes:</strong> Tell Git to track the files you specify.  This is cruical for getting the changes onto
+GitHub.  There are two forms of this command:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>// Tell Git to keep an eye on all files in current directory
+$ git add .
+// Tell Git to keep an eye on all previously added files, and this additional file
+$ git add &lt;filename&gt;
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The <code class="docutils literal"><span class="pre">-A</span></code> flag can be used to tell Git to track removed files.</p>
+</div>
+<p><strong>Committing changes:</strong> This command prepares the files you added for upload.  This does <strong>NOT</strong> modify
+your repo.  Use this command to &#8220;save&#8221; your work, create a unique hash, and keep a record of the changes
+made and the authors who made them.  Typically a message is passed specifying what changes were made.</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>// Surround your messages with quotes
+$ git commit -am &quot;&lt;your_commit_message&gt;&quot;
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The <code class="docutils literal"><span class="pre">-a</span></code> flag tells Git to add any changes for files it is already tracking before committing</p>
+</div>
+<p><strong>Pushing to upstream:</strong> Upload any local changes to upstream and merge them.  Remember to do this after
+you finished your work locally.</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ git push
+</pre></div>
+</div>
+</div>
+</div>
+
+
+                            </div>
+                            <div class="articleComments">
+                                
+                            </div>
+                        </div>
+                        <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="terminal.html" class="btn btn-neutral float-right" title="How to Use the Terminal" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="emacs.html" class="btn btn-neutral" title="Introduction to Emacs" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, PChan, Kenneth, Shakil, Jake, Leo, WX.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+                    </div>
+                </div>
+                
+            </section>
+            
+        </div>
+	
+	<div class="rst-versions" data-toggle="rst-versions">
+	    <form action="/logout" id="button_form">
+            </form>
+	</div>
+        
+
+
+        
+
+            <script type="text/javascript">
+             var DOCUMENTATION_OPTIONS = {
+                 URL_ROOT:'../../../',
+                 VERSION:'0.0.1',
+                 COLLAPSE_INDEX:false,
+                 FILE_SUFFIX:'.html',
+                 HAS_SOURCE:  true,
+                 SOURCELINK_SUFFIX: ''
+             };
+            </script>
+                <script type="text/javascript" src="../../../_static/jquery.js"></script>
+                <script type="text/javascript" src="../../../_static/underscore.js"></script>
+                <script type="text/javascript" src="../../../_static/doctools.js"></script>
+
+        
+
+        
+        
+            <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+        
+
+        
+        
+            <script type="text/javascript">
+             jQuery(function () {
+                 SphinxRtdTheme.StickyNav.enable();
+             });
+            </script>
+         
+
+    </body>
+</html>

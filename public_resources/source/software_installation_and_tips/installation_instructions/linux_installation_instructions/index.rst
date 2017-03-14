@@ -1,2 +1,0 @@
-Linux-Only Software
-===================
