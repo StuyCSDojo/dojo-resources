@@ -45,7 +45,7 @@
                 <link rel="search" title="Search" href="../../../search.html"/>
             <link rel="top" title="dojo-resources 0.0.1 documentation" href="../../../index.html"/>
                 <link rel="up" title="Installing Software" href="../index.html"/>
-                <link rel="next" title="Tutorials for Using Various Software" href="../../software_tutorials/index.html"/>
+                <link rel="next" title="Installing Homebrew" href="../system_tools/homebrew.html"/>
                 <link rel="prev" title="Installing Software" href="../index.html"/> 
 
         
@@ -100,7 +100,7 @@
 <ul>
 <li class="toctree-l1"><a class="reference external" href="https://docs.racket-lang.org/">Racket</a></li>
 <li class="toctree-l1"><a class="reference external" href="https://ccl.northwestern.edu/netlogo/docs/dictionary.html">NetLogo</a></li>
-<li class="toctree-l1"><a class="reference external" href="http://www.w3schools.com/">HTML W3schools</a></li>
+<li class="toctree-l1"><a class="reference external" href="http://www.w3schools.com/">Web W3schools</a></li>
 <li class="toctree-l1"><a class="reference external" href="https://docs.python.org/2/library/index.html">Python 2.7</a></li>
 <li class="toctree-l1"><a class="reference external" href="http://rgruet.free.fr/PQR27/PQR2.7.html">Python 2.7 Quick Reference</a></li>
 <li class="toctree-l1"><a class="reference external" href="http://docs.oracle.com/javase/7/docs/api/">Java 7 API</a></li>
@@ -108,7 +108,7 @@
 <li class="toctree-l1"><a class="reference external" href="https://processing.org/reference">Processing</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Guides and Tutorials</span></p>
-<ul class="current">
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="../../../stuycs/network.html">Network</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../../stuycs/network/firefox_already_running.html">Firefox Already Running Error</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../stuycs/network/proxy_settings.html">Stuy Proxy Settings</a></li>
@@ -163,18 +163,29 @@
 </li>
 </ul>
 </li>
+</ul>
+<ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="../../software.html">Software and Tools</a><ul class="current">
 <li class="toctree-l2 current"><a class="reference internal" href="../index.html">Installing Software</a><ul class="current">
 <li class="toctree-l3 current"><a class="reference internal" href="../index.html#programming-tools">Programming Tools</a><ul class="current">
 <li class="toctree-l4 current"><a class="current reference internal" href="#">Installing Git</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="../index.html#system-tools">System Tools</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../system_tools/homebrew.html">Installing Homebrew</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../software_tutorials/index.html">Tutorials for Using Various Software</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../software_tutorials/index.html#languages">Languages</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../software_tutorials/languages/bash.html">Introduction to Bash</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="../../software_tutorials/index.html#programming-tools">Programming Tools</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../software_tutorials/programming_tools/emacs.html">Introduction to Emacs</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../software_tutorials/programming_tools/git.html">Introduction to Git</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../software_tutorials/programming_tools/terminal.html">How to Use the Terminal</a></li>
 </ul>
 </li>
 </ul>
@@ -192,6 +203,7 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../../stuycs/useful_links.html#ap-computer-science">AP Computer Science</a><ul>
+<li class="toctree-l2"><a class="reference external" href="http://cscircles.cemc.uwaterloo.ca/java_visualize/">Java Visualizer</a></li>
 <li class="toctree-l2"><a class="reference external" href="https://dojo.stuycs.org/nqueens-sketchpad">NQueens SketchPad</a></li>
 <li class="toctree-l2"><a class="reference external" href="https://dojo.stuycs.org/knights-tour-sketchpad">Knight Tours SketchPad</a></li>
 </ul>
@@ -332,6 +344,12 @@ git version 2.11.0        // sample output
 </pre></div>
 </div>
 </li>
+<li><p class="first">Configure your Git username and email</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ git config --global user.name &quot;&lt;your name&gt;&quot;    // your name in quotes
+$ git config --global user.email &quot;&lt;your email&gt;&quot;  // your git email in quotes
+</pre></div>
+</div>
+</li>
 </ul>
 </li>
 <li><p class="first">For Fedora:</p>
@@ -355,6 +373,12 @@ git version 2.11.0        // sample output
 </pre></div>
 </div>
 </li>
+<li><p class="first">Configure your Git username and email</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ git config --global user.name &quot;&lt;your name&gt;&quot;    // your name in quotes
+$ git config --global user.email &quot;&lt;your email&gt;&quot;  // your git email in quotes
+</pre></div>
+</div>
+</li>
 </ul>
 </li>
 </ul>
@@ -375,6 +399,7 @@ features, security fixes, and etc.</p>
 <p>There are a couple of ways to installing Git:</p>
 <ul>
 <li><p class="first">Homebrew</p>
+<p>If you are not sure if homebrew is installed, check <a class="reference internal" href="../system_tools/homebrew.html#installing-homebrew"><span class="std std-ref">Installing Homebrew</span></a>.</p>
 <ul>
 <li><p class="first">Install Git via Homebrew</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span>$ brew install git
@@ -437,10 +462,12 @@ $ git config --global user.email &quot;&lt;your email&gt;&quot;  // your git ema
 </li>
 <li><p class="first">Run the executable; if you are not sure, follow the pointers below</p>
 <ul class="simple">
-<li>On the page with four checkboxes, checking at least one of the first two is recommended; the last two
-checkboxes are useful, but not necessary</li>
+<li>On the page with five checkboxes, check everything, &#8220;but Git GUI HERE&#8221;</li>
 <li>On the screen for adjusting path environment, select the third one</li>
 <li>On the screen for choosing CR/LF, select the first one</li>
+<li>On the screen for choosing the terminal emulator, select &#8220;Use MinTTY&#8221;</li>
+<li>On the screen for configuring extra options, check all three</li>
+<li>Click Install</li>
 </ul>
 </li>
 <li><p class="first">Run Git Bash</p>
@@ -466,7 +493,7 @@ $ git config --global user.email &quot;&lt;your email&gt;&quot;  // your git ema
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../../software_tutorials/index.html" class="btn btn-neutral float-right" title="Tutorials for Using Various Software" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="../system_tools/homebrew.html" class="btn btn-neutral float-right" title="Installing Homebrew" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="../index.html" class="btn btn-neutral" title="Installing Software" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>

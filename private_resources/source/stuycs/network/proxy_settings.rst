@@ -1,6 +1,9 @@
 Stuy Proxy Settings
 ===================
-You sit in front of the computer and your browser refuses to load any pages.  You remember your teacher
+
+*Written by PChan on 2017-03-11*
+
+You sit in front of the computer and your browser refuses to load anything.  You remember your teacher
 telling you about configuring the proxy...
 
 When you login for the first time on your StuyCS account, you need to configure the proxy settings.  Here

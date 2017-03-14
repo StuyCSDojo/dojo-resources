@@ -47,6 +47,11 @@ would know how to install Git themselves.
 
        $ git --version
        git version 2.11.0        // sample output
+  * Configure your Git username and email
+    ::
+       
+       $ git config --global user.name "<your name>"    // your name in quotes
+       $ git config --global user.email "<your email>"  // your git email in quotes
 
 * For Fedora:
 
@@ -66,6 +71,12 @@ would know how to install Git themselves.
 
        $ git --version
        git version 2.11.0        // sample output
+
+  * Configure your Git username and email
+    ::
+       
+       $ git config --global user.name "<your name>"    // your name in quotes
+       $ git config --global user.email "<your email>"  // your git email in quotes
   
 .. _git_mac_osx:
 
@@ -86,6 +97,8 @@ terminal:
 There are a couple of ways to installing Git:
 
 * Homebrew
+
+  If you are not sure if homebrew is installed, check :ref:`installing_homebrew`.
 
   * Install Git via Homebrew
     ::
@@ -137,10 +150,12 @@ For Windows, we are going to install Git Bash which provides a Bash emulation wi
 * Download the `installer for Git Bash <https://git-for-windows.github.io/>`_
 * Run the executable; if you are not sure, follow the pointers below
 
-  * On the page with four checkboxes, checking at least one of the first two is recommended; the last two
-    checkboxes are useful, but not necessary
+  * On the page with five checkboxes, check everything, "but Git GUI HERE"
   * On the screen for adjusting path environment, select the third one
   * On the screen for choosing CR/LF, select the first one
+  * On the screen for choosing the terminal emulator, select "Use MinTTY"
+  * On the screen for configuring extra options, check all three
+  * Click Install
 * Run Git Bash
 * Configure your Git username and email
   ::

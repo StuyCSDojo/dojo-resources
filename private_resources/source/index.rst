@@ -16,7 +16,7 @@ Welcome to Dojo Resources!
 
    Racket <https://docs.racket-lang.org/>
    NetLogo <https://ccl.northwestern.edu/netlogo/docs/dictionary.html>
-   HTML W3schools <http://www.w3schools.com/>
+   Web W3schools <http://www.w3schools.com/>
    Python 2.7 <https://docs.python.org/2/library/index.html>
    Python 2.7 Quick Reference <http://rgruet.free.fr/PQR27/PQR2.7.html>
    Java 7 API <http://docs.oracle.com/javase/7/docs/api/>
@@ -24,11 +24,15 @@ Welcome to Dojo Resources!
    Processing <https://processing.org/reference>
 	     
 .. toctree::
-   :maxdepth: 4
+   :maxdepth: 3
    :caption: Guides and Tutorials
 
    stuycs/network
    stuycs/stuycs_guides
+
+.. toctree::
+   :maxdepth: 4
+	      
    software_installation_and_tips/software
 	     
 .. toctree::

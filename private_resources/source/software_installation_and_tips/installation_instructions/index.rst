@@ -12,3 +12,10 @@ Programming Tools
 
    programming_tools/emacs
    programming_tools/git
+
+System Tools
+------------
+.. toctree::
+   :maxdepth: 2
+	      
+   system_tools/homebrew

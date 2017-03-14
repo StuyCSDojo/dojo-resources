@@ -1,2 +1,1 @@
-Installing ImageMagick
-======================
+ Installing ImageMagick   

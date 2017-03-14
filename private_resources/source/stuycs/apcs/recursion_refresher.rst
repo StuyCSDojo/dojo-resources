@@ -35,7 +35,7 @@ Tips for Finding the Recursive Reduction
     recursive call
   * Use the base case to help you deduce the recursive reduction
 
-    * **ON PAPER**, find out the base case first using the tips above
+    * **ON PAPER**, find out the base case first using the tips below
     * Think about a problem that is slightly more complex than the base case.  How can you reduce it to
       the base case?
 

@@ -37,7 +37,7 @@ Tips for Finding the Recursive Reduction
     recursive call
   * Use the base case to help you deduce the recursive reduction
 
-    * **ON PAPER**, find out the base case first using the tips above
+    * **ON PAPER**, find out the base case first using the tips below
     * Think about a problem that is slightly more complex than the base case.  How can you reduce it to
       the base case?
 
@@ -102,10 +102,12 @@ integer, n, as the parameter and returns n!
        So, what is (6!)?
            It is 6*5*4*3*2*1.
 	   
-       Great!  Now what is the simplest factorial that you can think of?  And what does it equal?
+       Great!  Now what is the simplest factorial that you can think of?  And what does it
+       equal?
            Wait what?  What does this have to do with 6!?
 	   
-       Bear with me.  This will help you solve the problem.  So, what is the simplest factorial?
+       Bear with me.  This will help you solve the problem.  So, what is the simplest
+       factorial?
            1! which is 1.  (If you answer 0, just think of 1 being the simplest for now).
 	   
        Now what is a factorial that is slightly more complex?
@@ -114,9 +116,9 @@ integer, n, as the parameter and returns n!
        How can we rewrite 2! in terms of 1!?
            That would be 2*1!
 	   
-       Notice how we have just reduced a slightly more complicated problem into a simpler problem
-       involving something we already know...  Ponder over the significance of this...  How would you
-       solve 3! in this manner?
+       Notice how we have just reduced a slightly more complicated problem into a simpler
+       problem involving something we already know...  Ponder over the significance of
+       this...  How would you solve 3! in this manner?
            Hint: 3*2! which is 3*(...)
 	   
        Now take some time to rewrite 6!
@@ -127,20 +129,21 @@ integer, n, as the parameter and returns n!
                                  2*1!
                                    1     
        Ponder over the case of n!
-           Hint: How can you rewrite n! in terms of a smaller factorial?  How can you rewrite the smaller
-	   factorial into an even smaller one?
+           Hint: How can you rewrite n! in terms of a smaller factorial?  How can you
+	   rewrite the smaller factorial into an even smaller one?
 	   
-       By now, you might have deduce that 1! can serve as your base case.  A pseudocode might be:
+       By now, you might have deduce that 1! can serve as your base case.  A pseudocode
+       might be:
            if n is equal to 1
                then the answer is 1
            otherwise
                then the answer is ?
 	       
-       Here is a hint to fill in the last blank: Look at the trace diagram of 6!...  Notice how each step,
-       the factorial that we are computing shrinks.
+       Here is a hint to fill in the last blank: Look at the trace diagram of 6!...
+       Notice how each step, the factorial that we are computing shrinks.
     
-       Now, one last thing before I leave you...  Something you should be aware of is that 0! is by
-       definition 1.  The modified pseudocode might look like:
+       Now, one last thing before I leave you...  Something you should be aware of is
+       that 0! is by definition 1.  The modified pseudocode might look like:
            if n is less than or equal to 1
                then the answer is ?
            otherwise
@@ -214,10 +217,12 @@ an integer, n, as the parameter and returns n!
        So, what is (6!)?
            It is 6*5*4*3*2*1.
 	   
-       Great!  Now what is the simplest factorial that you can think of?  And what does it equal?
+       Great!  Now what is the simplest factorial that you can think of?  And what does it
+       equal?
            Wait what?  What does this have to do with 6!?
 	   
-       Bear with me.  This will help you solve the problem.  So, what is the simplest factorial?
+       Bear with me.  This will help you solve the problem.  So, what is the simplest
+       factorial?
            1! which is 1.  (If you answer 0, just think of 1 being the simplest for now).
 	   
        Now what is a factorial that is slightly more complex?
@@ -226,9 +231,9 @@ an integer, n, as the parameter and returns n!
        How can we rewrite 2! in terms of 1!?
            That would be 2*1!
 	   
-       Notice how we have just reduced a slightly more complicated problem into a simpler problem
-       involving something we already know...  Ponder over the significance of this...  How would you
-       solve 3! in this manner?
+       Notice how we have just reduced a slightly more complicated problem into a simpler
+       problem involving something we already know...  Ponder over the significance of
+       this...  How would you solve 3! in this manner?
            Hint: First, rewrite 3! as 3*2!  How do we write that in terms of 1!?
 	   
        Now take some time to rewrite 6!
@@ -239,26 +244,29 @@ an integer, n, as the parameter and returns n!
                                  2*1!
                                    1     
        Ponder over the case of n!
-           Hint: How can you rewrite n! in terms of a smaller factorial?  How can you rewrite the smaller
-	   factorial into an even smaller one?
+           Hint: How can you rewrite n! in terms of a smaller factorial?  How can you
+	   rewrite the smaller factorial into an even smaller one?
 	   
-       By now, you might have deduce that 1! can serve as your base case.  Now how can we incorporate
-       the usage of state variables, one of the distinguishing factors of iterative-style recursion?
+       By now, you might have deduce that 1! can serve as your base case.  Now how can
+       we incorporate the usage of state variables, one of the distinguishing factors
+       of iterative-style recursion?
 
-       Remember that two of the main usage of state variables are to store the answer that you have
-       calculated so far and to act as a counter.
+       Remember that two of the main usage of state variables are to store the answer
+       that you have calculated so far and to act as a counter.
 
-       So let us start by adding a variable for our current answer.  The function header would look like:
+       So let us start by adding a variable for our current answer.  The function
+       header would look like:
 
        (define factorial (lambda (n product)
               ...
 	      )
 
-       Notice that in addition to n (the number to calculate the factorial for), we have product.  This
-       allows us to keep track of the current product as we progress from one function call to another.
+       Notice that in addition to n (the number to calculate the factorial for), we
+       have product.  This allows us to keep track of the current product as we progress
+       from one function call to another.
 
-       But, how would we know when to stop?  It might be useful to have a counter that counts up to n.  A
-       trace of (factorial n) when n is 6 is shown below:
+       But, how would we know when to stop?  It might be useful to have a counter that
+       counts up to n.  A trace of (factorial n counter answer) when n is 6 is shown below:
        
        -----------------------------------------------------------------------
        | Function Call       | Current Value of n | Counter | Current Answer |
@@ -276,6 +284,7 @@ an integer, n, as the parameter and returns n!
        | (factorial 6 6 720) |          6         |    6    |      720       |
        -----------------------------------------------------------------------
 
-       The actual code is left as an exercise for you to complete.  Remember to take into account 0!
+       The actual code is left as an exercise for you to complete.  Remember to take
+       into account 0!
 
     .. highlight:: python

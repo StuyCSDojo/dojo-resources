@@ -43,7 +43,7 @@ Let us go over the key notations in Emacs
    ESC   Escape key
    TAB   Tab key
 
-``C-x C-f`` means whild holding down the ``Ctrl`` key, press the ``x`` key and then press the ``f`` key
+``C-x C-f`` means while holding down the ``Ctrl`` key, press the ``x`` key and then press the ``f`` key
 |br|
 ``M-x`` means while holding down the ``Alt`` key or the ``Meta`` key, press the ``x`` key
 
@@ -307,5 +307,6 @@ Here are some additional resources to expand your Emacs knowledge:
 
   * Start with the `Emacs Wiki <https://emacswiki.org/>`_.  You might need to scroll down a bit for the
     meaningful information.
-
+  * To keep track of the various Emacs commands, check out the `Emacs Survival Reference Card <http://www.sluug.org/resources/presentations/2016/2016-01-13/Emacs_24_refcard-P1.pdf>`_.
+    
 .. highlight:: python

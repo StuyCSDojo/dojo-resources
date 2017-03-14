@@ -76,6 +76,9 @@ Before making any additional changes:
 
        $ git pull
 
+.. important::
+   Remember to pull before you make additional changes.
+       
 After making your changes:
 
   * Make sure to commit and push your changes upstream or your teacher will not see it!
@@ -97,12 +100,15 @@ Git Basic Operations
 .. note::
    Repo links are defined above
 
-**PUlling from upstream:** Sync your local copy with upstream by downloading and merging any changes.
+**Pulling from upstream:** Sync your local copy with upstream by downloading and merging any changes.
 Always do this before you make any changes to your repo, or else merge conflicts will hound you to death.
 ::
 
    $ git pull
 
+.. important::
+   Again, remember to **PULL** before you make additional changes.
+   
 **Find the status of your repo:** Check if you have added new files, modified any files, or need to
 commit.
 ::
