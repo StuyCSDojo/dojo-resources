@@ -2,6 +2,9 @@
 
 Installing Homebrew
 ===================
+
+*Written by PChan on 2017-03-13*
+
 Homebrew is one of the many package managers for Mac OSX allowing you to install packages that are not
 preinstalled.
 

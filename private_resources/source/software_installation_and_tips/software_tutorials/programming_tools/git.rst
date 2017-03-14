@@ -1,3 +1,5 @@
+.. _introduction_to_git:
+
 Introduction to Git
 ===================
 

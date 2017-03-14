@@ -8,7 +8,7 @@
         
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
-            <title>Installing Homebrew &mdash; dojo-resources 0.0.1 documentation</title>
+            <title>Installing Emacs &mdash; dojo-resources 0.0.1 documentation</title>
         
 
         
@@ -45,8 +45,8 @@
                 <link rel="search" title="Search" href="../../../search.html"/>
             <link rel="top" title="dojo-resources 0.0.1 documentation" href="../../../index.html"/>
                 <link rel="up" title="Installing Software" href="../index.html"/>
-                <link rel="next" title="Tutorials for Using Various Software" href="../../software_tutorials/index.html"/>
-                <link rel="prev" title="Installing Git" href="../programming_tools/git.html"/> 
+                <link rel="next" title="Installing Git" href="git.html"/>
+                <link rel="prev" title="Installing Software" href="../index.html"/> 
 
         
         <script src="../../../_static/js/modernizr.min.js"></script>
@@ -167,13 +167,13 @@
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="../../software.html">Software and Tools</a><ul class="current">
 <li class="toctree-l2 current"><a class="reference internal" href="../index.html">Installing Software</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="../index.html#programming-tools">Programming Tools</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../programming_tools/emacs.html">Installing Emacs</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../programming_tools/git.html">Installing Git</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="../index.html#programming-tools">Programming Tools</a><ul class="current">
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Installing Emacs</a></li>
+<li class="toctree-l4"><a class="reference internal" href="git.html">Installing Git</a></li>
 </ul>
 </li>
-<li class="toctree-l3 current"><a class="reference internal" href="../index.html#system-tools">System Tools</a><ul class="current">
-<li class="toctree-l4 current"><a class="current reference internal" href="#">Installing Homebrew</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../index.html#system-tools">System Tools</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../system_tools/homebrew.html">Installing Homebrew</a></li>
 </ul>
 </li>
 </ul>
@@ -279,7 +279,7 @@
         
           <li><a href="../index.html">Installing Software</a> &raquo;</li>
         
-      <li>Installing Homebrew</li>
+      <li>Installing Emacs</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -296,41 +296,122 @@
                         <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
                             <div itemprop="articleBody">
                                 
-  <div class="section" id="installing-homebrew">
-<span id="id1"></span><h1>Installing Homebrew<a class="headerlink" href="#installing-homebrew" title="Permalink to this headline">¶</a></h1>
-<p><em>Written by PChan on 2017-03-13</em></p>
-<p>Homebrew is one of the many package managers for Mac OSX allowing you to install packages that are not
-preinstalled.</p>
-<div class="section" id="instructions">
-<h2>Instructions<a class="headerlink" href="#instructions" title="Permalink to this headline">¶</a></h2>
-<p>First, check if you need to install Homebrew by running the following command in the terminal:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span>$ brew doctor
+  <div class="section" id="installing-emacs">
+<span id="id1"></span><h1>Installing Emacs<a class="headerlink" href="#installing-emacs" title="Permalink to this headline">¶</a></h1>
+<p><em>Written by PChan on 2017-03-14</em></p>
+<ul class="simple">
+<li><a class="reference internal" href="#emacs-linux"><span class="std std-ref">Linux</span></a></li>
+<li><a class="reference internal" href="#emacs-mac-osx"><span class="std std-ref">Mac OSX</span></a></li>
+<li><a class="reference internal" href="#emacs-windows"><span class="std std-ref">Windows</span></a></li>
+</ul>
+<div class="section" id="linux">
+<span id="emacs-linux"></span><h2>Linux<a class="headerlink" href="#linux" title="Permalink to this headline">¶</a></h2>
+<p>We will provide instructions for Fedora and Debian systems.  We are assuming that users of other distros
+would know how to install Emacs themselves.</p>
+<ul>
+<li><p class="first">For Ubuntu/Debian/Mint:</p>
+<ul>
+<li><p class="first">For the latest stable version:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ sudo apt-get install emacs
 </pre></div>
 </div>
-<p>If you get a command not found error, follow the next set of instructions to install Homebrew in the
-terminal.  If you do not get an error, you are set to go!</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span>$ xcode-select --install
-$ ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot;
-// Follow the instructions provided by the script
-
-$ echo &#39;export PATH=&quot;/usr/local/bin:$PATH&quot;&#39; &gt;&gt; ~/.bash_profile
-// Close the current terminal and fire up a new terminal
-
-$ brew doctor
-// You should see a message like the following:
-Your system is ready to brew.
-
-// If you get something like the following (where &lt;director&gt; is name of any directory)
-Warning: /usr/local/&lt;directory&gt; isn&#39;t writable
-
-$ sudo chmod g+w /usr/local
-$ sudo chgrp staff /usr/local
-$ brew doctor
-// You should now see a message like the following:
-Your system is ready to brew.
+</li>
+<li><p class="first">For the latest development version (Ubuntu only):</p>
+<ul>
+<li><p class="first">Try to add the Ubuntu Elisp ppa:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ sudo add-apt-repository ppa:ubuntu-elisp/ppa
 </pre></div>
 </div>
-<p>That&#8217;s it!  You have successfuly installed Homebrew!</p>
+</li>
+<li><p class="first">If you get <code class="docutils literal"><span class="pre">sudo:</span> <span class="pre">add-apt-repostiory:</span> <span class="pre">command</span> <span class="pre">not</span> <span class="pre">found</span></code>, run the following:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ sudo apt-get install software-properties-common
+</pre></div>
+</div>
+<p>Try to add the Ubuntu Elisp ppa again</p>
+</li>
+<li><p class="first">Execute the following commands to update the package listing and install emacs</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ sudo apt-get update
+$ sudo apt-get install emacs-snapshot emacs-snapshot-el
+</pre></div>
+</div>
+</li>
+<li><p class="first">Optional: Allow you to execute <code class="docutils literal"><span class="pre">emacs-snapshot</span></code> by running <code class="docutils literal"><span class="pre">emacs</span></code></p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ sudo ln -s /usr/bin/emacs-snapshot /usr/bin/emacs
+</pre></div>
+</div>
+</li>
+<li><p class="first">Run Emacs via the following command:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ emacs-snapshot &amp;     // if you did not run the optional step
+$ emacs &amp;              // if you did run the optional step
+</pre></div>
+</div>
+</li>
+<li><p class="first">Check out the <a class="reference internal" href="../../software_tutorials/programming_tools/emacs.html#introduction-to-emacs"><span class="std std-ref">Introduction to Emacs</span></a> guide for pointers on using Emacs</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p class="first">For Fedora:</p>
+<ul>
+<li><p class="first">Install Emacs 24 via the following commands:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ sudo dnf install emacs     // on Fedora 22 and higher
+$ sudo yum install emacs     // on Fedora 21 and lower
+</pre></div>
+</div>
+</li>
+<li><p class="first">Run Emacs via the following command:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ emacs &amp;
+</pre></div>
+</div>
+</li>
+<li><p class="first">Check out the <a class="reference internal" href="../../software_tutorials/programming_tools/emacs.html#introduction-to-emacs"><span class="std std-ref">Introduction to Emacs</span></a> guide for pointers on using Emacs</p>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="mac-osx">
+<span id="emacs-mac-osx"></span><h2>Mac OSX<a class="headerlink" href="#mac-osx" title="Permalink to this headline">¶</a></h2>
+<p>We will be installing Emacs via Homebrew.  For instructions on how to install Homebrew, check the
+<a class="reference internal" href="../system_tools/homebrew.html#installing-homebrew"><span class="std std-ref">Installing Homebrew</span></a> guide.</p>
+<p>After you have installed homebrew:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ brew update
+$ brew tap railwaycat/emacsmacport
+$ brew install emacs-mac
+</pre></div>
+</div>
+<p>Run Emacs via the following command:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ emacs-mac &amp;
+</pre></div>
+</div>
+<p>Check out the <a class="reference internal" href="../../software_tutorials/programming_tools/emacs.html#introduction-to-emacs"><span class="std std-ref">Introduction to Emacs</span></a> guide for pointers on using Emacs</p>
+</div>
+<div class="section" id="windows">
+<span id="emacs-windows"></span><h2>Windows<a class="headerlink" href="#windows" title="Permalink to this headline">¶</a></h2>
+<p>Check the OS version that you are running, then determine which set of instructions to follow.</p>
+<div class="section" id="bit-x86">
+<span id="emacs-windows-x86"></span><h3>32-bit (x86)<a class="headerlink" href="#bit-x86" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>Download Emacs from <a class="reference external" href="https://ftp.gnu.org/gnu/emacs/windows/">here</a>.  Choose the latest version ending
+with: <code class="docutils literal"><span class="pre">i686-w64-mingw32.zip</span></code>.</li>
+<li>Extract the downloaded file, here is a <a class="reference external" href="http://www.7-zip.org/">link to a free archiver</a>.</li>
+<li>To run Emacs, navigate to <code class="docutils literal"><span class="pre">emacs/bin</span></code> under the newly extracted folder and double-click on
+runemacs.exe.</li>
+<li>Check out the <a class="reference internal" href="../../software_tutorials/programming_tools/emacs.html#introduction-to-emacs"><span class="std std-ref">Introduction to Emacs</span></a> guide for pointers on using Emacs</li>
+</ol>
+</div>
+<div class="section" id="bit">
+<span id="emacs-windows-x64"></span><h3>64-bit<a class="headerlink" href="#bit" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>Download <a class="reference external" href="https://github.com/zklhp/emacs-w64/releases">Emacs</a>.  Any of the links under the
+download section should be fine, but if you are not sure, pick the one ending with <code class="docutils literal"><span class="pre">-Og.7z</span></code></li>
+<li>Extract the downloaded file, here is <a class="reference external" href="http://www.7-zip.org/">a free archiver</a>.</li>
+<li>To run Emacs, navigate to <code class="docutils literal"><span class="pre">emacs/bin</span></code> under the newly extracted folder and double-click on
+runemacs.exe.</li>
+<li>Check out the <a class="reference internal" href="../../software_tutorials/programming_tools/emacs.html#introduction-to-emacs"><span class="std std-ref">Introduction to Emacs</span></a> guide for pointers on using Emacs</li>
+</ol>
+</div>
 </div>
 </div>
 
@@ -344,10 +425,10 @@ Your system is ready to brew.
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../../software_tutorials/index.html" class="btn btn-neutral float-right" title="Tutorials for Using Various Software" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="git.html" class="btn btn-neutral float-right" title="Installing Git" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="../programming_tools/git.html" class="btn btn-neutral" title="Installing Git" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="../index.html" class="btn btn-neutral" title="Installing Software" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

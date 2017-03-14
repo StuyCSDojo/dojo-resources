@@ -3,20 +3,20 @@
 Installing Git
 ==============
 
+*Written by PChan on 2017-03-11*
+
 .. |br| raw:: html
 
    <br />
 
-What Operating System Are You Using?
-------------------------------------
-  * :ref:`git_linux`
-  * :ref:`git_mac_osx`
-  * :ref:`git_windows`
+* :ref:`git_linux`
+* :ref:`git_mac_osx`
+* :ref:`git_windows`
 
 .. _git_linux:
 
 Linux
-^^^^^
+-----
 We will provide instructions for Fedora and Debian systems.  We are assuming that users of other distros
 would know how to install Git themselves.
 
@@ -52,7 +52,8 @@ would know how to install Git themselves.
        
        $ git config --global user.name "<your name>"    // your name in quotes
        $ git config --global user.email "<your email>"  // your git email in quotes
-
+  * Check out the :ref:`introduction_to_git` guide for pointers on using Emacs
+       
 * For Fedora:
 
   * Check if Git is installed
@@ -77,11 +78,12 @@ would know how to install Git themselves.
        
        $ git config --global user.name "<your name>"    // your name in quotes
        $ git config --global user.email "<your email>"  // your git email in quotes
-  
+  * Check out the :ref:`introduction_to_git` guide for pointers on using Emacs
+       
 .. _git_mac_osx:
 
 Mac OSX
-^^^^^^^
+-------
 Depending on your setup, Git may already already be installed.  To check, run the following command in the
 terminal:
 
@@ -114,7 +116,8 @@ There are a couple of ways to installing Git:
        
        $ git config --global user.name "<your name>"    // your name in quotes
        $ git config --global user.email "<your email>"  // your git email in quotes
-       
+  * Check out the :ref:`introduction_to_git` guide for pointers on using Emacs
+    
 * MacPort
   
   * Update MacPorts
@@ -140,11 +143,12 @@ There are a couple of ways to installing Git:
        
        $ git config --global user.name "<your name>"    // your name in quotes
        $ git config --global user.email "<your email>"  // your git email in quotes
+  * Check out the :ref:`introduction_to_git` guide for pointers on using Emacs
     
 .. _git_windows:
 
 Windows
-^^^^^^^
+-------
 For Windows, we are going to install Git Bash which provides a Bash emulation with Git prebundled.
 
 * Download the `installer for Git Bash <https://git-for-windows.github.io/>`_
@@ -162,4 +166,4 @@ For Windows, we are going to install Git Bash which provides a Bash emulation wi
 
      $ git config --global user.name "<your name>"    // your name in quotes
      $ git config --global user.email "<your email>"  // your git email in quotes
-     
+* Check out the :ref:`introduction_to_git` guide for pointers on using Emacs

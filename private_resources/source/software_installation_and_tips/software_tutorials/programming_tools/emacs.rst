@@ -1,3 +1,5 @@
+.. _introduction_to_emacs:
+
 Introduction to Emacs
 =====================
 
