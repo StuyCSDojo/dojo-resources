@@ -32,7 +32,8 @@ AP Computer Science
 .. toctree::
    :maxdepth: 3
 
-   apcs/recursion_refresher
+   ..
+	      apcs/recursion_refresher
 
 .. _systems:
 
