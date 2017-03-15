@@ -21,8 +21,8 @@ AP Computer Science
    :maxdepth: 1
 
    Java Visualizer <http://cscircles.cemc.uwaterloo.ca/java_visualize/>
-   NQueens SketchPad <https://dojo.stuycs.org/nqueens-sketchpad>
-   Knight Tours SketchPad <https://dojo.stuycs.org/knights-tour-sketchpad>
+   NQueens SketchPad </public_resources/nqueens-sketchpad#://>
+   Knight Tours SketchPad </public_resources/knights-tour-sketchpad#://>
    
 Systems Level Programming
 ^^^^^^^^^^^^^^^^^^^^^^^^^
