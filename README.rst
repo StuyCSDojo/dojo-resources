@@ -9,18 +9,18 @@ What is Here
 ------------
 This repository contains the files behind the Dojo Website resources section. There are three directories:
 
-  * **app/**
+* **app/**
 
-    * Contains a standalone Flask app for accessing the pages of the private resources section and public
-      resources section
-  * **private_resources/**
+  * Contains a standalone Flask app for accessing the pages of the private resources section and public
+    resources section
+* **private_resources/**
 
-    * Contains the rst source files and the html files for the private version
-    * This is meant to be accessible by teachers and the developers because it contains beta content
-  * **public_resources/**
+  * Contains the rst source files and the html files for the private version
+  * This is meant to be accessible by teachers and the developers because it contains beta content
+* **public_resources/**
 
-    * Contains the rst source files and the html files for the public version
-    * The latest "stable" version whose content are accessible to the general public
+  * Contains the rst source files and the html files for the public version
+  * The latest "stable" version whose content are accessible to the general public
 
 RST Convention
 --------------
