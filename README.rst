@@ -1,9 +1,10 @@
 Dojo Resources
 ==============
 
-* :ref:`readme_what_is_it`
-* :ref:`readme_rst_convention`
-  
+* `What is Here`_
+* `RST Convention`_
+
+
 What is Here
 ------------
 This repository contains the files behind the Dojo Website resources section. There are three directories:
@@ -23,7 +24,6 @@ This repository contains the files behind the Dojo Website resources section. Th
 
 RST Convention
 --------------
-.. highlight:: none
 
 ::
 
