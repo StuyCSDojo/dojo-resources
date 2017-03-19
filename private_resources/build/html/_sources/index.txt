@@ -24,21 +24,21 @@ Welcome to Dojo Resources!
    Processing <https://processing.org/reference>
 
 .. toctree::
-   :maxdepth: 2
-   :caption: Guides and Tutorials
-	     
-   stuycs/network
-
-.. toctree::
    :maxdepth: 3
-	      
+   :caption: Guides and Tutorials
+	  
    stuycs/stuycs_guides
 
 .. toctree::
    :maxdepth: 4
 	      
    software_installation_and_tips/software
-	     
+
+.. toctree::
+   :maxdepth: 2
+
+   stuycs/misc
+   
 .. toctree::
    :maxdepth: 2
    :caption: Useful Links
