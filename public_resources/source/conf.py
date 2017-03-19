@@ -52,7 +52,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'dojo-resources'
+project = u'Dojo Resources'
 copyright = u'2017, PChan, Kenneth, Shakil, Jake, Leo, WX'
 author = u'PChan, Kenneth, Shakil, Jake, Leo, WX'
 
