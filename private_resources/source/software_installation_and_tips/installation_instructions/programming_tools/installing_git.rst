@@ -151,7 +151,8 @@ Windows
 -------
 For Windows, we are going to install Git Bash which provides a Bash emulation with Git prebundled.
 
-* Download the `installer for Git Bash <https://git-for-windows.github.io/>`_
+* Check the `version of your OS <http://support.microsoft.com/kb/827218/en-US>`_ and download the
+  appropriate `installer for Git Bash <https://git-for-windows.github.io/>`_
 * Run the executable; if you are not sure, follow the pointers below
 
   * On the page with five checkboxes, check everything, "but Git GUI HERE"

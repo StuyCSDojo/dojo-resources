@@ -97,7 +97,8 @@ Emacs.
 
 Windows
 -------
-Check the OS version that you are running, then determine which set of instructions to follow.
+Check the `OS version that you are running <http://support.microsoft.com/kb/827218/en-US>`_, then
+determine which set of instructions to follow.
 
 .. _installation_programming_tools_emacs_windows_x86:
 
