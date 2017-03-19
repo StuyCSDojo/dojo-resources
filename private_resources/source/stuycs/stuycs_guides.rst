@@ -24,7 +24,7 @@ Intro to Computer Science 2
 .. toctree::
    :maxdepth: 3
 
-   intro_cs2/python
+   intro_cs2/annual_recursion_introduction
 
 .. _apcs:
 

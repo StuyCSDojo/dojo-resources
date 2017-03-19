@@ -22,12 +22,16 @@ Welcome to Dojo Resources!
    Java 7 API <http://docs.oracle.com/javase/7/docs/api/>
    Java 7 AP subset API <https://docs.oracle.com/javase/7/docs/api>
    Processing <https://processing.org/reference>
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Guides and Tutorials
 	     
+   stuycs/network
+
 .. toctree::
    :maxdepth: 3
-   :caption: Guides and Tutorials
-
-   stuycs/network
+	      
    stuycs/stuycs_guides
 
 .. toctree::

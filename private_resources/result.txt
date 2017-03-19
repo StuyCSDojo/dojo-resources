@@ -1,0 +1,125 @@
+sphinx-build -b html -d build/doctrees   source build/html
+Running Sphinx v1.4.8
+loading pickled environment... done
+building [mo]: targets for 0 po files that are out of date
+building [html]: targets for 0 source files that are out of date
+updating environment: 0 added, 1 changed, 0 removed
+reading sources... [100%] software_installation_and_tips/software_tutorials/remote_file_transfer/remote_file_transfer_tutorial
+
+looking for now-outdated files... none found
+pickling environment... done
+checking consistency... done
+preparing documents... done
+writing output... [ 33%] index
+writing output... [ 66%] software_installation_and_tips/software_tutorials/index
+writing output... [100%] software_installation_and_tips/software_tutorials/remote_file_transfer/remote_file_transfer_tutorial
+
+generating indices... genindex
+writing additional pages... search
+copying images... [ 25%] software_installation_and_tips/software_tutorials/remote_file_transfer/../../images/software_tutorials/remote_file_transfer/filezilla/filezilla_login.png
+copying images... [ 50%] software_installation_and_tips/software_tutorials/remote_file_transfer/../../images/software_tutorials/remote_file_transfer/filezilla/filezilla_session.png
+copying images... [ 75%] software_installation_and_tips/software_tutorials/remote_file_transfer/../../images/software_tutorials/remote_file_transfer/winscp/winscp_connecting.png
+copying images... [100%] software_installation_and_tips/software_tutorials/remote_file_transfer/../../images/software_tutorials/remote_file_transfer/filezilla/filezilla_connecting.png
+
+copying static files... done
+copying extra files... done
+dumping search index in English (code: en) ... done
+dumping object inventory... done
+build succeeded, 4 warnings.
+
+Build finished. The HTML pages are in build/html.
+sphinx-build -b html -d build/doctrees   source build/html
+Running Sphinx v1.4.8
+loading pickled environment... done
+building [mo]: targets for 0 po files that are out of date
+building [html]: targets for 27 source files that are out of date
+updating environment: 0 added, 1 changed, 0 removed
+reading sources... [100%] software_installation_and_tips/software_tutorials/remote_file_transfer/remote_file_transfer_tutorial
+
+looking for now-outdated files... none found
+pickling environment... done
+checking consistency... done
+preparing documents... done
+writing output... [  3%] image
+writing output... [  7%] index
+writing output... [ 11%] software_installation_and_tips/installation_instructions/file_transfer_utilities/installing_ssh_programs
+writing output... [ 14%] software_installation_and_tips/installation_instructions/index
+writing output... [ 18%] software_installation_and_tips/installation_instructions/programming_tools/installing_emacs
+writing output... [ 22%] software_installation_and_tips/installation_instructions/programming_tools/installing_git
+writing output... [ 25%] software_installation_and_tips/installation_instructions/system_tools/installing_homebrew
+writing output... [ 29%] software_installation_and_tips/software
+writing output... [ 33%] software_installation_and_tips/software_tutorials/index
+writing output... [ 37%] software_installation_and_tips/software_tutorials/languages/bash_tutorial
+writing output... [ 40%] software_installation_and_tips/software_tutorials/programming_tools/emacs_tutorial
+writing output... [ 44%] software_installation_and_tips/software_tutorials/programming_tools/git_tutorial
+writing output... [ 48%] software_installation_and_tips/software_tutorials/programming_tools/terminal_tutorial
+writing output... [ 51%] software_installation_and_tips/software_tutorials/remote_file_transfer/remote_file_transfer_tutorial
+writing output... [ 55%] software_installation_and_tips/software_tutorials/remote_file_transfer/ssh_keys_tutorial
+writing output... [ 59%] software_installation_and_tips/software_tutorials/remote_file_transfer/ssh_tutorial
+writing output... [ 62%] stuycs/apcs/recursion_refresher
+writing output... [ 66%] stuycs/graphics/image_magick
+writing output... [ 70%] stuycs/intro_cs1/recursion_introduction
+writing output... [ 74%] stuycs/intro_cs2/annual_recursion_introduction
+writing output... [ 77%] stuycs/network
+writing output... [ 81%] stuycs/network/firefox_already_running
+writing output... [ 85%] stuycs/network/proxy_settings
+writing output... [ 88%] stuycs/softdev/softdev
+writing output... [ 92%] stuycs/stuycs_guides
+writing output... [ 96%] stuycs/systems/systems
+writing output... [100%] stuycs/useful_links
+
+generating indices... genindex
+writing additional pages... search
+copying images... [ 10%] software_installation_and_tips/software_tutorials/remote_file_transfer/../../images/software_tutorials/remote_file_transfer/filezilla/filezilla_login.png
+copying images... [ 20%] software_installation_and_tips/software_tutorials/programming_tools/../../images/software_tutorials/programming_tools/emacs/emacs-terminology.png
+copying images... [ 30%] stuycs/network/../images/network/firefox_already_running.png
+copying images... [ 40%] stuycs/network/../images/network/proxy_settings.png
+copying images... [ 50%] _static/stuycs.png
+copying images... [ 60%] software_installation_and_tips/software_tutorials/remote_file_transfer/../../images/software_tutorials/remote_file_transfer/winscp/winscp_connecting.png
+copying images... [ 70%] software_installation_and_tips/software_tutorials/programming_tools/../../images/software_tutorials/programming_tools/terminal/terminal.png
+copying images... [ 80%] software_installation_and_tips/software_tutorials/remote_file_transfer/../../images/software_tutorials/remote_file_transfer/filezilla/filezilla_session.png
+copying images... [ 90%] software_installation_and_tips/software_tutorials/remote_file_transfer/../../images/software_tutorials/remote_file_transfer/filezilla/filezilla_connecting.png
+copying images... [100%] software_installation_and_tips/software_tutorials/programming_tools/../../images/software_tutorials/programming_tools/emacs/emacs-split-window.jpg
+
+copying static files... done
+copying extra files... done
+dumping search index in English (code: en) ... done
+dumping object inventory... done
+build succeeded, 20 warnings.
+
+Build finished. The HTML pages are in build/html.
+sphinx-build -b html -d build/doctrees   source build/html
+Running Sphinx v1.4.8
+loading pickled environment... done
+building [mo]: targets for 0 po files that are out of date
+building [html]: targets for 1 source files that are out of date
+updating environment: 0 added, 2 changed, 0 removed
+reading sources... [ 50%] software_installation_and_tips/installation_instructions/file_transfer_utilities/installing_ssh_programs
+reading sources... [100%] software_installation_and_tips/software_tutorials/remote_file_transfer/remote_file_transfer_tutorial
+
+looking for now-outdated files... none found
+pickling environment... done
+checking consistency... done
+preparing documents... done
+writing output... [ 20%] index
+writing output... [ 40%] software_installation_and_tips/installation_instructions/file_transfer_utilities/installing_ssh_programs
+writing output... [ 60%] software_installation_and_tips/installation_instructions/index
+writing output... [ 80%] software_installation_and_tips/software_tutorials/index
+writing output... [100%] software_installation_and_tips/software_tutorials/remote_file_transfer/remote_file_transfer_tutorial
+
+generating indices... genindex
+writing additional pages... search
+copying images... [ 25%] software_installation_and_tips/software_tutorials/remote_file_transfer/../../images/software_tutorials/remote_file_transfer/filezilla/filezilla_login.png
+copying images... [ 50%] software_installation_and_tips/software_tutorials/remote_file_transfer/../../images/software_tutorials/remote_file_transfer/filezilla/filezilla_session.png
+copying images... [ 75%] software_installation_and_tips/software_tutorials/remote_file_transfer/../../images/software_tutorials/remote_file_transfer/winscp/winscp_connecting.png
+copying images... [100%] software_installation_and_tips/software_tutorials/remote_file_transfer/../../images/software_tutorials/remote_file_transfer/filezilla/filezilla_connecting.png
+
+copying static files... done
+copying extra files... done
+dumping search index in English (code: en) ... done
+dumping object inventory... done
+build succeeded, 4 warnings.
+
+Build finished. The HTML pages are in build/html.
+sphinx-build -b html -d build/doctrees   source build/html
+Running Sphinx v1.4.8

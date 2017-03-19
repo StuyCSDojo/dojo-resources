@@ -4,8 +4,6 @@ Intro to Computer Science 1
 .. toctree::
    :maxdepth: 1
 
-   
-
 Intro to Computer Science 2
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -37,8 +35,6 @@ Computer Graphics
 
 .. toctree::
    :maxdepth: 1
-
-   
 
 Software Development
 ^^^^^^^^^^^^^^^^^^^^

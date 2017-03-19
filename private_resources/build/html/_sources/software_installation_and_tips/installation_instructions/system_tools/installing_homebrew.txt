@@ -1,0 +1,43 @@
+.. _installation_system_tools_homebrew:
+
+Installing Homebrew
+===================
+
+*Written by PChan on 2017-03-13*
+
+Homebrew is one of the many package managers for Mac OSX allowing you to install packages that are not
+preinstalled.
+
+Instructions
+------------
+First, check if you need to install Homebrew by running the following command in the terminal:
+::
+
+   $ brew doctor
+
+If you get a command not found error, follow the next set of instructions to install Homebrew in the
+terminal.  If you do not get an error, you are set to go!
+
+::
+
+   $ xcode-select --install
+   $ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+   // Follow the instructions provided by the script
+
+   $ echo 'export PATH="/usr/local/bin:$PATH"' >> ~/.bash_profile
+   // Close the current terminal and fire up a new terminal
+
+   $ brew doctor
+   // You should see a message like the following:
+   Your system is ready to brew.
+
+   // If you get something like the following (where <director> is name of any directory)
+   Warning: /usr/local/<directory> isn't writable
+
+   $ sudo chmod g+w /usr/local
+   $ sudo chgrp staff /usr/local
+   $ brew doctor
+   // You should now see a message like the following:
+   Your system is ready to brew.
+
+That's it!  You have successfuly installed Homebrew!
