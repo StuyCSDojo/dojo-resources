@@ -100,6 +100,7 @@
 <ul>
 <li class="toctree-l1"><a class="reference external" href="https://docs.racket-lang.org/">Racket</a></li>
 <li class="toctree-l1"><a class="reference external" href="https://ccl.northwestern.edu/netlogo/docs/dictionary.html">NetLogo</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://www.w3.org/TR/2014/REC-html5-20141028/">HTML</a></li>
 <li class="toctree-l1"><a class="reference external" href="http://www.w3schools.com/">Web W3schools</a></li>
 <li class="toctree-l1"><a class="reference external" href="https://docs.python.org/2/library/index.html">Python 2.7</a></li>
 <li class="toctree-l1"><a class="reference external" href="http://rgruet.free.fr/PQR27/PQR2.7.html">Python 2.7 Quick Reference</a></li>
@@ -357,7 +358,7 @@ would know how to install Emacs themselves.</p>
 </div>
 <p>Try to add the Ubuntu Elisp ppa again</p>
 </li>
-<li><p class="first">Execute the following commands to update the package listing and install emacs</p>
+<li><p class="first">Execute the following commands to update the package listing and install Emacs</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span>$ sudo apt-get update
 $ sudo apt-get install emacs-snapshot emacs-snapshot-el
 </pre></div>
@@ -368,7 +369,9 @@ $ sudo apt-get install emacs-snapshot emacs-snapshot-el
 </pre></div>
 </div>
 </li>
-<li><p class="first">Run Emacs via the following command:</p>
+<li><p class="first">Run Emacs via the following command:
+<br />
+Do note that the <code class="docutils literal"><span class="pre">&amp;</span></code> is only necessary when running the program in the background.</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span>$ emacs-snapshot &amp;     // if you did not run the optional step
 $ emacs &amp;              // if you did run the optional step
 </pre></div>
@@ -389,7 +392,9 @@ $ sudo yum install emacs     // on Fedora 21 and lower
 </pre></div>
 </div>
 </li>
-<li><p class="first">Run Emacs via the following command:</p>
+<li><p class="first">Run Emacs via the following command:
+<br />
+Do note that the <code class="docutils literal"><span class="pre">&amp;</span></code> is only necessary when running the program in the background.</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span>$ emacs &amp;
 </pre></div>
 </div>
@@ -405,7 +410,7 @@ using Emacs</p>
 <span id="installation-programming-tools-emacs-mac-osx"></span><h2>Mac OSX<a class="headerlink" href="#mac-osx" title="Permalink to this headline">¶</a></h2>
 <p>We will be installing Emacs via Homebrew.  For instructions on how to install Homebrew, check the
 <a class="reference internal" href="../system_tools/installing_homebrew.html#installation-system-tools-homebrew"><span class="std std-ref">Installing Homebrew</span></a> guide.</p>
-<p>After you have installed homebrew:</p>
+<p>After you have installed Homebrew:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span>$ brew update
 $ brew tap railwaycat/emacsmacport
 $ brew install emacs-mac
@@ -427,7 +432,7 @@ determine which set of instructions to follow.</p>
 <ol class="arabic simple">
 <li>Download Emacs from <a class="reference external" href="https://ftp.gnu.org/gnu/emacs/windows/">here</a>.  Choose the latest version ending
 with: <code class="docutils literal"><span class="pre">i686-w64-mingw32.zip</span></code>.</li>
-<li>Extract the downloaded file, here is a <a class="reference external" href="http://www.7-zip.org/">link to a free archiver</a>.</li>
+<li>Right click on the zip file, and choose the <code class="docutils literal"><span class="pre">Extract</span> <span class="pre">All</span></code> option</li>
 <li>To run Emacs, navigate to <code class="docutils literal"><span class="pre">emacs/bin</span></code> under the newly extracted folder and double-click on
 runemacs.exe.</li>
 <li>Check out the <a class="reference internal" href="../../software_tutorials/programming_tools/emacs_tutorial.html#tutorials-programming-tools-emacs-introduction-to-emacs"><span class="std std-ref">Introduction to Emacs</span></a> guide for pointers on

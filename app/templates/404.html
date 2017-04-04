@@ -1,0 +1,48 @@
+{% extends "master.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block head %}
+    {{ super() }}
+{% endblock %}
+
+{% block nav %}
+    <div class="nav-wrapper blue darken-4">
+	<a href='#' data-activates='mobile' class='button-collapse'><i class='material-icons'>menu</i></a>
+	<a href='/' class='left-padding breadcrumb left'><strong>CS DOJO</strong></a>
+	<a href='#!' class='breadcrumb white-text'>404 Error</a>
+	<ul id="nav-mobile" class="right-padding right hide-on-med-and-down">
+            <li><a href='/'>Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/resources">Resources</a></li>
+            <li><a href='/calendar'>Calendar</a></li>
+            <li><a href="/blog">Dojo Blog</a></li>
+            <li><a href="/irc">Chat</a></li>
+            {% if is_logged_in %}
+		<li><a href='/logout'>Logout</a></li>
+	    {% else %}
+		<li><a href='/login'>Login</a></li>
+            {% endif  %}
+	</ul>
+	<ul class='side-nav' id='mobile'>
+            <li><a href='/'>Home</a></li>
+            <li><a href='/about'>About</a></li>
+            <li><a href='/resources'>Resources</a></li>
+            <li><a href='/calendar'>Calendar</a></li>
+            <li><a href='/irc'>Chat</a></li>
+            {% if is_logged_in %}
+		<li><a href='/logout'>Logout</a></li>
+	    {% else %}
+		<li><a href='/login'>Login</a></li>
+            {% endif  %}
+	</ul>
+    </div>
+{% endblock %}
+
+{% block container %}
+    <h4>Uh oh! Error 404</h4>
+    <div class='divider'></div>
+    <p>It appears that the page you are trying to access does not exist.
+	Please click on one of the links on the nav bar or the back button to go back
+	to the realm of the website.</p>
+{% endblock %}

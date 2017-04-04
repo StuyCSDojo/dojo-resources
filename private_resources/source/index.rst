@@ -16,6 +16,7 @@ Welcome to Dojo Resources!
 
    Racket <https://docs.racket-lang.org/>
    NetLogo <https://ccl.northwestern.edu/netlogo/docs/dictionary.html>
+   HTML <https://www.w3.org/TR/2014/REC-html5-20141028/>
    Web W3schools <http://www.w3schools.com/>
    Python 2.7 <https://docs.python.org/2/library/index.html>
    Python 2.7 Quick Reference <http://rgruet.free.fr/PQR27/PQR2.7.html>

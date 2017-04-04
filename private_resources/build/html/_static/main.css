@@ -30,3 +30,10 @@ span.badge.construction {
     border-radius: 2px;
     padding: 2px 6px;
 }
+
+p.caption {
+    font-style: italic;
+    font-size: 12px;
+    line-height: 14px;
+    margin-top: 24px;
+}

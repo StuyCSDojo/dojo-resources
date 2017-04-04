@@ -100,6 +100,7 @@
 <ul>
 <li class="toctree-l1"><a class="reference external" href="https://docs.racket-lang.org/">Racket</a></li>
 <li class="toctree-l1"><a class="reference external" href="https://ccl.northwestern.edu/netlogo/docs/dictionary.html">NetLogo</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://www.w3.org/TR/2014/REC-html5-20141028/">HTML</a></li>
 <li class="toctree-l1"><a class="reference external" href="http://www.w3schools.com/">Web W3schools</a></li>
 <li class="toctree-l1"><a class="reference external" href="https://docs.python.org/2/library/index.html">Python 2.7</a></li>
 <li class="toctree-l1"><a class="reference external" href="http://rgruet.free.fr/PQR27/PQR2.7.html">Python 2.7 Quick Reference</a></li>
@@ -369,6 +370,8 @@ Enter passphrase (empty for no passphrase): [Enter]
 Enter same passphrase again: [Enter]
 </pre></div>
 </div>
+<p>When the program is done generating the key, you should see a SSH key fingerprint like the following:</p>
+<img alt="../../../_images/ssh-keys-fingerprint.png" src="../../../_images/ssh-keys-fingerprint.png" />
 </div>
 <div class="section" id="deleting-ssh-keys">
 <span id="network-ssh-keys-deleting-ssh-keys"></span><h2>Deleting SSH Keys<a class="headerlink" href="#deleting-ssh-keys" title="Permalink to this headline">¶</a></h2>
@@ -393,7 +396,15 @@ $ chmod 705 ~/.ssh
 </div>
 <div class="section" id="ssh-keys-usage">
 <span id="network-ssh-keys-usage"></span><h2>SSH Keys Usage<a class="headerlink" href="#ssh-keys-usage" title="Permalink to this headline">¶</a></h2>
-<p>SSH Keys can be used to authenticate you when accessing remote systems via the SSH protocol.</p>
+<p>SSH keys are a form of authentication when accessing remote systems via SSH protocol.  Instead of
+utilizing a password-based authentication, SSH keys utilize a pair of keys: a private key and a public
+key.  The public key is given to the public (ie the machines you want to SSH into) and the private key
+should be securely stored on your own machine.</p>
+<p>Authentication work by having the remote machine send an encrypted message (using the public key) and
+having your machine reply with the decrypted machine (using the private key).  If the decrypted message
+matches the original message, you are successfully authenticated.</p>
+<p>Unlike password-based authentication, you don&#8217;t have to memorize a password (although you can choose to
+protect the private key with a password) making it more secure.</p>
 <div class="section" id="ssh-keys-for-github">
 <span id="network-ssh-keys-github"></span><h3>SSH Keys For GitHub<a class="headerlink" href="#ssh-keys-for-github" title="Permalink to this headline">¶</a></h3>
 <p>When you clone Git repositories with HTTPS links, you need to enter your credentials each time you push.
@@ -404,7 +415,8 @@ secure and faster.</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span>// If necessary, replace &quot;~/.ssh/id_rsa.pub&quot; with the path to your public key
 $ cat ~/.ssh/id_rsa.pub
 
-// Highlight the content of the file with the mouse and press Ctrl-Shift-C to copy
+// Highlight the content of the file with the mouse and press Ctrl-Shift-C (Unix terminal)
+// or Ctrl-Insert (Git Bash) to copy
 </pre></div>
 </div>
 <ol class="arabic simple" start="2">
@@ -417,10 +429,12 @@ other keys)</li>
 <li>In the <em>Key</em> box, paste the content that you copied in step 1</li>
 <li>Lastly, click on the <strong>Add SSH key</strong></li>
 </ol>
+<p>The image below shows the steps to follow after navigating to the settings on GitHub:</p>
+<img alt="../../../_images/ssh-keys-github.png" src="../../../_images/ssh-keys-github.png" />
 </div>
 <div class="section" id="ssh-keys-for-sshing-or-remote-file-transfer">
 <span id="network-ssh-keys-transfer-authentication"></span><h3>SSH Keys For SSHing or Remote File Transfer<a class="headerlink" href="#ssh-keys-for-sshing-or-remote-file-transfer" title="Permalink to this headline">¶</a></h3>
-<p>Everytime you ssh into one of the lab machines, you need to enter your password to authenticate you.  We
+<p>Every time you ssh into one of the lab machines, you need to enter your password to authenticate you.  We
 can replace this with SSH key authentication.</p>
 <p>In a terminal/Git Bash, follow the instructions below:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span>// username is your StuyCS account username and hostname is clyde.stuycs.org

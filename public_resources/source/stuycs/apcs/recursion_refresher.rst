@@ -1,22 +1,18 @@
 Recursion: A Refresher
 ======================
 
-.. |br| raw:: html
-
-   <br />
-
 *Written by PChan on 2017-03-11*
    
-  * :ref:`apcs_definitions`
-  * :ref:`apcs_tips_for_recursive_reduction`
-  * :ref:`apcs_tips_for_base_case`
-  * :ref:`apcs_what_is_recursion`
-  * :ref:`apcs_recursion_example`
-  * :ref:`apcs_what_is_iterative_style_recursion`
-  * :ref:`apcs_what_are_state_variables`
-  * :ref:`apcs_iterative_style_recursion_example`
+  * :ref:`apcs_recursion_definitions`
+  * :ref:`apcs_recursion_tips_for_recursive_reduction`
+  * :ref:`apcs_recursion_tips_for_base_case`
+  * :ref:`apcs_recursion_what_is_recursion`
+  * :ref:`apcs_recursion_recursion_example`
+  * :ref:`apcs_recursion_what_is_iterative_style_recursion`
+  * :ref:`apcs_recursion_what_are_state_variables`
+  * :ref:`apcs_recursion_iterative_style_recursion_example`
 
-.. _apcs_definitions:
+.. _apcs_recursion_definitions:
 
 Definitions
 -----------
@@ -27,7 +23,7 @@ Definitions
 * A **base case** is sometimes refer to as the exit case.  It should **NOT** make a call to the recursive
   function
 
-.. _apcs_tips_for_recursive_reduction:
+.. _apcs_recursion_tips_for_recursive_reduction:
 
 Tips for Finding the Recursive Reduction
 ----------------------------------------
@@ -39,7 +35,7 @@ Tips for Finding the Recursive Reduction
     * Think about a problem that is slightly more complex than the base case.  How can you reduce it to
       the base case?
 
-.. _apcs_tips_for_base_case:
+.. _apcs_recursion_tips_for_base_case:
 
 Tips for Finding the Base Case
 ------------------------------
@@ -60,7 +56,7 @@ Tips for Finding the Base Case
 .. important::
    These sample values are not the only possible values for base cases.
       
-.. _apcs_what_is_recursion:
+.. _apcs_recursion_what_is_recursion:
 
 What is a Recursive Function
 ----------------------------
@@ -73,7 +69,7 @@ Recursion, sometimes referred to as "head recursion", is characterized by the fo
   * The recursive call is the first statement to be evaluated after the base case
   * May be more memory intensive
 
-.. _apcs_recursion_example:
+.. _apcs_recursion_recursion_example:
 
 Example of Recursion
 --------------------
@@ -93,7 +89,7 @@ Example of Recursion
 
 .. highlight:: python
    
-.. _apcs_what_is_iterative_style_recursion:
+.. _apcs_recursion_what_is_iterative_style_recursion:
 
 What is an Iterative-Style Recursive Function
 ---------------------------------------------
@@ -106,7 +102,7 @@ Another style of recursion that you may have covered is characterized by the fol
     * **Wrapper functions** are functions whose sole purpose is to call another function
   * The recursive call is the last operation to be performed, all computations come before it
 
-.. _apcs_what_are_state_variables:
+.. _apcs_recursion_what_are_state_variables:
    
 What are State Variables
 ------------------------
@@ -131,7 +127,7 @@ Some of the most commonly asked questions about state variables are:
 .. tip::
    Keep in mind that more state variables can improve the readability of your code.
 
-.. _apcs_iterative_style_recursion_example:
+.. _apcs_recursion_iterative_style_recursion_example:
 
 Example of Iterative Style Recursion
 ------------------------------------

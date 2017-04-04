@@ -1,24 +1,20 @@
 Introduction to Recursion
 =========================
 
-.. |br| raw:: html
-
-   <br />
-
 *Written by PChan on 2017-03-09*
 	      
-  * :ref:`definitions`
-  * :ref:`tips_for_recursive_reduction`
-  * :ref:`tips_for_base_case`
-  * :ref:`what_is_recursion`
-  * :ref:`tips_for_recursion`
-  * :ref:`sample_workflow_for_recursion`
-  * :ref:`what_is_iterative_style_recursion`
-  * :ref:`what_are_state_variables`
-  * :ref:`tips_for_iterative_style_recursion`
-  * :ref:`sample_workflow_for_iterative_style_recursion`
+  * :ref:`intro_cs1_recursion_definitions`
+  * :ref:`intro_cs1_recursion_tips_for_recursive_reduction`
+  * :ref:`intro_cs1_recursion_tips_for_base_case`
+  * :ref:`intro_cs1_recursion_what_is_recursion`
+  * :ref:`intro_cs1_recursion_tips_for_recursion`
+  * :ref:`intro_cs1_recursion_sample_workflow_for_recursion`
+  * :ref:`intro_cs1_recursion_what_is_iterative_style_recursion`
+  * :ref:`intro_cs1_recursion_what_are_state_variables`
+  * :ref:`intro_cs1_recursion_tips_for_iterative_style_recursion`
+  * :ref:`intro_cs1_recursion_sample_workflow_for_iterative_style_recursion`
 
-.. _definitions:
+.. _intro_cs1_recursion_definitions:
 
 Definitions
 -----------
@@ -29,7 +25,7 @@ Definitions
 * A **base case** is sometimes refer to as the exit case.  It should **NOT** make a call to the recursive
   function
 
-.. _tips_for_recursive_reduction:
+.. _intro_cs1_recursion_tips_for_recursive_reduction:
 
 Tips for Finding the Recursive Reduction
 ----------------------------------------
@@ -41,7 +37,7 @@ Tips for Finding the Recursive Reduction
     * Think about a problem that is slightly more complex than the base case.  How can you reduce it to
       the base case?
 
-.. _tips_for_base_case:
+.. _intro_cs1_recursion_tips_for_base_case:
 
 Tips for Finding the Base Case
 ------------------------------
@@ -62,7 +58,7 @@ Tips for Finding the Base Case
 .. important::
    These sample values are not the only possible values for base cases.
       
-.. _what_is_recursion:
+.. _intro_cs1_recursion_what_is_recursion:
 
 What is a Recursive Function
 ----------------------------
@@ -75,7 +71,7 @@ Recursion, sometimes referred to as "head recursion", is characterized by the fo
   * The recursive call is the first statement to be evaluated after the base case
   * May be more memory intensive
 
-.. _tips_for_recursion:
+.. _intro_cs1_recursion_tips_for_recursion:
 
 Tips for Writing Recursive Functions
 ------------------------------------
@@ -85,7 +81,7 @@ Tips for Writing Recursive Functions
   * Write your algorithm in pseudocode, this gives you a solid outline to build up without worrying about
     the syntax and also tests your understanding of your own algorithm
 
-.. _sample_workflow_for_recursion:
+.. _intro_cs1_recursion_sample_workflow_for_recursion:
 
 Sample Workflow for Recursion
 -----------------------------
@@ -151,7 +147,7 @@ integer, n, as the parameter and returns n!
 
     .. highlight:: python
 
-.. _what_is_iterative_style_recursion:
+.. _intro_cs1_recursion_what_is_iterative_style_recursion:
 
 What is an Iterative-Style Recursive Function
 ---------------------------------------------
@@ -164,7 +160,7 @@ Another style of recursion that you may have covered is characterized by the fol
     * **Wrapper functions** are functions whose sole purpose is to call another function
   * The recursive call is the last operation to be performed, all computations come before it
 
-.. _what_are_state_variables:
+.. _intro_cs1_recursion_what_are_state_variables:
    
 What are State Variables
 ------------------------
@@ -189,7 +185,7 @@ Some of the most commonly asked questions about state variables are:
 .. tip::
    Keep in mind that more state variables can improve the readability of your code.
 
-.. _tips_for_iterative_style_recursion:
+.. _intro_cs1_recursion_tips_for_iterative_style_recursion:
 
 Tips for Writing Iterative-Style Recursive Functions
 ----------------------------------------------------
@@ -200,7 +196,7 @@ start by coming up with the recursive reduction and the base case.  Afterward:
     with each recursive call
   * Instead of performing the operation on the recursive call, do it directly to the parameter
 
-.. _sample_workflow_for_iterative_style_recursion:
+.. _intro_cs1_recursion_sample_workflow_for_iterative_style_recursion:
 
 Sample Workflow for Iterative-Style Recursion
 ---------------------------------------------
