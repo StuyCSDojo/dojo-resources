@@ -8,7 +8,7 @@
         
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
-            <title>Guide to SSH Keys &mdash; Dojo Resources 0.0.1 documentation</title>
+            <title>Guide to SSH Keys &mdash; Dojo Resources 0.0.2 documentation</title>
         
 
         
@@ -43,7 +43,7 @@
                 <link rel="index" title="Index"
                       href="../../../genindex.html"/>
                 <link rel="search" title="Search" href="../../../search.html"/>
-            <link rel="top" title="Dojo Resources 0.0.1 documentation" href="../../../index.html"/>
+            <link rel="top" title="Dojo Resources 0.0.2 documentation" href="../../../index.html"/>
                 <link rel="up" title="Tutorials for Using Various Software" href="../index.html"/>
                 <link rel="next" title="Introduction to Remote File Transfer" href="remote_file_transfer_tutorial.html"/>
                 <link rel="prev" title="Introduction to SSH" href="ssh_tutorial.html"/> 
@@ -65,7 +65,7 @@
                         
 
                             
-                                    <a href="../../../index.html" class="icon icon-home"> Dojo Resources
+                                    <a href="https://dojo.stuycs.org"class="icon icon-home"> Dojo Website
                             
 
                             
@@ -75,7 +75,7 @@
                                         
                                         
                                             <div class="version">
-                                                0.0.1
+                                                0.0.2
                                             </div>
                                         
                                     
@@ -183,6 +183,7 @@
 <li class="toctree-l4"><a class="reference internal" href="../programming_tools/emacs_tutorial.html">Introduction to Emacs</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../programming_tools/git_tutorial.html">Introduction to Git</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../programming_tools/terminal_tutorial.html">How to Use the Terminal</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../programming_tools/vim_tutorial.html">Introduction to Vim</a></li>
 </ul>
 </li>
 <li class="toctree-l3 current"><a class="reference internal" href="../index.html#remote-file-transfer">Remote File Transfer</a><ul class="current">
@@ -309,17 +310,17 @@
 <h1>Guide to SSH Keys<a class="headerlink" href="#guide-to-ssh-keys" title="Permalink to this headline">¶</a></h1>
 <p><em>Written by PChan on 2017-03-17</em></p>
 <ul class="simple">
-<li><a class="reference internal" href="#network-ssh-keys-what-is-ssh-keys"><span class="std std-ref">What Are SSH Keys</span></a></li>
-<li><a class="reference internal" href="#network-ssh-keys-creating-ssh-keys"><span class="std std-ref">Creating SSH Keys</span></a></li>
-<li><a class="reference internal" href="#network-ssh-keys-deleting-ssh-keys"><span class="std std-ref">Deleting SSH Keys</span></a></li>
-<li><a class="reference internal" href="#network-ssh-keys-usage"><span class="std std-ref">SSH Keys Usage</span></a><ul>
-<li><a class="reference internal" href="#network-ssh-keys-github"><span class="std std-ref">SSH Keys For GitHub</span></a></li>
-<li><a class="reference internal" href="#network-ssh-keys-transfer-authentication"><span class="std std-ref">SSH Keys For SSHing or Remote File Transfer</span></a></li>
+<li><a class="reference internal" href="#tutorials-remote-file-transfer-ssh-keys-what-is-ssh-keys"><span class="std std-ref">What Are SSH Keys</span></a></li>
+<li><a class="reference internal" href="#tutorials-remote-file-transfer-ssh-keys-creating-ssh-keys"><span class="std std-ref">Creating SSH Keys</span></a></li>
+<li><a class="reference internal" href="#tutorials-remote-file-transfer-ssh-keys-deleting-ssh-keys"><span class="std std-ref">Deleting SSH Keys</span></a></li>
+<li><a class="reference internal" href="#tutorials-remote-file-transfer-ssh-keys-usage"><span class="std std-ref">SSH Keys Usage</span></a><ul>
+<li><a class="reference internal" href="#tutorials-remote-file-transfer-ssh-keys-github"><span class="std std-ref">SSH Keys For GitHub</span></a></li>
+<li><a class="reference internal" href="#tutorials-remote-file-transfer-ssh-keys-transfer-authentication"><span class="std std-ref">SSH Keys For SSHing or Remote File Transfer</span></a></li>
 </ul>
 </li>
 </ul>
 <div class="section" id="what-are-ssh-keys">
-<span id="network-ssh-keys-what-is-ssh-keys"></span><h2>What Are SSH Keys<a class="headerlink" href="#what-are-ssh-keys" title="Permalink to this headline">¶</a></h2>
+<span id="tutorials-remote-file-transfer-ssh-keys-what-is-ssh-keys"></span><h2>What Are SSH Keys<a class="headerlink" href="#what-are-ssh-keys" title="Permalink to this headline">¶</a></h2>
 <p><strong>SSH keys</strong> are access credentials in the SSH protocol with a function similar to that of usernames and
 passwords with the following characteristics:</p>
 <blockquote>
@@ -334,7 +335,7 @@ using the private key</li>
 </div></blockquote>
 </div>
 <div class="section" id="creating-ssh-keys">
-<span id="network-ssh-keys-creating-ssh-keys"></span><h2>Creating SSH Keys<a class="headerlink" href="#creating-ssh-keys" title="Permalink to this headline">¶</a></h2>
+<span id="tutorials-remote-file-transfer-ssh-keys-creating-ssh-keys"></span><h2>Creating SSH Keys<a class="headerlink" href="#creating-ssh-keys" title="Permalink to this headline">¶</a></h2>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">Comments begin after <code class="docutils literal"><span class="pre">//</span></code> and are used to explain the following line.
@@ -358,7 +359,7 @@ Enter same passphrase again: [Enter]
 <img alt="../../../_images/ssh-keys-fingerprint.png" src="../../../_images/ssh-keys-fingerprint.png" />
 </div>
 <div class="section" id="deleting-ssh-keys">
-<span id="network-ssh-keys-deleting-ssh-keys"></span><h2>Deleting SSH Keys<a class="headerlink" href="#deleting-ssh-keys" title="Permalink to this headline">¶</a></h2>
+<span id="tutorials-remote-file-transfer-ssh-keys-deleting-ssh-keys"></span><h2>Deleting SSH Keys<a class="headerlink" href="#deleting-ssh-keys" title="Permalink to this headline">¶</a></h2>
 <p>There are two paths for deleting your SSH Keys.</p>
 <p>If you know which pair of keys you want to delete, follow the instructions below:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span>$ cd ~/.ssh
@@ -379,7 +380,7 @@ $ chmod 705 ~/.ssh
 </div>
 </div>
 <div class="section" id="ssh-keys-usage">
-<span id="network-ssh-keys-usage"></span><h2>SSH Keys Usage<a class="headerlink" href="#ssh-keys-usage" title="Permalink to this headline">¶</a></h2>
+<span id="tutorials-remote-file-transfer-ssh-keys-usage"></span><h2>SSH Keys Usage<a class="headerlink" href="#ssh-keys-usage" title="Permalink to this headline">¶</a></h2>
 <p>SSH keys are a form of authentication when accessing remote systems via SSH protocol.  Instead of
 utilizing a password-based authentication, SSH keys utilize a pair of keys: a private key and a public
 key.  The public key is given to the public (ie the machines you want to SSH into) and the private key
@@ -390,7 +391,7 @@ matches the original message, you are successfully authenticated.</p>
 <p>Unlike password-based authentication, you don&#8217;t have to memorize a password (although you can choose to
 protect the private key with a password) making it more secure.</p>
 <div class="section" id="ssh-keys-for-github">
-<span id="network-ssh-keys-github"></span><h3>SSH Keys For GitHub<a class="headerlink" href="#ssh-keys-for-github" title="Permalink to this headline">¶</a></h3>
+<span id="tutorials-remote-file-transfer-ssh-keys-github"></span><h3>SSH Keys For GitHub<a class="headerlink" href="#ssh-keys-for-github" title="Permalink to this headline">¶</a></h3>
 <p>When you clone Git repositories with HTTPS links, you need to enter your credentials each time you push.
 It is possible to use SSH keys for authentication instead of your password when pushing which is more
 secure and faster.</p>
@@ -415,11 +416,23 @@ other keys)</li>
 </ol>
 <p>The image below shows the steps to follow after navigating to the settings on GitHub:</p>
 <img alt="../../../_images/ssh-keys-github.png" src="../../../_images/ssh-keys-github.png" />
+<p>To verify that you have added your SSH keys properly, run the following command in the terminal:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ ssh -T git@github.com
+</pre></div>
+</div>
+<p>When prompted to, continue connecting by typing: <code class="docutils literal"><span class="pre">yes</span></code>.  If you did it correctly, you should see the
+following message:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>Hi username! You&#39;ve successfully authenticated, but GitHub does not
+provide shell access.
+</pre></div>
+</div>
+<p>Otherwise, double check that you have followed the instructions correctly.</p>
 </div>
 <div class="section" id="ssh-keys-for-sshing-or-remote-file-transfer">
-<span id="network-ssh-keys-transfer-authentication"></span><h3>SSH Keys For SSHing or Remote File Transfer<a class="headerlink" href="#ssh-keys-for-sshing-or-remote-file-transfer" title="Permalink to this headline">¶</a></h3>
+<span id="tutorials-remote-file-transfer-ssh-keys-transfer-authentication"></span><h3>SSH Keys For SSHing or Remote File Transfer<a class="headerlink" href="#ssh-keys-for-sshing-or-remote-file-transfer" title="Permalink to this headline">¶</a></h3>
 <p>Every time you ssh into one of the lab machines, you need to enter your password to authenticate you.  We
-can replace this with SSH key authentication.</p>
+can replace this with SSH key authentication.  If you do not have a SSH key pair already, follow the
+instructions in the <a class="reference internal" href="#tutorials-remote-file-transfer-ssh-keys-creating-ssh-keys"><span class="std std-ref">Creating SSH Keys</span></a> guide.</p>
 <p>In a terminal/Git Bash, follow the instructions below:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span>// username is your StuyCS account username and hostname is clyde.stuycs.org
 $ ssh-copy-id username@hostname
@@ -493,7 +506,7 @@ $ ssh username@hostname
             <script type="text/javascript">
              var DOCUMENTATION_OPTIONS = {
                  URL_ROOT:'../../../',
-                 VERSION:'0.0.1',
+                 VERSION:'0.0.2',
                  COLLAPSE_INDEX:false,
                  FILE_SUFFIX:'.html',
                  HAS_SOURCE:  true,

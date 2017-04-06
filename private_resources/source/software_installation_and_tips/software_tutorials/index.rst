@@ -23,6 +23,7 @@ Programming Tools
    programming_tools/emacs_tutorial
    programming_tools/git_tutorial
    programming_tools/terminal_tutorial
+   programming_tools/vim_tutorial
 
 .. _remote_file_transfer_tutorials:
 

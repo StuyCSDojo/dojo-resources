@@ -8,7 +8,7 @@
         
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
-            <title>Introduction to Remote File Transfer &mdash; Dojo Resources 0.0.1 documentation</title>
+            <title>Introduction to Remote File Transfer &mdash; Dojo Resources 0.0.2 documentation</title>
         
 
         
@@ -43,7 +43,7 @@
                 <link rel="index" title="Index"
                       href="../../../genindex.html"/>
                 <link rel="search" title="Search" href="../../../search.html"/>
-            <link rel="top" title="Dojo Resources 0.0.1 documentation" href="../../../index.html"/>
+            <link rel="top" title="Dojo Resources 0.0.2 documentation" href="../../../index.html"/>
                 <link rel="up" title="Tutorials for Using Various Software" href="../index.html"/>
                 <link rel="next" title="Misc" href="../../../stuycs/misc.html"/>
                 <link rel="prev" title="Guide to SSH Keys" href="ssh_keys_tutorial.html"/> 
@@ -65,7 +65,7 @@
                         
 
                             
-                                    <a href="../../../index.html" class="icon icon-home"> Dojo Resources
+                                    <a href="https://dojo.stuycs.org"class="icon icon-home"> Dojo Website
                             
 
                             
@@ -75,7 +75,7 @@
                                         
                                         
                                             <div class="version">
-                                                0.0.1
+                                                0.0.2
                                             </div>
                                         
                                     
@@ -183,6 +183,7 @@
 <li class="toctree-l4"><a class="reference internal" href="../programming_tools/emacs_tutorial.html">Introduction to Emacs</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../programming_tools/git_tutorial.html">Introduction to Git</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../programming_tools/terminal_tutorial.html">How to Use the Terminal</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../programming_tools/vim_tutorial.html">Introduction to Vim</a></li>
 </ul>
 </li>
 <li class="toctree-l3 current"><a class="reference internal" href="../index.html#remote-file-transfer">Remote File Transfer</a><ul class="current">
@@ -309,24 +310,29 @@
 <h1>Introduction to Remote File Transfer<a class="headerlink" href="#introduction-to-remote-file-transfer" title="Permalink to this headline">¶</a></h1>
 <p><em>Written by PChan on 2017-03-18</em></p>
 <ul class="simple">
-<li><a class="reference internal" href="#network-remote-file-transfer-using-filezilla"><span class="std std-ref">Using FileZilla</span></a><ul>
-<li><a class="reference internal" href="#network-remote-file-transfer-filezilla-authentication"><span class="std std-ref">Authenticating Yourself</span></a></li>
-<li><a class="reference internal" href="#network-remote-file-transfer-filezilla-session"><span class="std std-ref">Transferring Files with FileZilla</span></a></li>
+<li><a class="reference internal" href="#tutorials-remote-file-transfer-using-filezilla"><span class="std std-ref">Using FileZilla</span></a><ul>
+<li><a class="reference internal" href="#tutorials-remote-file-transfer-filezilla-authentication"><span class="std std-ref">Authenticating Yourself</span></a></li>
+<li><a class="reference internal" href="#tutorials-remote-file-transfer-filezilla-session"><span class="std std-ref">Transferring Files with FileZilla</span></a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#network-remote-file-transfer-using-winscp"><span class="std std-ref">Using WinSCP</span></a><ul>
-<li><a class="reference internal" href="#network-remote-file-transfer-winscp-authentication"><span class="std std-ref">Authenticating Yourself</span></a></li>
-<li><a class="reference internal" href="#network-remote-file-transfer-winscp-session"><span class="std std-ref">Transferring Files with WinSCP</span></a></li>
+<li><a class="reference internal" href="#tutorials-remote-file-transfer-using-winscp"><span class="std std-ref">Using WinSCP</span></a><ul>
+<li><a class="reference internal" href="#tutorials-remote-file-transfer-winscp-authentication"><span class="std std-ref">Authenticating Yourself</span></a></li>
+<li><a class="reference internal" href="#tutorials-remote-file-transfer-winscp-session"><span class="std std-ref">Transferring Files with WinSCP</span></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#tutorials-remote-file-transfer-using-terminal-or-git-bash"><span class="std std-ref">Using Git Bash or Terminal</span></a><ul>
+<li><a class="reference internal" href="#tutorials-remote-file-transfer-scp"><span class="std std-ref">Using SCP</span></a></li>
+<li><a class="reference internal" href="#tutorials-remote-file-transfer-rsync"><span class="std std-ref">With RSync</span></a></li>
 </ul>
 </li>
 </ul>
 <div class="section" id="using-filezilla">
-<span id="network-remote-file-transfer-using-filezilla"></span><h2>Using FileZilla<a class="headerlink" href="#using-filezilla" title="Permalink to this headline">¶</a></h2>
+<span id="tutorials-remote-file-transfer-using-filezilla"></span><h2>Using FileZilla<a class="headerlink" href="#using-filezilla" title="Permalink to this headline">¶</a></h2>
 <p>FileZilla is a graphical program that is used primarily for transferring files between a local machine and
 a remote machine.  If you have not done so already, install the program following the
 <a class="reference internal" href="../../installation_instructions/file_transfer_utilities/installing_ssh_programs.html#installation-file-transfer-utilities-ssh-programs-installing-filezilla"><span class="std std-ref">Installing FileZilla</span></a> guide.</p>
 <div class="section" id="authenticating-yourself">
-<span id="network-remote-file-transfer-filezilla-authentication"></span><h3>Authenticating Yourself<a class="headerlink" href="#authenticating-yourself" title="Permalink to this headline">¶</a></h3>
+<span id="tutorials-remote-file-transfer-filezilla-authentication"></span><h3>Authenticating Yourself<a class="headerlink" href="#authenticating-yourself" title="Permalink to this headline">¶</a></h3>
 <p>After executing the program, the first step to connecting is to enter your credentials.  Near the top of
 the program, you should see a bar like the following (yours would not have text):</p>
 <img alt="../../../_images/filezilla_login.png" src="../../../_images/filezilla_login.png" />
@@ -344,7 +350,7 @@ image below.</p>
 <img alt="../../../_images/filezilla_connecting.png" src="../../../_images/filezilla_connecting.png" />
 </div>
 <div class="section" id="transferring-files-with-filezilla">
-<span id="network-remote-file-transfer-filezilla-session"></span><h3>Transferring Files with FileZilla<a class="headerlink" href="#transferring-files-with-filezilla" title="Permalink to this headline">¶</a></h3>
+<span id="tutorials-remote-file-transfer-filezilla-session"></span><h3>Transferring Files with FileZilla<a class="headerlink" href="#transferring-files-with-filezilla" title="Permalink to this headline">¶</a></h3>
 <p>After you have successfully connected, the multi-pane panel near the bottom of the screen should be
 populated similar to the following image:</p>
 <img alt="../../../_images/filezilla_session.png" src="../../../_images/filezilla_session.png" />
@@ -358,14 +364,14 @@ locate the file on the right pane and then simply drag the file from the right p
 </div>
 </div>
 <div class="section" id="using-winscp">
-<span id="network-remote-file-transfer-using-winscp"></span><h2>Using WinSCP<a class="headerlink" href="#using-winscp" title="Permalink to this headline">¶</a></h2>
+<span id="tutorials-remote-file-transfer-using-winscp"></span><h2>Using WinSCP<a class="headerlink" href="#using-winscp" title="Permalink to this headline">¶</a></h2>
 <p>WinSCP is a third-party Windows-only program that is used primarily for transferring files between a local
 machine and a remote machine.  If you have not done so already, install the program by following the
 <a class="reference internal" href="../../installation_instructions/file_transfer_utilities/installing_ssh_programs.html#installation-file-transfer-utilities-ssh-programs-installing-winscp"><span class="std std-ref">Installing WinSCP</span></a> guide.</p>
 <p>When you execute the program, you should see a pop up similar to the one below:</p>
 <img alt="../../../_images/winscp_login.jpg" src="../../../_images/winscp_login.jpg" />
-<div class="section" id="network-remote-file-transfer-winscp-authentication">
-<span id="id1"></span><h3>Authenticating Yourself<a class="headerlink" href="#network-remote-file-transfer-winscp-authentication" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="tutorials-remote-file-transfer-winscp-authentication">
+<span id="id1"></span><h3>Authenticating Yourself<a class="headerlink" href="#tutorials-remote-file-transfer-winscp-authentication" title="Permalink to this headline">¶</a></h3>
 <p>To log in, you need to fill in the following fields:</p>
 <blockquote>
 <div><ul class="simple">
@@ -379,7 +385,7 @@ the remote machine, you would see the following window detailing the progress...
 <img alt="../../../_images/winscp_connecting.png" src="../../../_images/winscp_connecting.png" />
 </div>
 <div class="section" id="transferring-files-with-winscp">
-<span id="network-remote-file-transfer-winscp-session"></span><h3>Transferring Files with WinSCP<a class="headerlink" href="#transferring-files-with-winscp" title="Permalink to this headline">¶</a></h3>
+<span id="tutorials-remote-file-transfer-winscp-session"></span><h3>Transferring Files with WinSCP<a class="headerlink" href="#transferring-files-with-winscp" title="Permalink to this headline">¶</a></h3>
 <p>After you successfully authenticated yourself, you should see something like the window below (with
 different filenames):</p>
 <img alt="../../../_images/winscp_session.png" src="../../../_images/winscp_session.png" />
@@ -391,6 +397,106 @@ right panel to the left panel.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">In the file listing, <code class="docutils literal"><span class="pre">..</span></code> refers to the parent directory.  Click on it to go up one directory.</p>
+</div>
+<ul class="simple">
+<li><a class="reference internal" href="#tutorials-remote-file-transfer-using-terminal-or-git-bash"><span class="std std-ref">Using Git Bash or Terminal</span></a><ul>
+<li><a class="reference internal" href="#tutorials-remote-file-transfer-scp"><span class="std std-ref">Using SCP</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="using-git-bash-or-terminal">
+<span id="tutorials-remote-file-transfer-using-terminal-or-git-bash"></span><h2>Using Git Bash or Terminal<a class="headerlink" href="#using-git-bash-or-terminal" title="Permalink to this headline">¶</a></h2>
+<p>It is also possible to transfer files over via the terminal or Git Bash for those who no longer need the
+graphical interface (recommended for APCS and up).  The two commands that we would look at are: <code class="docutils literal"><span class="pre">scp</span></code>
+and <code class="docutils literal"><span class="pre">rsync</span></code>.</p>
+<div class="section" id="using-scp">
+<span id="tutorials-remote-file-transfer-scp"></span><h3>Using SCP<a class="headerlink" href="#using-scp" title="Permalink to this headline">¶</a></h3>
+<p>The <code class="docutils literal"><span class="pre">scp</span></code> command is very similar to its cousin: <code class="docutils literal"><span class="pre">cp</span></code>. While it is used to copy files, it is meant to
+copy files from or to a remote machine (although it can do local file transfer as well).  <code class="docutils literal"><span class="pre">scp</span></code> stands
+for secure copy and utilizes the following syntax:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ scp username@hostname:source_path username@hostname:destination_path
+</pre></div>
+</div>
+<p>When it prompts you for a password, simply enter the password for the account that you are accessing
+remotely.  If you are transferring files from or to the school machines, this would be the password you
+use to log into the CS lab machines.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">If you want to copy over a directory, simply add the <code class="docutils literal"><span class="pre">-r</span></code> flag.  Any flags that are valid for the
+<code class="docutils literal"><span class="pre">cp</span></code> command are also valid for the <code class="docutils literal"><span class="pre">scp</span></code> command.</p>
+</div>
+<p>When transferring the .bashrc file from your school account to the current directory, the format would
+look like this:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ scp patrick.chan@clyde.stuycs.org:~/.bashrc .
+</pre></div>
+</div>
+<p>Usually, you only need to specify the username and hostname for one of the parameter and the other
+parameter would simply be the path on your local machine.  However, if you were to transfer between two
+remote machines, both parameters would need a username and hostname in the format specified above.</p>
+<div class="admonition tip">
+<p class="first admonition-title">Tip</p>
+<p class="last">You might have notice that you need to enter your password to the school account every time you run the
+command.  To simplify the process, take a look at the <a class="reference internal" href="ssh_keys_tutorial.html#tutorials-remote-file-transfer-ssh-keys-transfer-authentication"><span class="std std-ref">SSH Keys For SSHing or Remote File Transfer</span></a> guide.</p>
+</div>
+<p>There are situations where you might need to transfer <code class="docutils literal"><span class="pre">*.java</span></code> files (all files ending in .java) over.
+To transfer those files from the current directory of your local machine to the school computer:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ scp *.java username@clyde.stuycs.org:~/&lt;path/to/store/your/java/files&gt;
+</pre></div>
+</div>
+<p>To transfer the files from the school machine to the current directory of your local machine, you might
+do:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ scp username@clyde.stuycs.org:~/apcs/hw01/\*.java .
+</pre></div>
+</div>
+<div class="admonition important">
+<p class="first admonition-title">Important</p>
+<p class="last">Make sure to escape the asterisk/wild card symbol with a backslash (<code class="docutils literal"><span class="pre">\</span></code>) here or else you will get
+an error.</p>
+</div>
+</div>
+<div class="section" id="with-rsync">
+<span id="tutorials-remote-file-transfer-rsync"></span><h3>With RSync<a class="headerlink" href="#with-rsync" title="Permalink to this headline">¶</a></h3>
+<p>When transferring large files or large amount of data in general, you might want to use the <code class="docutils literal"><span class="pre">rsync</span></code>
+command.  Similar to <code class="docutils literal"><span class="pre">scp</span></code>, it can be used to transfer files from remote machines, but it increases
+performance by compressing the data and only transferring the difference between the local version and the
+remote version.  Nevertheless, you will typically use <code class="docutils literal"><span class="pre">scp</span></code> for your daily task and <code class="docutils literal"><span class="pre">rsync</span></code> for
+recurring tasks such as backups.</p>
+<p>The most basic syntax for <code class="docutils literal"><span class="pre">rsync</span></code> is:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ rsync -avzP username@hostname:source_path username@hostname:destination_path
+</pre></div>
+</div>
+<p>A brief explanation on the flags:</p>
+<ul class="simple">
+<li><code class="docutils literal"><span class="pre">-a</span></code>: archive mode, preserve permission</li>
+<li><code class="docutils literal"><span class="pre">-v</span></code>: verbose mode, print out what it is doing</li>
+<li><code class="docutils literal"><span class="pre">-z</span></code>: compress file data, make it smaller</li>
+<li><code class="docutils literal"><span class="pre">-P</span></code>: preserve partially completed data (run the same command again to continue an interrupted
+transfer)</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">To transfer a directory, add the <code class="docutils literal"><span class="pre">-r</span></code> flag, similar to the <code class="docutils literal"><span class="pre">cp</span></code> command or the <code class="docutils literal"><span class="pre">scp</span></code> command.</p>
+</div>
+<p>When it prompts you for a password, simply enter the password for the account that you are accessing
+remotely. If you are transferring files from or to the school machines, this would be the password you use
+to log in to the CS lab machines.</p>
+<div class="admonition important">
+<p class="first admonition-title">Important</p>
+<p class="last"><code class="docutils literal"><span class="pre">rsync</span></code> does not provide security while you transfer data, so it is in your best interest to run it
+under <code class="docutils literal"><span class="pre">ssh</span></code>.  Do so by adding this additional flag: <code class="docutils literal"><span class="pre">-e</span> <span class="pre">ssh</span></code>.</p>
+</div>
+<p>Here is an example:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ rsync -avzP -e ssh .bashrc patrick.chan@clyde.stuycs.org:~/.bashrc
+</pre></div>
+</div>
+<p>Like the <code class="docutils literal"><span class="pre">scp</span></code> command, you usually need to specify the username and hostname just for the remote
+machine unless you are transferring between two remote machines.</p>
+<div class="admonition tip">
+<p class="first admonition-title">Tip</p>
+<p class="last">You might have notice that you need to enter your password to the school account every time you run the
+command.  To simplify the process, take a look at the <a class="reference internal" href="ssh_keys_tutorial.html#tutorials-remote-file-transfer-ssh-keys-transfer-authentication"><span class="std std-ref">SSH Keys For SSHing or Remote File Transfer</span></a> guide.</p>
 </div>
 </div>
 </div>
@@ -445,7 +551,7 @@ right panel to the left panel.</p>
             <script type="text/javascript">
              var DOCUMENTATION_OPTIONS = {
                  URL_ROOT:'../../../',
-                 VERSION:'0.0.1',
+                 VERSION:'0.0.2',
                  COLLAPSE_INDEX:false,
                  FILE_SUFFIX:'.html',
                  HAS_SOURCE:  true,

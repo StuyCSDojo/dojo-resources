@@ -7,15 +7,15 @@ Guide to SSH Keys
 
 *Written by PChan on 2017-03-17*
    
-* :ref:`network_ssh_keys_what_is_ssh_keys`
-* :ref:`network_ssh_keys_creating_ssh_keys`
-* :ref:`network_ssh_keys_deleting_ssh_keys`
-* :ref:`network_ssh_keys_usage`
+* :ref:`tutorials_remote_file_transfer_ssh_keys_what_is_ssh_keys`
+* :ref:`tutorials_remote_file_transfer_ssh_keys_creating_ssh_keys`
+* :ref:`tutorials_remote_file_transfer_ssh_keys_deleting_ssh_keys`
+* :ref:`tutorials_remote_file_transfer_ssh_keys_usage`
 
-  * :ref:`network_ssh_keys_github`
-  * :ref:`network_ssh_keys_transfer_authentication`
+  * :ref:`tutorials_remote_file_transfer_ssh_keys_github`
+  * :ref:`tutorials_remote_file_transfer_ssh_keys_transfer_authentication`
 
-.. _network_ssh_keys_what_is_ssh_keys:
+.. _tutorials_remote_file_transfer_ssh_keys_what_is_ssh_keys:
 
 What Are SSH Keys
 -----------------
@@ -29,7 +29,7 @@ passwords with the following characteristics:
   * Authenticated when the client is able to successfully decrypt the message encrypted by the public key
     using the private key
     
-.. _network_ssh_keys_creating_ssh_keys:
+.. _tutorials_remote_file_transfer_ssh_keys_creating_ssh_keys:
 
 Creating SSH Keys
 -----------------
@@ -57,7 +57,7 @@ When the program is done generating the key, you should see a SSH key fingerprin
 
 .. image:: ../../images/software_tutorials/remote_file_transfer/ssh_keys/ssh-keys-fingerprint.png
    
-.. _network_ssh_keys_deleting_ssh_keys:
+.. _tutorials_remote_file_transfer_ssh_keys_deleting_ssh_keys:
 
 Deleting SSH Keys
 -----------------
@@ -82,7 +82,7 @@ If you are new to the concept of SSH Keys or you have only one set of keys, foll
    // when sshing with SSH keys
    $ chmod 705 ~/.ssh
 
-.. _network_ssh_keys_usage:
+.. _tutorials_remote_file_transfer_ssh_keys_usage:
 
 SSH Keys Usage
 --------------
@@ -98,7 +98,7 @@ matches the original message, you are successfully authenticated.
 Unlike password-based authentication, you don't have to memorize a password (although you can choose to
 protect the private key with a password) making it more secure.
 
-.. _network_ssh_keys_github:
+.. _tutorials_remote_file_transfer_ssh_keys_github:
 
 SSH Keys For GitHub
 ^^^^^^^^^^^^^^^^^^^
@@ -130,12 +130,27 @@ The image below shows the steps to follow after navigating to the settings on Gi
 
 .. image:: ../../images/software_tutorials/remote_file_transfer/ssh_keys/ssh-keys-github.png
 
-.. _network_ssh_keys_transfer_authentication:
+To verify that you have added your SSH keys properly, run the following command in the terminal:
+::
+
+   $ ssh -T git@github.com
+
+When prompted to, continue connecting by typing: ``yes``.  If you did it correctly, you should see the
+following message:
+::
+
+   Hi username! You've successfully authenticated, but GitHub does not
+   provide shell access.
+
+Otherwise, double check that you have followed the instructions correctly.
+	   
+.. _tutorials_remote_file_transfer_ssh_keys_transfer_authentication:
 
 SSH Keys For SSHing or Remote File Transfer
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Every time you ssh into one of the lab machines, you need to enter your password to authenticate you.  We
-can replace this with SSH key authentication.
+can replace this with SSH key authentication.  If you do not have a SSH key pair already, follow the
+instructions in the :ref:`tutorials_remote_file_transfer_ssh_keys_creating_ssh_keys` guide.
 
 In a terminal/Git Bash, follow the instructions below:
 ::
