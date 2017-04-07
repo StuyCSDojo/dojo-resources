@@ -45,15 +45,15 @@ When accessing your StuyCS account remotely, you will need to know your username
 
 StuyCS SSH Hostname
 -------------------      
-Due to a change in ISP, access from outside is not restricted to ``clyde.stuycs.org``.  Therefore, from
+Due to a change in ISP, access from outside is not restricted to ``clyde.stuy.edu``.  Therefore, from
 outside the school, you would run the following command:
 ::
 
-   $ ssh <username>@clyde.stuycs.org
+   $ ssh <username>@clyde.stuy.edu
 
-In the case that the DNS server is messed up, the IP address for ``clyde.stuycs.org`` is ``24.103.0.186``.
+In the case that the DNS server is messed up, the IP address for ``clyde.stuy.edu`` is ``24.103.0.186``.
    
-After you have connected to ``clyde.stuycs.org``, it is in your best interest to ssh into one of the lab
+After you have connected to ``clyde.stuy.edu``, it is in your best interest to ssh into one of the lab
 machines.  Here are the hostnames for the four main servers along with their IP address (in the case that
 the DNS server is messed up)
 ::
@@ -64,7 +64,7 @@ the DNS server is messed up)
    marge.stuy.edu  (149.89.161.100)
 
 .. warning::
-   Never **EVER** do your work directly on clyde.stuycs.org.  Make sure to switch to a different machine
+   Never **EVER** do your work directly on ``clyde.stuy.edu``.  Make sure to switch to a different machine
    as soon as you are connected.
    
 In addition to the four aforementioned hostnames, you can also access the first five machines in each room
@@ -89,11 +89,11 @@ StuyCS Examples
 Here are some examples:
 ::
 
-   $ ssh patrick.chan@clyde.stuycs.org    // To connect from outside
+   $ ssh patrick.chan@clyde.stuy.edu      // To connect from outside
    $ ssh homer.stuy.edu                   // Switch to different lab machine
 
 ::
 
-   $ ssh patrick.chan@clyde.stuycs.org    // To connect from the outside
+   $ ssh patrick.chan@clyde.stuy.edu      // To connect from the outside
    $ ssh 149.89.150.100                   // Connect to homer with IP address
    

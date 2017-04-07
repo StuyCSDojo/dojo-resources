@@ -23,6 +23,7 @@ Programming Tools
 
    programming_tools/installing_emacs
    programming_tools/installing_git
+   programming_tools/installing_make
 
 .. _installing_system_tools:
    
