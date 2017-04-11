@@ -1,5 +1,10 @@
-#bin/bash
-#gunicorn -w 4 -b 127.0.0.1:8000 api:app &> /dev/null &
-gunicorn -w 4 -b unix:/tmp/resources.sock -m 005 api:app &> /dev/null &
-#gunicorn -w 4 -b 0.0.0.0:5000 api:app &> /dev/null &
-disown
+#! /bin/bash -e
+
+sudo pkill gunicorn
+cd /projects/dojo-resources/app
+gunicorn -w 4 -b unix:/tmp/resources.sock -m 005 api:app --daemon &> /dev/null
+cd /projects/dojo-website/app
+gunicorn -w 4 -b unix:/tmp/website.sock -m 005 api:app --daemon &> /dev/null
+cd /projects/dojo-docs/app
+gunicorn -w 4 -b unix:/tmp/docs.sock -m 005 api:app --daemon &> /dev/null
+
