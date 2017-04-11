@@ -14,8 +14,17 @@ File Transfer Utilities
 
    file_transfer_utilities/installing_ssh_programs
   
-.. _installing_programming_tools:
+.. _installing_programming_languages:
 
+Programming Languages
+---------------------
+.. toctree::
+   :maxdepth: 2
+
+   programming_languages/installing_python
+
+.. _installing_programming_tools:
+   
 Programming Tools
 -----------------
 .. toctree::
@@ -24,6 +33,7 @@ Programming Tools
    programming_tools/installing_emacs
    programming_tools/installing_git
    programming_tools/installing_make
+   programming_tools/installing_mongodb
 
 .. _installing_system_tools:
    

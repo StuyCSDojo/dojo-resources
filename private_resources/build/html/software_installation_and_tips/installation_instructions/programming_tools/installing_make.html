@@ -45,7 +45,7 @@
                 <link rel="search" title="Search" href="../../../search.html"/>
             <link rel="top" title="Dojo Resources 0.0.2 documentation" href="../../../index.html"/>
                 <link rel="up" title="Installing Software" href="../index.html"/>
-                <link rel="next" title="Installing Homebrew" href="../system_tools/installing_homebrew.html"/>
+                <link rel="next" title="Installing MongoDB" href="installing_mongodb.html"/>
                 <link rel="prev" title="Installing Git" href="installing_git.html"/> 
 
         
@@ -179,10 +179,15 @@
 <li class="toctree-l4"><a class="reference internal" href="../file_transfer_utilities/installing_ssh_programs.html">Installing SSH Programs</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="../index.html#programming-languages">Programming Languages</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../programming_languages/installing_python.html">Installing Python and Pip</a></li>
+</ul>
+</li>
 <li class="toctree-l3 current"><a class="reference internal" href="../index.html#programming-tools">Programming Tools</a><ul class="current">
 <li class="toctree-l4"><a class="reference internal" href="installing_emacs.html">Installing Emacs</a></li>
 <li class="toctree-l4"><a class="reference internal" href="installing_git.html">Installing Git</a></li>
 <li class="toctree-l4 current"><a class="current reference internal" href="#">Installing Make</a></li>
+<li class="toctree-l4"><a class="reference internal" href="installing_mongodb.html">Installing MongoDB</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../index.html#system-tools">System Tools</a><ul>
@@ -207,6 +212,10 @@
 <li class="toctree-l4"><a class="reference internal" href="../../software_tutorials/remote_file_transfer/ssh_tutorial.html">Introduction to SSH</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../software_tutorials/remote_file_transfer/ssh_keys_tutorial.html">Guide to SSH Keys</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../software_tutorials/remote_file_transfer/remote_file_transfer_tutorial.html">Introduction to Remote File Transfer</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../software_tutorials/index.html#system">System</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../software_tutorials/system/modifying_windows_path_tutorial.html">Modifying Windows Path</a></li>
 </ul>
 </li>
 </ul>
@@ -248,7 +257,7 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../../stuycs/useful_links.html#general-software">General Software</a><ul>
-<li class="toctree-l2"><a class="reference external" href="http://www.w3schools.com/">Emacs Wiki</a></li>
+<li class="toctree-l2"><a class="reference external" href="https://www.emacswiki.org">Emacs Wiki</a></li>
 <li class="toctree-l2"><a class="reference external" href="http://vim.wikia.com/wiki/Vim_Tips_Wiki">Vim Tips Wiki</a></li>
 </ul>
 </li>
@@ -326,12 +335,83 @@
   <div class="section" id="installing-make">
 <span id="installation-programming-tools-make"></span><h1>Installing Make<a class="headerlink" href="#installing-make" title="Permalink to this headline">¶</a></h1>
 <p><em>Written by PChan on 2017-04-06</em></p>
-<ul class="simple">
-<li><span class="xref std std-ref">installation_programming_tools_make_linux</span></li>
-<li><span class="xref std std-ref">installation_programming_tools_make_mac_osx</span></li>
-<li><span class="xref std std-ref">installation_programming_tools_make_windows</span></li>
+<ul>
+<li><p class="first"><a class="reference internal" href="#installation-programming-tools-make-linux"><span class="std std-ref">Linux</span></a></p>
+</li>
+<li><p class="first"><a class="reference internal" href="#installation-programming-tools-make-mac-osx"><span class="std std-ref">Mac OSX</span></a></p>
+</li>
+<li><p class="first"><a class="reference internal" href="#installation-programming-tools-make-windows"><span class="std std-ref">Windows</span></a></p>
+</li>
 </ul>
-<span class="target" id="installation-programming-tools-make-windows"><span id="installation-programming-tools-make-mac-osx"></span><span id="installation-programming-tools-make-linux"></span></span></div>
+<div class="section" id="linux">
+<span id="installation-programming-tools-make-linux"></span><h2>Linux<a class="headerlink" href="#linux" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><p class="first">On Ubuntu/Debian/Mint</p>
+<div class="highlight-none"><div class="highlight"><pre><span></span>$ sudo apt-get install build-essential
+</pre></div>
+</div>
+</li>
+<li><p class="first">On Fedora 21</p>
+<div class="highlight-none"><div class="highlight"><pre><span></span>// minimalist approach
+$ sudo yum install make automake gcc gcc-c++ kernel-devel
+
+// full-blown approach, so that you do not have to bother with this again (takes up more space)
+$ sudo yum groupinstall &quot;DevelopmentTools&quot; &quot;Development Libraries&quot;
+</pre></div>
+</div>
+</li>
+<li><p class="first">On Fedora 23</p>
+<div class="highlight-none"><div class="highlight"><pre><span></span>// try
+$ sudo dnf install @development-tools
+
+// otherwise
+$ sudo dnf group install &quot;C Development Tools and Libraries&quot;
+</pre></div>
+</div>
+</li>
+</ul>
+</div>
+<div class="section" id="mac-osx">
+<span id="installation-programming-tools-make-mac-osx"></span><h2>Mac OSX<a class="headerlink" href="#mac-osx" title="Permalink to this headline">¶</a></h2>
+<p>Generally, Mac OSX comes with make preinstalled.  To check to see if this is the case, run the following
+command in the terminal:</p>
+<div class="highlight-none"><div class="highlight"><pre><span></span>$ make --version
+</pre></div>
+</div>
+<p>If you do not get an error, you are good to go.  Otherwise, run the following command:</p>
+<div class="highlight-none"><div class="highlight"><pre><span></span>$ xcode-select --install
+</pre></div>
+</div>
+</div>
+<div class="section" id="windows">
+<span id="installation-programming-tools-make-windows"></span><h2>Windows<a class="headerlink" href="#windows" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><p class="first">Download the <a class="reference external" href="https://sourceforge.net/projects/mingw/files/latest/download">MinGW installation app</a></p>
+</li>
+<li><p class="first">Run the executable</p>
+</li>
+<li><p class="first">Read and accept the license agreement</p>
+</li>
+<li><p class="first">Select <strong>Current Package</strong></p>
+</li>
+<li><p class="first">When choosing the components to install, you&#8217;ll need:</p>
+<ul class="simple">
+<li><strong>MinGW base tools</strong></li>
+<li><strong>g++ compiler</strong></li>
+<li><strong>MinGW Make</strong></li>
+</ul>
+</li>
+<li><p class="first">Read the <a class="reference internal" href="../../software_tutorials/system/modifying_windows_path_tutorial.html#tutorials-system-windows-path-modifying-windows-path"><span class="std std-ref">Modifying Windows Path</span></a> guide and add <code class="docutils literal"><span class="pre">C:\MinGW\bin</span></code> to
+your path</p>
+</li>
+<li><p class="first">Run the following command in a command prompt with administrative privileges:</p>
+<div class="highlight-none"><div class="highlight"><pre><span></span>C:\Users\Username&gt; copy C:\MinGW\bin\mingw32-make.exe C:\MinGW\bin\make.exe
+</pre></div>
+</div>
+</li>
+</ul>
+</div>
+</div>
 
 
                             </div>
@@ -343,7 +423,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../system_tools/installing_homebrew.html" class="btn btn-neutral float-right" title="Installing Homebrew" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="installing_mongodb.html" class="btn btn-neutral float-right" title="Installing MongoDB" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="installing_git.html" class="btn btn-neutral" title="Installing Git" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>

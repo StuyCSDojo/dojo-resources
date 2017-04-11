@@ -50,5 +50,5 @@ General Software
 .. toctree::
    :maxdepth: 1
 
-   Emacs Wiki <http://www.w3schools.com/>
+   Emacs Wiki <https://www.emacswiki.org>
    Vim Tips Wiki <http://vim.wikia.com/wiki/Vim_Tips_Wiki>

@@ -1,0 +1,443 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+            <title>Modifying Windows Path &mdash; Dojo Resources 0.0.2 documentation</title>
+        
+
+        
+        
+
+        
+
+        
+        
+            
+
+        
+
+        
+        
+            <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+        
+
+        
+
+        
+
+        <link rel="stylesheet" href="../../../_static/bootstrap-glyphicons.css" type="text/css" />
+        <link rel="stylesheet" href="../../../_static/main.css" type="text/css" />
+        <link rel="stylesheet" href="../../../_static/button.css" type="text/css" />
+        <script
+            src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+            integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc="
+            crossorigin="anonymous"></script>
+        <script src="../../../_static/button.js"></script>
+        <script src="../../../_static/set_target.js"></script>
+                <link rel="index" title="Index"
+                      href="../../../genindex.html"/>
+                <link rel="search" title="Search" href="../../../search.html"/>
+            <link rel="top" title="Dojo Resources 0.0.2 documentation" href="../../../index.html"/>
+                <link rel="up" title="Tutorials for Using Various Software" href="../index.html"/>
+                <link rel="next" title="Misc" href="../../../stuycs/misc.html"/>
+                <link rel="prev" title="Introduction to Remote File Transfer" href="../remote_file_transfer/remote_file_transfer_tutorial.html"/> 
+
+        
+        <script src="../../../_static/js/modernizr.min.js"></script>
+
+    </head>
+
+    <body class="wy-body-for-nav" role="document">
+
+         
+        <div class="wy-grid-for-nav">
+
+            
+            <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+                <div class="wy-side-scroll">
+                    <div class="wy-side-nav-search">
+                        
+
+                            
+                                    <a href="https://dojo.stuycs.org"class="icon icon-home"> Dojo Website
+                            
+
+                            
+                                    </a>
+
+                                    
+                                        
+                                        
+                                            <div class="version">
+                                                0.0.2
+                                            </div>
+                                        
+                                    
+
+                                    
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search Dojo Resources" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+                        
+                    </div>
+
+                    <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                        
+                            
+                            
+                                <p class="caption"><span class="caption-text">Language Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://docs.racket-lang.org/">Racket</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://ccl.northwestern.edu/netlogo/docs/dictionary.html">NetLogo</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://www.w3.org/TR/2014/REC-html5-20141028/">HTML</a></li>
+<li class="toctree-l1"><a class="reference external" href="http://www.w3schools.com/">Web W3schools</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://docs.python.org/2/library/index.html">Python 2.7</a></li>
+<li class="toctree-l1"><a class="reference external" href="http://rgruet.free.fr/PQR27/PQR2.7.html">Python 2.7 Quick Reference</a></li>
+<li class="toctree-l1"><a class="reference external" href="http://docs.oracle.com/javase/7/docs/api/">Java 7 API</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://docs.oracle.com/javase/7/docs/api">Java 7 AP subset API</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://processing.org/reference">Processing</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Guides and Tutorials</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../stuycs/stuycs_guides.html">StuyCS Guides</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../stuycs/stuycs_guides.html#intro-to-computer-science-1">Intro to Computer Science 1</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../stuycs/intro_cs1/recursion_introduction.html">Introduction to Recursion</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../stuycs/intro_cs1/recursion_introduction.html#definitions">Definitions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../stuycs/intro_cs1/recursion_introduction.html#tips-for-finding-the-recursive-reduction">Tips for Finding the Recursive Reduction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../stuycs/intro_cs1/recursion_introduction.html#tips-for-finding-the-base-case">Tips for Finding the Base Case</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../stuycs/intro_cs1/recursion_introduction.html#what-is-a-recursive-function">What is a Recursive Function</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../stuycs/intro_cs1/recursion_introduction.html#tips-for-writing-recursive-functions">Tips for Writing Recursive Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../stuycs/intro_cs1/recursion_introduction.html#sample-workflow-for-recursion">Sample Workflow for Recursion</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../stuycs/intro_cs1/recursion_introduction.html#what-is-an-iterative-style-recursive-function">What is an Iterative-Style Recursive Function</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../stuycs/intro_cs1/recursion_introduction.html#what-are-state-variables">What are State Variables</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../stuycs/intro_cs1/recursion_introduction.html#tips-for-writing-iterative-style-recursive-functions">Tips for Writing Iterative-Style Recursive Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../stuycs/intro_cs1/recursion_introduction.html#sample-workflow-for-iterative-style-recursion">Sample Workflow for Iterative-Style Recursion</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../stuycs/stuycs_guides.html#intro-to-computer-science-2">Intro to Computer Science 2</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../stuycs/stuycs_guides.html#ap-computer-science">AP Computer Science</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../stuycs/apcs/recursion_refresher.html">Recursion: A Refresher</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../stuycs/apcs/recursion_refresher.html#definitions">Definitions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../stuycs/apcs/recursion_refresher.html#tips-for-finding-the-recursive-reduction">Tips for Finding the Recursive Reduction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../stuycs/apcs/recursion_refresher.html#tips-for-finding-the-base-case">Tips for Finding the Base Case</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../stuycs/apcs/recursion_refresher.html#what-is-a-recursive-function">What is a Recursive Function</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../stuycs/apcs/recursion_refresher.html#example-of-recursion">Example of Recursion</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../stuycs/apcs/recursion_refresher.html#what-is-an-iterative-style-recursive-function">What is an Iterative-Style Recursive Function</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../stuycs/apcs/recursion_refresher.html#what-are-state-variables">What are State Variables</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../stuycs/apcs/recursion_refresher.html#example-of-iterative-style-recursion">Example of Iterative Style Recursion</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../stuycs/stuycs_guides.html#system-level-programming">System Level Programming</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../stuycs/stuycs_guides.html#computer-graphics">Computer Graphics</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../stuycs/stuycs_guides.html#software-development">Software Development</a><ul class="simple">
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../software.html">Software and Tools</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../installation_instructions/index.html">Installing Software</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../installation_instructions/index.html#file-transfer-utilities">File Transfer Utilities</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../installation_instructions/file_transfer_utilities/installing_ssh_programs.html">Installing SSH Programs</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../installation_instructions/index.html#programming-languages">Programming Languages</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../installation_instructions/programming_languages/installing_python.html">Installing Python and Pip</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../installation_instructions/index.html#programming-tools">Programming Tools</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../installation_instructions/programming_tools/installing_emacs.html">Installing Emacs</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../installation_instructions/programming_tools/installing_git.html">Installing Git</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../installation_instructions/programming_tools/installing_make.html">Installing Make</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../installation_instructions/programming_tools/installing_mongodb.html">Installing MongoDB</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../installation_instructions/index.html#system-tools">System Tools</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../installation_instructions/system_tools/installing_homebrew.html">Installing Homebrew</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2 current"><a class="reference internal" href="../index.html">Tutorials for Using Various Software</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../index.html#languages">Languages</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../languages/bash_tutorial.html">Introduction to Bash</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../index.html#programming-tools">Programming Tools</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../programming_tools/emacs_tutorial.html">Introduction to Emacs</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../programming_tools/git_tutorial.html">Introduction to Git</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../programming_tools/terminal_tutorial.html">How to Use the Terminal</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../programming_tools/vim_tutorial.html">Introduction to Vim</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../index.html#remote-file-transfer">Remote File Transfer</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../remote_file_transfer/ssh_tutorial.html">Introduction to SSH</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../remote_file_transfer/ssh_keys_tutorial.html">Guide to SSH Keys</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../remote_file_transfer/remote_file_transfer_tutorial.html">Introduction to Remote File Transfer</a></li>
+</ul>
+</li>
+<li class="toctree-l3 current"><a class="reference internal" href="../index.html#system">System</a><ul class="current">
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Modifying Windows Path</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../stuycs/misc.html">Misc</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../stuycs/misc/firefox_already_running.html">Firefox Already Running Error</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../stuycs/misc/proxy_settings.html">Stuy Proxy Settings</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Useful Links</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../stuycs/useful_links.html">Intro to Computer Science 1</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../stuycs/useful_links.html#intro-to-computer-science-2">Intro to Computer Science 2</a><ul>
+<li class="toctree-l2"><a class="reference external" href="http://pythontutor.com/">Python Visualizer</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../stuycs/useful_links.html#ap-computer-science">AP Computer Science</a><ul>
+<li class="toctree-l2"><a class="reference external" href="http://cscircles.cemc.uwaterloo.ca/java_visualize/">Java Visualizer</a></li>
+<li class="toctree-l2"><a class="reference external" href="/public_resources/nqueens-sketchpad#://">NQueens SketchPad</a></li>
+<li class="toctree-l2"><a class="reference external" href="/public_resources/knights-tour-sketchpad#://">Knight Tours SketchPad</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../stuycs/useful_links.html#systems-level-programming">Systems Level Programming</a><ul>
+<li class="toctree-l2"><a class="reference external" href="http://cdecl.org/">C-English Translator</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../stuycs/useful_links.html#computer-graphics">Computer Graphics</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../stuycs/useful_links.html#software-development">Software Development</a><ul>
+<li class="toctree-l2"><a class="reference external" href="https://jsfiddle.net/">JS Fiddle</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../stuycs/useful_links.html#general-software">General Software</a><ul>
+<li class="toctree-l2"><a class="reference external" href="https://www.emacswiki.org">Emacs Wiki</a></li>
+<li class="toctree-l2"><a class="reference external" href="http://vim.wikia.com/wiki/Vim_Tips_Wiki">Vim Tips Wiki</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Extra</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../image.html">StuyCS</a></li>
+</ul>
+
+                            
+                        
+                    </div>
+                </div>
+                
+            </nav>
+
+            <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+                
+                <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+                    
+                        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+                        <a href="../../../index.html">Dojo Resources</a>
+                    
+                </nav>
+
+
+
+                
+                <div class="wy-nav-content">
+                    <div class="rst-content">
+                        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html">Resources</a> &raquo;</li>
+        
+          <li><a href="../../software.html">Software and Tools</a> &raquo;</li>
+        
+          <li><a href="../index.html">Tutorials for Using Various Software</a> &raquo;</li>
+        
+      <li>Modifying Windows Path</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+                        <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+                            <div itemprop="articleBody">
+                                
+  <div class="section" id="modifying-windows-path">
+<span id="tutorials-system-windows-path-modifying-windows-path"></span><h1>Modifying Windows Path<a class="headerlink" href="#modifying-windows-path" title="Permalink to this headline">¶</a></h1>
+<p>To run an application directly from the command prompt without specifying the full path, you will need to
+either add it to your path or to put the application in a folder on your path.  In this tutorial, we will
+cover how to add a directory to your path.</p>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">You will need Administrator access during this process.</p>
+</div>
+<p>For Windows 10:</p>
+<ol class="arabic simple">
+<li>Open Control Panel</li>
+<li>Look for the <strong>System and Security</strong> category</li>
+<li>Select <strong>System</strong></li>
+<li>On the left side, select <strong>Advanced System Settings</strong></li>
+<li>Select <strong>Environment Variables</strong> in the pop up window</li>
+<li>In the <strong>System Variables</strong> section (the bottom section), find the <em>PATH</em> environment variable and
+select it</li>
+<li>Click <strong>Edit</strong></li>
+<li>In the pop up window that follows, click <strong>New</strong> and then click <strong>Browse</strong> to find the directory you
+want to add to your path</li>
+<li>Close each window by clicking <strong>OK</strong></li>
+</ol>
+<div class="figure align-center" id="id1">
+<img alt="../../../_images/windows10-path.jpg" src="../../../_images/windows10-path.jpg" />
+<p class="caption"><span class="caption-text">This is a screenshot of what you should do after step 5.</span></p>
+</div>
+<p>For Windows 7, 8, 8.1:</p>
+<ol class="arabic simple">
+<li>Open Control Panel</li>
+<li>Look for the <strong>System and Security</strong> category</li>
+<li>Select <strong>System</strong></li>
+<li>On the left side, select <strong>Advanced System Settings</strong></li>
+<li>Select <strong>Environment Variables</strong> in the pop up window</li>
+<li>In the <strong>System Variables</strong> section (the bottom section), find the <em>PATH</em> environment variable and
+select it</li>
+<li>Click <strong>Edit</strong></li>
+<li>In the new pop up window with two text boxes, navigate to the end of the second text box</li>
+<li>Insert a semicolon if necessary (ie if there isn&#8217;t one already) followed by the path you want to add</li>
+<li>Close each window by clicking <strong>OK</strong></li>
+</ol>
+<div class="figure align-center" id="id2">
+<a class="reference internal image-reference" href="../../../_images/windows8-path.png"><img alt="../../../_images/windows8-path.png" src="../../../_images/windows8-path.png" style="width: 500px;" /></a>
+<p class="caption"><span class="caption-text">This is a screenshot of what you should do after step 4.</span></p>
+</div>
+</div>
+
+
+                            </div>
+                            <div class="articleComments">
+                                
+                            </div>
+                        </div>
+                        <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../../../stuycs/misc.html" class="btn btn-neutral float-right" title="Misc" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../remote_file_transfer/remote_file_transfer_tutorial.html" class="btn btn-neutral" title="Introduction to Remote File Transfer" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, PChan, Kenneth, Shakil, Jake, Leo, WX.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+                    </div>
+                </div>
+                
+            </section>
+            
+        </div>
+	
+	<div class="rst-versions" data-toggle="rst-versions">
+	    <form action="/logout" id="button_form">
+            </form>
+	</div>
+        
+
+
+        
+
+            <script type="text/javascript">
+             var DOCUMENTATION_OPTIONS = {
+                 URL_ROOT:'../../../',
+                 VERSION:'0.0.2',
+                 COLLAPSE_INDEX:false,
+                 FILE_SUFFIX:'.html',
+                 HAS_SOURCE:  true,
+                 SOURCELINK_SUFFIX: ''
+             };
+            </script>
+                <script type="text/javascript" src="../../../_static/jquery.js"></script>
+                <script type="text/javascript" src="../../../_static/underscore.js"></script>
+                <script type="text/javascript" src="../../../_static/doctools.js"></script>
+
+        
+
+        
+        
+            <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+        
+
+        
+        
+            <script type="text/javascript">
+             jQuery(function () {
+                 SphinxRtdTheme.StickyNav.enable();
+             });
+            </script>
+         
+
+    </body>
+</html>

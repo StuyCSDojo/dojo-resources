@@ -3,6 +3,9 @@ Tutorials for Using Various Software
 
 * :ref:`languages`
 * :ref:`programming_tools_tutorials`
+* :ref:`remote_file_transfer_tutorials`
+* :ref:`system_tutorials`
+  
 
 .. _languages:
 
@@ -35,3 +38,12 @@ Remote File Transfer
    remote_file_transfer/ssh_tutorial
    remote_file_transfer/ssh_keys_tutorial
    remote_file_transfer/remote_file_transfer_tutorial
+
+.. _system_tutorials:
+
+System
+------
+.. toctree::
+   :maxdepth: 2
+
+   system/modifying_windows_path_tutorial
