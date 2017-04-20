@@ -23,7 +23,7 @@ Intro to Computer Science 2
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 .. toctree::
    :maxdepth: 3
-
+              
 .. _apcs:
 
 AP Computer Science
@@ -31,8 +31,18 @@ AP Computer Science
 .. toctree::
    :maxdepth: 3
 
+   apcs/ap/java_introduction
+   apcs/ap/java_introductory_features
+   apcs/ap/java_conditionals
+   apcs/ap/java_loops_structure
+   apcs/ap/introducing_polymorphism
+   apcs/ap/selection_sort_introduction
+   apcs/ap/insertion_sort_introduction
    apcs/recursion_refresher
-
+   apcs/ap/mergesort_introduction
+   apcs/ap/quicksort_introduction
+   apcs/ap/sequential_binary_search_introduction
+   
 .. _systems:
 
 System Level Programming
@@ -53,4 +63,4 @@ Software Development
 ^^^^^^^^^^^^^^^^^^^^
 .. toctree::
    :maxdepth: 3
-
+              

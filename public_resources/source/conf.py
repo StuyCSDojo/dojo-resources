@@ -31,7 +31,7 @@
 # ones.
 extensions = [
     'sphinx.ext.intersphinx',
-    'sphinx.ext.todo',
+    'sphinx.ext.mathjax',
     'sphinx.ext.coverage',
 ]
 
@@ -53,8 +53,8 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'Dojo Resources'
-copyright = u'2017, PChan, Kenneth, Shakil, Jake, Leo, WX'
-author = u'PChan, Kenneth, Shakil, Jake, Leo, WX'
+copyright = u'2017, PChan, Kenneth, Jackie, Shakil, Jake, Leo, WX'
+author = u'PChan, Kenneth, Jackie, Shakil, Jake, Leo, WX'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
