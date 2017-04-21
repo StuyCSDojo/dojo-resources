@@ -1,5 +1,5 @@
-Making Decisions
-================
+Conditionals
+============
 
 *Written by PChan on 2017-04-15*
 
@@ -109,9 +109,25 @@ Do you remember the ``cond`` statement in Scheme?
      ((<BE>) <things to do>)
      (else (<things to do>)))
 
+.. highlight:: python
+     
+Or maybe the ``elif`` statement in Python...
+::
+
+   if <BE>:
+       <things to do>
+   elif <BE>:
+       <things to do>
+   elif <BE>:
+       <things to do>
+   else:
+       <things to do>
+       
 .. highlight:: java
      
-The ``cond`` statement in Scheme allows you to test multiple conditionals without nesting if statements.
+The ``cond`` statement in Scheme or the ``elif`` statement in Python allows you to test multiple
+conditionals without nesting if statements.
+
 The Java equivalence would be:
 ::
 

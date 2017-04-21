@@ -1,5 +1,5 @@
-Introducing Sequential vs Binary Search
-=======================================
+Sequential vs Binary Search
+===========================
 
 *Written by PChan on 2017-04-14*
 

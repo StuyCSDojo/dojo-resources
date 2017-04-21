@@ -38,6 +38,7 @@ AP Computer Science
    apcs/ap/java_conditionals
    apcs/ap/java_loops_structure
    apcs/ap/introducing_polymorphism
+   apcs/ap/big_o_notation
    apcs/ap/selection_sort_introduction
    apcs/ap/insertion_sort_introduction
    apcs/recursion_refresher

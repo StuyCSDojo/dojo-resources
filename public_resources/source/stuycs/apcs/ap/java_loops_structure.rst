@@ -1,5 +1,5 @@
-Introducing Basic Loops Structure
-=================================
+Basic Loops Structure
+=====================
 
 *Written by PChan on 2017-04-15*
 

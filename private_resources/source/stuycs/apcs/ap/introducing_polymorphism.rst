@@ -1,5 +1,5 @@
-Introducing Static vs Dynamic Polymorphism
-==========================================
+Static vs Dynamic Polymorphism
+==============================
 
 *Written by PChan on 2017-04-19*
 

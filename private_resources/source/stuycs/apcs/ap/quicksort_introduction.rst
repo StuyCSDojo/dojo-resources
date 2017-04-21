@@ -1,5 +1,5 @@
-Introducing QuickSort
-=====================
+QuickSort
+=========
 
 *Written by PChan on 2017-04-14*
 

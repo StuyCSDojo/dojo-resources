@@ -1,5 +1,5 @@
-Introducing Insertion Sort
-==========================
+Insertion Sort
+==============
 
 *Written by PChan on 2017-04-13*
 

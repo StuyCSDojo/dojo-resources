@@ -36,11 +36,11 @@ Primitives are predefined by Java with the usage of reserved keywords.  There ar
 +==========+==============+=====================+
 | byte     | 8 bits       | [-2^7, (2^7) - 1]   |
 +----------+--------------+---------------------+
-| short    | 16 bits      | [-2^15, (2^15) + 1] |
+| short    | 16 bits      | [-2^15, (2^15) - 1] |
 +----------+--------------+---------------------+
-| int      | 32 bits      | [-2^31, (2^31) + 1] |
+| int      | 32 bits      | [-2^31, (2^31) - 1] |
 +----------+--------------+---------------------+
-| long     | 64 bits      | [-2^63, (2^63) + 1] |
+| long     | 64 bits      | [-2^63, (2^63) - 1] |
 +----------+--------------+---------------------+
 
 +----------------+--------------+
@@ -123,7 +123,7 @@ Operator  Meaning
 ========  ================================================================================
 \+        Add or concatenate the two operands
 \-        Subtract the second value from the first value
-\*        Multiply the two operand
+\*        Multiply the two operands
 /         Divide the first value by the second value
 %         Remainder of left-hand operand divided by right-hand operator (Modulus operator)
 ========  ================================================================================
@@ -153,13 +153,13 @@ Operator  Meaning
    These operators would only work with primitives and may give the wrong answers for Objects.
 
 Due to the way how floating-point values are stored, you might not always get the correct answer if you
-used the relational opeators incorrectly due to round-off errors.  Instead, you should test to see if they
-are close enough in precision to be considered equal:
+used the relational operators incorrectly due to round-off errors.  Instead, you should test to see if
+they are close enough in precision to be considered equal:
 
 .. math::
 
-   \mathopen|x - y\mathclose| \leq \epsilon max(\mathopen|x\mathclose|, \mathopen|y\mathclose|)
-
+   |x - y| \leq \epsilon max(|x|, |y|)
+   
 where :math:`\epsilon` is a very small number.
 
 .. _tutorial_apcs_ap_introductory_java_features_logical_operators:

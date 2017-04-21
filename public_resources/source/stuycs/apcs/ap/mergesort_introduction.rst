@@ -1,18 +1,11 @@
-Introducing MergeSort
-=====================
+MergeSort
+=========
 
 *Written by PChan on 2017-04-14*
 
-* :ref:`tutorial_apcs_ap_mergesort_introduction_key_idea_splitting`
 * :ref:`tutorial_apcs_ap_mergesort_introduction_key_idea_merging`
 * :ref:`tutorial_apcs_ap_mergesort_introduction_the_general_algorithm`
 * :ref:`tutorial_apcs_ap_mergesort_introduction_exercises`
-
-.. _tutorial_apcs_ap_mergesort_introduction_key_idea_splitting:
-
-Key Idea: Splitting a List
---------------------------
-
 
 .. _tutorial_apcs_ap_mergesort_introduction_key_idea_merging:
   
@@ -60,7 +53,8 @@ Exercises
 Here are some questions to ponder over (in order of ascending difficulty):
 
 1. Is there a best case scenario?  A worst case scenario?
-2. How many times do you need to half the list before you can start merging
+2. How many times do you need to half the list before you can start merging?
 3. What disadvantage(s) does mergesort have compared to other sorting algorithms?
-4. Determine the runtime of this algorithm.  What is the ratio of the time it takes to sort the list and
+4. How might splitting and remerging the list be faster than selection sort or insertion sort?
+5. Determine the runtime of this algorithm.  What is the ratio of the time it takes to sort the list and
    the size of the list?

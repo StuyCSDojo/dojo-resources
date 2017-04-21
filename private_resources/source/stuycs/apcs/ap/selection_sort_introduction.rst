@@ -1,5 +1,5 @@
-Introducing Selection Sort
-==========================
+Selection Sort
+==============
 
 *Written by PChan on 2017-04-13*
 
@@ -63,5 +63,6 @@ Exercises
 Here are some questions to ponder over (in order of ascending difficulty):
 
 1. Is there a best case scenario?  A worst case scenario?
-2. Determine the runtime of this algorithm.  What is the ratio of the time it takes to sort the list and
+2. How many passes would you need to make to sort an array of size 10?  100?  1000?
+3. Determine the runtime of this algorithm.  What is the ratio of the time it takes to sort the list and
    the size of the list?   

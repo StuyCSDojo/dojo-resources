@@ -12,6 +12,10 @@ Recursion: A Refresher
   * :ref:`apcs_recursion_what_are_state_variables`
   * :ref:`apcs_recursion_iterative_style_recursion_example`
 
+.. note::
+   The following guide is meant as a basic refresher on recursion.  For a more in-depth coverage, check
+   :ref:`intro_cs1_recursion`.
+    
 .. _apcs_recursion_definitions:
 
 Definitions

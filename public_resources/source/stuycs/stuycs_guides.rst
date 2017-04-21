@@ -23,7 +23,7 @@ Intro to Computer Science 2
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 .. toctree::
    :maxdepth: 3
-              
+
 .. _apcs:
 
 AP Computer Science
@@ -50,6 +50,7 @@ System Level Programming
 .. toctree::
    :maxdepth: 3
 
+
 .. _graphics:
 
 Computer Graphics
@@ -57,10 +58,11 @@ Computer Graphics
 .. toctree::
    :maxdepth: 3
 
+
 .. _softdev:
 
 Software Development
 ^^^^^^^^^^^^^^^^^^^^
 .. toctree::
    :maxdepth: 3
-              
+

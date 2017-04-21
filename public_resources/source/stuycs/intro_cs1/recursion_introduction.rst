@@ -1,3 +1,5 @@
+.. _intro_cs1_recursion:
+
 Introduction to Recursion
 =========================
 
