@@ -36,12 +36,13 @@ AP Computer Science
    apcs/ap/java_conditionals
    apcs/ap/java_loops_structure
    apcs/ap/introducing_polymorphism
-   apcs/ap/selection_sort_introduction
-   apcs/ap/insertion_sort_introduction
+   apcs/ap/big_oh_notation
+   apcs/ap/selection_sort
+   apcs/ap/insertion_sort
    apcs/recursion_refresher
-   apcs/ap/mergesort_introduction
-   apcs/ap/quicksort_introduction
-   apcs/ap/sequential_binary_search_introduction
+   apcs/ap/mergesort
+   apcs/ap/quicksort
+   apcs/ap/sequential_binary_search
    
 .. _systems:
 
@@ -50,7 +51,6 @@ System Level Programming
 .. toctree::
    :maxdepth: 3
 
-
 .. _graphics:
 
 Computer Graphics
@@ -58,11 +58,10 @@ Computer Graphics
 .. toctree::
    :maxdepth: 3
 
-
 .. _softdev:
 
 Software Development
 ^^^^^^^^^^^^^^^^^^^^
 .. toctree::
    :maxdepth: 3
-
+              

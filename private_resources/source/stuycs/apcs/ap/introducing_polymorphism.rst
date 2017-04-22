@@ -13,7 +13,7 @@ Static vs Dynamic Polymorphism
 Static Polymorphism
 -------------------
 **Static polymorphism** is achieved through method overloading.  *Method overloading* is the concept of
-defining multiple methods with the same name, but take different parameters.  Java figures out at
+defining multiple methods with the same name, but taking different parameters.  Java figures out at
 compile-time which method to call in such cases based on method signatures:
 ::
 

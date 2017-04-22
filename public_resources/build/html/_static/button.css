@@ -1,7 +1,7 @@
 .button {
-    display: inline-block;
+    display: block;
     border-radius: 10px;
-    background-color: #2980B9;
+    background-color: #3AA7A3;
     border: none;
     color: #FFFFFF;
     text-align: center;
@@ -12,8 +12,7 @@
     cursor: pointer;
     vertical-align: middle;
     position: relative;
-    left: 25%;
-    
+    margin: auto;
 }
 
 .button span {

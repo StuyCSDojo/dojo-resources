@@ -38,13 +38,13 @@ AP Computer Science
    apcs/ap/java_conditionals
    apcs/ap/java_loops_structure
    apcs/ap/introducing_polymorphism
-   apcs/ap/big_o_notation
-   apcs/ap/selection_sort_introduction
-   apcs/ap/insertion_sort_introduction
+   apcs/ap/big_oh_notation
+   apcs/ap/selection_sort
+   apcs/ap/insertion_sort
    apcs/recursion_refresher
-   apcs/ap/mergesort_introduction
-   apcs/ap/quicksort_introduction
-   apcs/ap/sequential_binary_search_introduction
+   apcs/ap/mergesort
+   apcs/ap/quicksort
+   apcs/ap/sequential_binary_search
    
 .. _systems:
 

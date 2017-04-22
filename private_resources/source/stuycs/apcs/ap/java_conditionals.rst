@@ -3,16 +3,16 @@ Conditionals
 
 *Written by PChan on 2017-04-15*
 
-* :ref:`tutorial_apcs_ap_making_decisions_if_statements`
-* :ref:`tutorial_apcs_ap_making_decisions_if_statements_tips_and_warnings`
+* :ref:`tutorial_apcs_ap_java_conditionals_if_statements`
+* :ref:`tutorial_apcs_ap_java_conditionals_if_statements_tips_and_warnings`
 
-  * :ref:`tutorial_apcs_ap_making_decisions_if_statements_tips_and_warnings_nested_if_statements`
-  * :ref:`tutorial_apcs_ap_making_decisions_if_statements_tips_and_warnings_conditionals_without_braces`
-* :ref:`tutorial_apcs_ap_making_decisions_extended_if_statements`
+  * :ref:`tutorial_apcs_ap_java_conditionals_if_statements_tips_and_warnings_nested_if_statements`
+  * :ref:`tutorial_apcs_ap_java_conditionals_if_statements_tips_and_warnings_conditionals_without_braces`
+* :ref:`tutorial_apcs_ap_java_conditionals_extended_if_statements`
 
 .. highlight:: java
   
-.. _tutorial_apcs_ap_making_decisions_if_statements:
+.. _tutorial_apcs_ap_java_conditionals_if_statements:
 
 The Basic if Statement
 ----------------------
@@ -51,12 +51,12 @@ If the BE is true, the body of the ``if`` statement would be evaluated, but the 
 statement would be ignored.  If the BE is false, the body of the ``if`` statement would be ignored, and
 the body of the ``else`` statement would be evaluated.
 
-.. _tutorial_apcs_ap_making_decisions_if_statements_tips_and_warnings:
+.. _tutorial_apcs_ap_java_conditionals_if_statements_tips_and_warnings:
 
 Tips and Warnings
 -----------------
 
-.. _tutorial_apcs_ap_making_decisions_if_statements_tips_and_warnings_nested_if_statements:
+.. _tutorial_apcs_ap_java_conditionals_if_statements_tips_and_warnings_nested_if_statements:
 
 Nested if Statements
 ^^^^^^^^^^^^^^^^^^^^
@@ -76,7 +76,7 @@ The above snippet of code can be rewritten as:
        // Code to evaluate if Boolean Expr1 and Boolean Expr2 are true
    }
 
-.. _tutorial_apcs_ap_making_decisions_if_statements_tips_and_warnings_conditionals_without_braces:
+.. _tutorial_apcs_ap_java_conditionals_if_statements_tips_and_warnings_conditionals_without_braces:
    
 Conditionals Without Braces
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -93,7 +93,7 @@ any statements indented similarly would be evaluated every single time.
    The usage of this feature is not recommended as it can introduce errors later when you add more
    statements to the body.  Always use braces and save yourself hours of headaches.
 
-.. _tutorial_apcs_ap_making_decisions_extended_if_statements:
+.. _tutorial_apcs_ap_java_conditionals_extended_if_statements:
 
 Extended if Statements
 ----------------------

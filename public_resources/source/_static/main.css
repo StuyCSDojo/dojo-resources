@@ -37,3 +37,12 @@ p.caption {
     line-height: 14px;
     margin-top: 24px;
 }
+
+.wy-side-nav-search, .wy-nav-top {
+    background-color: #3AA7A3
+}
+
+.wy-body-for-nav, body {
+    background-color: #FFFDEA
+}
+

@@ -17,8 +17,8 @@ What is Java
 In IntroCS, you’ve learned Scheme and Netlogo, both of which are procedural programming languages
 (meaning everything you’re coding is a procedure trying to accomplish a certain task). Java is different
 from these languages in that the main building blocks are *objects* instead of functions/procedures. Each
-**object** is a bundle of *fields* (properties, attributes) and *methods* (actions, what the object can
-do).
+**object** is made up of *fields* (properties, what the object has) and *methods* (actions, what the
+object can do).
 
 .. _tutorial_apcs_ap_java_introduction_jvm_and_java_bytecode:
 
