@@ -107,10 +107,6 @@ right panel to the left panel.
 .. note::
    In the file listing, ``..`` refers to the parent directory.  Click on it to go up one directory.
 
-* :ref:`tutorials_remote_file_transfer_using_terminal_or_git_bash`
-
-  * :ref:`tutorials_remote_file_transfer_scp`
-
 .. _tutorials_remote_file_transfer_using_terminal_or_git_bash:
 
 Using Git Bash or Terminal

@@ -8,7 +8,7 @@
         
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
-            <title>Static vs Dynamic Polymorphism &mdash; Dojo Resources 0.0.2 documentation</title>
+            <title>Interfaces</title>
         
 
         
@@ -45,8 +45,8 @@
                 <link rel="search" title="Search" href="../../../search.html"/>
             <link rel="top" title="Dojo Resources 0.0.2 documentation" href="../../../index.html"/>
                 <link rel="up" title="StuyCS Guides" href="../../stuycs_guides.html"/>
-                <link rel="next" title="Big Oh Notation" href="big_oh_notation.html"/>
-                <link rel="prev" title="Basic Loops Structure" href="java_loops_structure.html"/> 
+                <link rel="next" title="Static vs Dynamic Polymorphism" href="java_polymorphism.html"/>
+                <link rel="prev" title="Abstract Classes and Methods" href="java_abstract_classes_and_methods.html"/> 
 
         
         <script src="../../../_static/js/modernizr.min.js"></script>
@@ -170,9 +170,34 @@
 <li class="toctree-l4"><a class="reference internal" href="java_loops_structure.html#for-loop-vs-while-loop">For Loop vs While Loop</a></li>
 </ul>
 </li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">Static vs Dynamic Polymorphism</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#static-polymorphism">Static Polymorphism</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#dynamic-polymorphism">Dynamic Polymorphism</a></li>
+<li class="toctree-l3"><a class="reference internal" href="java_inheritance.html">Inheritance</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="java_inheritance.html#overview">Overview</a></li>
+<li class="toctree-l4"><a class="reference internal" href="java_inheritance.html#is-a-relationship">&#8220;Is-A&#8221; Relationship</a></li>
+<li class="toctree-l4"><a class="reference internal" href="java_inheritance.html#extend-ing-a-class">(Extend)ing a Class</a></li>
+<li class="toctree-l4"><a class="reference internal" href="java_inheritance.html#rules-regarding-subclasses">Rules Regarding Subclasses</a></li>
+<li class="toctree-l4"><a class="reference internal" href="java_inheritance.html#overriding-methods">Overriding Methods</a></li>
+<li class="toctree-l4"><a class="reference internal" href="java_inheritance.html#object-type-vs-variable-type">Object Type vs Variable Type</a></li>
+<li class="toctree-l4"><a class="reference internal" href="java_inheritance.html#the-usage-of-super">The Usage of Super</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="java_abstract_classes_and_methods.html">Abstract Classes and Methods</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="java_abstract_classes_and_methods.html#overview">Overview</a></li>
+<li class="toctree-l4"><a class="reference internal" href="java_abstract_classes_and_methods.html#defining-abstract-classes-and-methods">Defining Abstract Classes and Methods</a></li>
+<li class="toctree-l4"><a class="reference internal" href="java_abstract_classes_and_methods.html#key-takeaways">Key Takeaways</a></li>
+</ul>
+</li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Interfaces</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#overview">Overview</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#defining-interfaces">Defining Interfaces</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#using-an-interface">Using an Interface</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#calling-methods-of-an-interface">Calling Methods of An Interface</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#key-takeaways">Key Takeaways</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#the-comparable-interface">The Comparable Interface</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="java_polymorphism.html">Static vs Dynamic Polymorphism</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="java_polymorphism.html#static-polymorphism">Static Polymorphism</a></li>
+<li class="toctree-l4"><a class="reference internal" href="java_polymorphism.html#dynamic-polymorphism">Dynamic Polymorphism</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="big_oh_notation.html">Big Oh Notation</a><ul>
@@ -382,7 +407,7 @@
         
           <li><a href="../../stuycs_guides.html">StuyCS Guides</a> &raquo;</li>
         
-      <li>Static vs Dynamic Polymorphism</li>
+      <li>Interfaces</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -399,61 +424,145 @@
                         <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
                             <div itemprop="articleBody">
                                 
-  <div class="section" id="static-vs-dynamic-polymorphism">
-<h1>Static vs Dynamic Polymorphism<a class="headerlink" href="#static-vs-dynamic-polymorphism" title="Permalink to this headline">¶</a></h1>
-<p><em>Written by PChan on 2017-04-19</em></p>
+  <div class="section" id="interfaces">
+<h1>Interfaces<a class="headerlink" href="#interfaces" title="Permalink to this headline">¶</a></h1>
+<p><em>Written by PChan on 2017-04-25</em></p>
 <ul class="simple">
-<li><a class="reference internal" href="#tutorial-apcs-ap-introducing-polymorphism-static-polymorphism"><span class="std std-ref">Static Polymorphism</span></a></li>
-<li><a class="reference internal" href="#tutorial-apcs-ap-introducing-polymorphism-dynamic-polymorphism"><span class="std std-ref">Dynamic Polymorphism</span></a></li>
+<li><a class="reference internal" href="#tutorial-apcs-ap-java-interfaces-overview"><span class="std std-ref">Overview</span></a></li>
+<li><a class="reference internal" href="#tutorial-apcs-ap-java-interfaces-defining-interfaces"><span class="std std-ref">Defining Interfaces</span></a></li>
+<li><a class="reference internal" href="#tutorial-apcs-ap-java-interfaces-using-an-interface"><span class="std std-ref">Using an Interface</span></a></li>
+<li><a class="reference internal" href="#tutorial-apcs-ap-java-interfaces-calling-methods-of-interfaces"><span class="std std-ref">Calling Methods of An Interface</span></a></li>
+<li><a class="reference internal" href="#tutorial-apcs-ap-java-interfaces-key-takeaway"><span class="std std-ref">Key Takeaways</span></a></li>
+<li><a class="reference internal" href="#tutorial-apcs-ap-java-interfaces-the-comparable-interface"><span class="std std-ref">The Comparable Interface</span></a></li>
 </ul>
-<div class="section" id="static-polymorphism">
-<span id="tutorial-apcs-ap-introducing-polymorphism-static-polymorphism"></span><h2>Static Polymorphism<a class="headerlink" href="#static-polymorphism" title="Permalink to this headline">¶</a></h2>
-<p><strong>Static polymorphism</strong> is achieved through method overloading.  <em>Method overloading</em> is the concept of
-defining multiple methods with the same name, but taking different parameters.  Java figures out at
-compile-time which method to call in such cases based on method signatures:</p>
-<div class="highlight-java"><div class="highlight"><pre><span></span><span class="c1">// We will only show method signature here</span>
+<div class="section" id="overview">
+<span id="tutorial-apcs-ap-java-interfaces-overview"></span><h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
+<dl class="glossary docutils">
+<dt id="term-interface">Interface</dt>
+<dd>A collection of abstract methods and/or constant variables.</dd>
+</dl>
+<p>An <em>interface</em> is a contract stating that any non-abstract classes using it must define all methods in the
+interface.  This provides some uniformity between all your classes without making one class a subclass of
+another.</p>
+</div>
+<div class="section" id="defining-interfaces">
+<span id="tutorial-apcs-ap-java-interfaces-defining-interfaces"></span><h2>Defining Interfaces<a class="headerlink" href="#defining-interfaces" title="Permalink to this headline">¶</a></h2>
+<p>To define an interface, you would use the <code class="docutils literal"><span class="pre">interface</span></code> keyword.  Here is an example:</p>
+<div class="highlight-java"><div class="highlight"><pre><span></span><span class="kd">public</span> <span class="kd">interface</span> <span class="nc">Speakable</span><span class="o">{</span>
 
-<span class="kd">public</span> <span class="kt">int</span> <span class="nf">convert</span><span class="o">(</span><span class="kt">double</span><span class="o">,</span> <span class="kt">double</span><span class="o">);</span>
-<span class="kd">public</span> <span class="kt">int</span> <span class="nf">convert</span><span class="o">(</span><span class="kt">int</span><span class="o">,</span> <span class="kt">double</span><span class="o">);</span>
+    <span class="kd">public</span> <span class="n">String</span> <span class="n">greeting</span> <span class="o">=</span> <span class="s">&quot;Hello World!&quot;</span><span class="o">;</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">speak</span><span class="o">();</span>  <span class="c1">// No need to add ``abstract`` as it is implicitly stated</span>
 
-<span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">){</span>
-    <span class="n">convert</span><span class="o">(</span><span class="mi">3</span><span class="o">,</span> <span class="mf">2.0</span><span class="o">);</span>
-    <span class="n">convert</span><span class="o">(</span><span class="mf">3.0</span><span class="o">,</span> <span class="mf">2.0</span><span class="o">);</span>
 <span class="o">}</span>
 </pre></div>
 </div>
+<div class="admonition important">
+<p class="first admonition-title">Important</p>
+<p class="last">The methods you declare in the interface should have no body and typically ends with a semicolon
+instead of braces.</p>
 </div>
-<div class="section" id="dynamic-polymorphism">
-<span id="tutorial-apcs-ap-introducing-polymorphism-dynamic-polymorphism"></span><h2>Dynamic Polymorphism<a class="headerlink" href="#dynamic-polymorphism" title="Permalink to this headline">¶</a></h2>
-<p>Dynamic polymorphism is achieved through method overriding: Java figures out during run-time whether to
-call the overridden method or the method in the super class.</p>
-<div class="highlight-java"><div class="highlight"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Animal</span><span class="o">{</span>
-    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">speak</span><span class="o">(){</span>
-        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&quot;I don&#39;t know what I should say...&quot;</span><span class="o">);</span>
-    <span class="o">}</span>
-<span class="o">}</span>
+<p>An interface is normally used to enforce the implementation of a specific set of methods.  We will
+go into more details later...</p>
+</div>
+<div class="section" id="using-an-interface">
+<span id="tutorial-apcs-ap-java-interfaces-using-an-interface"></span><h2>Using an Interface<a class="headerlink" href="#using-an-interface" title="Permalink to this headline">¶</a></h2>
+<p>Instead of using the <code class="docutils literal"><span class="pre">extends</span></code> keyword, we use the <code class="docutils literal"><span class="pre">implements</span></code> keyword when working with interfaces.
+Here is an example:</p>
+<div class="highlight-java"><div class="highlight"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Human</span> <span class="kd">implements</span> <span class="n">Speakable</span><span class="o">{</span>
 
-<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Cat</span> <span class="kd">extends</span> <span class="n">Animal</span><span class="o">{</span>
-    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">speak</span><span class="o">(){</span>
-        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&quot;Mew!&quot;</span><span class="o">);</span>
-    <span class="o">}</span>
-<span class="o">}</span>
-
-<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test</span><span class="o">{</span>
-    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">){</span>
-        <span class="n">Animal</span> <span class="n">a</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Animal</span><span class="o">();</span>
-        <span class="n">Animal</span> <span class="n">b</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Cat</span><span class="o">();</span>
-        <span class="n">a</span><span class="o">.</span><span class="na">speak</span><span class="o">();</span>  <span class="c1">// What do you think is printed here?</span>
-        <span class="n">b</span><span class="o">.</span><span class="na">speak</span><span class="o">();</span>  <span class="c1">// What do you think is printed here?</span>
-    <span class="o">}</span>
 <span class="o">}</span>
 </pre></div>
 </div>
-<p>Even though both <code class="docutils literal"><span class="pre">a</span></code> and <code class="docutils literal"><span class="pre">b</span></code> are of variable type <code class="docutils literal"><span class="pre">Animal</span></code>, Java will invoke the method of the
-object type.  Hence, the output will be:</p>
-<div class="highlight-none"><div class="highlight"><pre><span></span>I don&#39;t know what to say...
-Mew!
+<div class="admonition important">
+<p class="first admonition-title">Important</p>
+<p class="last">All methods of an implemented interface must be defined in that class unless the class is abstract.</p>
+</div>
+<p>If we were to use the Speakable interface defined above, then <code class="docutils literal"><span class="pre">Human</span></code> must define the <code class="docutils literal"><span class="pre">speak()</span></code>
+method.  Notice the similarities between <em>abstract classes</em> and interfaces where unless the class is
+abstract, you need to implement all abstract methods.</p>
+<p>Should you choose to have a class <code class="docutils literal"><span class="pre">extends</span></code> another class while implementing interfaces, make sure that
+the <code class="docutils literal"><span class="pre">extends</span></code> clause is before the <code class="docutils literal"><span class="pre">implements</span></code> clause...</p>
+<div class="highlight-java"><div class="highlight"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Teacher</span> <span class="kd">extends</span> <span class="n">Human</span> <span class="kd">implements</span> <span class="n">Speakable</span><span class="o">{</span>
+    <span class="c1">// This is OK</span>
+<span class="o">}</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Teacher</span> <span class="kd">implements</span> <span class="n">Speakable</span> <span class="kd">extends</span> <span class="n">Human</span><span class="o">{</span>
+    <span class="c1">// This is BAD; NO GOOD!</span>
+<span class="o">}</span>
 </pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">A class might only extend <strong>one</strong> class, but may implement multiple interfaces...</p>
+</div>
+<div class="highlight-java"><div class="highlight"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Student</span> <span class="kd">extends</span> <span class="n">Human</span> <span class="kd">implements</span> <span class="n">Speakable</span><span class="o">,</span> <span class="n">Teachable</span><span class="o">{</span>
+
+<span class="o">}</span>
+</pre></div>
+</div>
+<p>When doing so, make sure to separate the interfaces with a comma.  In the example above, <code class="docutils literal"><span class="pre">Student</span></code> would
+need to implement all the methods inside <code class="docutils literal"><span class="pre">Speakable</span></code> and <code class="docutils literal"><span class="pre">Teachable</span></code>.</p>
+</div>
+<div class="section" id="calling-methods-of-an-interface">
+<span id="tutorial-apcs-ap-java-interfaces-calling-methods-of-interfaces"></span><h2>Calling Methods of An Interface<a class="headerlink" href="#calling-methods-of-an-interface" title="Permalink to this headline">¶</a></h2>
+<p>When we talk about inheritance, we mention how you can do something like:</p>
+<div class="highlight-java"><div class="highlight"><pre><span></span><span class="n">SuperClass</span> <span class="n">objectName</span> <span class="o">=</span> <span class="k">new</span> <span class="n">SubClass</span><span class="o">();</span>
+</pre></div>
+</div>
+<p>This is possible because <code class="docutils literal"><span class="pre">SubClass</span></code> <em>is-a</em> <code class="docutils literal"><span class="pre">SuperClass</span></code>.  We can do something similar with interfaces:</p>
+<div class="highlight-java"><div class="highlight"><pre><span></span><span class="n">InterfaceName</span> <span class="n">object</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Class</span><span class="o">();</span>
+</pre></div>
+</div>
+<p>where <code class="docutils literal"><span class="pre">InterfaceName</span></code> is the name of the interface and <code class="docutils literal"><span class="pre">Class</span></code> is the name of the class that
+implements the interface.  If we were to do <code class="docutils literal"><span class="pre">object.method()</span></code> and the signature for <code class="docutils literal"><span class="pre">method()</span></code> is
+defined in the interface, it would call <code class="docutils literal"><span class="pre">method()</span></code> using the definition in <code class="docutils literal"><span class="pre">Class</span></code>.  If the signature
+is not in the interface, Java will throw a compiler error.</p>
+</div>
+<div class="section" id="key-takeaways">
+<span id="tutorial-apcs-ap-java-interfaces-key-takeaway"></span><h2>Key Takeaways<a class="headerlink" href="#key-takeaways" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><p class="first">Interfaces may <strong>NOT</strong> be instantiated</p>
+</li>
+<li><p class="first">Interfaces do <strong>NOT</strong> have constructors</p>
+</li>
+<li><p class="first">The subclasses of a class that implements an interface would inherit the methods of the interface</p>
+</li>
+<li><p class="first">Methods of an interface is automatically abstract; no need to specify <code class="docutils literal"><span class="pre">abstract</span></code></p>
+</li>
+<li><p class="first">Any variables declared in interfaces are automatically <code class="docutils literal"><span class="pre">static</span></code> and <code class="docutils literal"><span class="pre">final</span></code></p>
+</li>
+<li><p class="first">You may implement more than one interfaces</p>
+</li>
+<li><p class="first">Use the <code class="docutils literal"><span class="pre">implements</span></code> keyword and not the <code class="docutils literal"><span class="pre">extends</span></code> keyword when used with a class</p>
+</li>
+<li><p class="first">An interface may extend one or more interfaces</p>
+<div class="highlight-java"><div class="highlight"><pre><span></span><span class="kd">public</span> <span class="n">interfaceOne</span> <span class="kd">extends</span> <span class="n">interfaceTwo</span><span class="o">,</span> <span class="n">interfaceThree</span><span class="o">{</span>
+
+<span class="o">}</span>
+</pre></div>
+</div>
+</li>
+</ul>
+</div>
+<div class="section" id="the-comparable-interface">
+<span id="tutorial-apcs-ap-java-interfaces-the-comparable-interface"></span><h2>The Comparable Interface<a class="headerlink" href="#the-comparable-interface" title="Permalink to this headline">¶</a></h2>
+<p>For the AP, you would need to know the <code class="docutils literal"><span class="pre">Comparable</span></code> interface.  An example of the <code class="docutils literal"><span class="pre">Comparable</span></code>
+interface is as followed:</p>
+<div class="highlight-java"><div class="highlight"><pre><span></span><span class="kd">public</span> <span class="kd">interface</span> <span class="nc">Comparable</span><span class="o">{</span>
+
+    <span class="kt">int</span> <span class="nf">compareTo</span><span class="o">(</span><span class="n">Object</span> <span class="n">obj</span><span class="o">);</span>
+
+<span class="o">}</span>
+</pre></div>
+</div>
+<p>Recall that the <code class="docutils literal"><span class="pre">compareTo()</span></code> method provides a mean of comparing two objects and may return three type
+of values: negative, 0, and positive which means that the current instance is less than, equal to, or
+greater than the parameter respectively.  Any classes that implement <code class="docutils literal"><span class="pre">Comparable</span></code> <strong>must</strong> defines the
+<code class="docutils literal"><span class="pre">compareTo()</span></code> method.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last"><code class="docutils literal"><span class="pre">Object</span></code> is the superclass for all objects, hence the <code class="docutils literal"><span class="pre">compareTo()</span></code> may be used to compare the
+current instances with any objects.</p>
 </div>
 </div>
 </div>
@@ -468,10 +577,10 @@ Mew!
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="big_oh_notation.html" class="btn btn-neutral float-right" title="Big Oh Notation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="java_polymorphism.html" class="btn btn-neutral float-right" title="Static vs Dynamic Polymorphism" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="java_loops_structure.html" class="btn btn-neutral" title="Basic Loops Structure" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="java_abstract_classes_and_methods.html" class="btn btn-neutral" title="Abstract Classes and Methods" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

@@ -3,12 +3,12 @@ Static vs Dynamic Polymorphism
 
 *Written by PChan on 2017-04-19*
 
-* :ref:`tutorial_apcs_ap_introducing_polymorphism_static_polymorphism`
-* :ref:`tutorial_apcs_ap_introducing_polymorphism_dynamic_polymorphism`
+* :ref:`tutorial_apcs_ap_polymorphism_static_polymorphism`
+* :ref:`tutorial_apcs_ap_polymorphism_dynamic_polymorphism`
 
 .. highlight:: java
 
-.. _tutorial_apcs_ap_introducing_polymorphism_static_polymorphism:
+.. _tutorial_apcs_ap_polymorphism_static_polymorphism:
 	       
 Static Polymorphism
 -------------------
@@ -27,7 +27,7 @@ compile-time which method to call in such cases based on method signatures:
        convert(3.0, 2.0);
    }
 
-.. _tutorial_apcs_ap_introducing_polymorphism_dynamic_polymorphism:
+.. _tutorial_apcs_ap_polymorphism_dynamic_polymorphism:
    
 Dynamic Polymorphism
 --------------------
