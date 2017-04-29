@@ -65,4 +65,7 @@ object type.  Hence, the output will be:
    I don't know what to say...
    Mew!
 
+.. danger::
+   Do **NOT** confuse this with :ref:`tutorial_apcs_ap_java_inheritance_downcasting`.
+   
 .. highlight:: python

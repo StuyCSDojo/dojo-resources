@@ -66,8 +66,11 @@ If we were to use the Speakable interface defined above, then ``Human`` must def
 method.  Notice the similarities between *abstract classes* and interfaces where unless the class is
 abstract, you need to implement all abstract methods.
 
-Should you choose to have a class ``extends`` another class while implementing interfaces, make sure that
-the ``extends`` clause is before the ``implements`` clause...
+.. important::
+   Should you choose to have a class ``extends`` another class while implementing interfaces, make sure
+   that the ``extends`` clause is before the ``implements`` clause.
+
+Here are two examples:
 ::
 
    public class Teacher extends Human implements Speakable{

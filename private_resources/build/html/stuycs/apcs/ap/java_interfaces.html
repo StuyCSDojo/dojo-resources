@@ -177,6 +177,7 @@
 <li class="toctree-l4"><a class="reference internal" href="java_inheritance.html#rules-regarding-subclasses">Rules Regarding Subclasses</a></li>
 <li class="toctree-l4"><a class="reference internal" href="java_inheritance.html#overriding-methods">Overriding Methods</a></li>
 <li class="toctree-l4"><a class="reference internal" href="java_inheritance.html#object-type-vs-variable-type">Object Type vs Variable Type</a></li>
+<li class="toctree-l4"><a class="reference internal" href="java_inheritance.html#downcasting">Downcasting</a></li>
 <li class="toctree-l4"><a class="reference internal" href="java_inheritance.html#the-usage-of-super">The Usage of Super</a></li>
 </ul>
 </li>
@@ -480,8 +481,12 @@ Here is an example:</p>
 <p>If we were to use the Speakable interface defined above, then <code class="docutils literal"><span class="pre">Human</span></code> must define the <code class="docutils literal"><span class="pre">speak()</span></code>
 method.  Notice the similarities between <em>abstract classes</em> and interfaces where unless the class is
 abstract, you need to implement all abstract methods.</p>
-<p>Should you choose to have a class <code class="docutils literal"><span class="pre">extends</span></code> another class while implementing interfaces, make sure that
-the <code class="docutils literal"><span class="pre">extends</span></code> clause is before the <code class="docutils literal"><span class="pre">implements</span></code> clause...</p>
+<div class="admonition important">
+<p class="first admonition-title">Important</p>
+<p class="last">Should you choose to have a class <code class="docutils literal"><span class="pre">extends</span></code> another class while implementing interfaces, make sure
+that the <code class="docutils literal"><span class="pre">extends</span></code> clause is before the <code class="docutils literal"><span class="pre">implements</span></code> clause.</p>
+</div>
+<p>Here are two examples:</p>
 <div class="highlight-java"><div class="highlight"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Teacher</span> <span class="kd">extends</span> <span class="n">Human</span> <span class="kd">implements</span> <span class="n">Speakable</span><span class="o">{</span>
     <span class="c1">// This is OK</span>
 <span class="o">}</span>

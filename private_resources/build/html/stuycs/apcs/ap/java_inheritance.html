@@ -177,6 +177,7 @@
 <li class="toctree-l4"><a class="reference internal" href="#rules-regarding-subclasses">Rules Regarding Subclasses</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#overriding-methods">Overriding Methods</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#object-type-vs-variable-type">Object Type vs Variable Type</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#downcasting">Downcasting</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#the-usage-of-super">The Usage of Super</a></li>
 </ul>
 </li>
@@ -434,12 +435,13 @@
 <li><a class="reference internal" href="#tutorial-apcs-ap-java-inheritance-rules-regarding-subclasses"><span class="std std-ref">Rules Regarding Subclasses</span></a></li>
 <li><a class="reference internal" href="#tutorial-apcs-ap-java-inheritance-overriding-methods"><span class="std std-ref">Overriding Methods</span></a></li>
 <li><a class="reference internal" href="#tutorial-apcs-ap-java-inheritance-object-type-vs-variable-type"><span class="std std-ref">Object Type vs Variable Type</span></a></li>
+<li><a class="reference internal" href="#tutorial-apcs-ap-java-inheritance-downcasting"><span class="std std-ref">Downcasting</span></a></li>
 <li><a class="reference internal" href="#tutorial-apcs-ap-java-inheritance-the-usage-of-super"><span class="std std-ref">The Usage of Super</span></a></li>
 </ul>
 <div class="section" id="overview">
 <span id="tutorial-apcs-ap-java-inheritance-overview"></span><h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
-<p><strong>Inheritance</strong> is the concept of defining a class, which would retain the characteristics of another
-class while augmenting it with unique features.  We can also say that the <em>subclass</em> <strong>inherits</strong> the
+<p><strong>Inheritance</strong> is the concept of defining a class that would retain the characteristics of another class
+while augmenting it with unique features.  We can also say that the <em>subclass</em> <strong>inherits</strong> the
 characteristics of the <em>superclass</em> because it share those characteristics without redefining them.</p>
 <p>Proper usage of inheritance gives us multiple benefits:</p>
 <ul class="simple">
@@ -473,7 +475,8 @@ inherits the characteristics of B.</p>
 <li>Subclasses may add new variables and methods</li>
 <li>Subclasses may override methods from the superclass</li>
 <li>Subclasses may <em>not</em> access private instance variables or methods from the superclass</li>
-<li>Subclasses only inherits the default constructor</li>
+<li>Subclasses would generate the default constructor of the superclass if no constructor is written for
+the subclass</li>
 </ul>
 </div>
 <div class="section" id="overriding-methods">
@@ -552,12 +555,121 @@ If we were to evaluate the following snippet:</p>
 <span class="o">}</span>
 </pre></div>
 </div>
-<p>Predict what will occur when you run <code class="docutils literal"><span class="pre">Cat.java</span></code>.  Test it out...</p>
-<p>Notice that the first line, <code class="docutils literal"><span class="pre">Animal</span> <span class="pre">tom</span> <span class="pre">=</span> <span class="pre">new</span> <span class="pre">Cat()</span></code> works, but <code class="docutils literal"><span class="pre">Cat</span> <span class="pre">jerry</span> <span class="pre">=</span> <span class="pre">new</span> <span class="pre">Animal()</span></code>
-throws an error.  This is because <code class="docutils literal"><span class="pre">Cat</span></code> <em>is-a</em> <code class="docutils literal"><span class="pre">Animal</span></code>, but <code class="docutils literal"><span class="pre">Animal</span></code> is <em>not</em> a <code class="docutils literal"><span class="pre">Cat</span></code>.</p>
+<p>In the main method, we are initalizing two objects which would be stored in variables with a different
+type than that of the object.  If we look at the first line, the type of the object is <code class="docutils literal"><span class="pre">Cat</span></code>, but the
+type of the variable is <code class="docutils literal"><span class="pre">Animal</span></code>.  In this case, we say that the variable type is <code class="docutils literal"><span class="pre">Cat</span></code>, but the
+object type is <code class="docutils literal"><span class="pre">Animal</span></code>.</p>
+<p>Do you think such declarations are valid?  Explain why or why not.  Test out your predictions and note
+down anything you found interesting.</p>
+<p><strong>Answer:</strong> You would find that <code class="docutils literal"><span class="pre">Animal</span> <span class="pre">tom</span> <span class="pre">=</span> <span class="pre">new</span> <span class="pre">Cat()</span></code> works, but <code class="docutils literal"><span class="pre">Cat</span> <span class="pre">jerry</span> <span class="pre">=</span> <span class="pre">new</span> <span class="pre">Animal()</span></code> does
+not work.  This is because <code class="docutils literal"><span class="pre">Cat</span></code> <em>is a</em> <code class="docutils literal"><span class="pre">Animal</span></code>, but <code class="docutils literal"><span class="pre">Animal</span></code> is <em>not</em> a <code class="docutils literal"><span class="pre">Cat</span></code>.</p>
+</div>
+<div class="section" id="downcasting">
+<span id="tutorial-apcs-ap-java-inheritance-downcasting"></span><h2>Downcasting<a class="headerlink" href="#downcasting" title="Permalink to this headline">¶</a></h2>
+<p>Before you continue, make sure that you are throughly familiar with the concept of
+<a class="reference internal" href="#tutorial-apcs-ap-java-inheritance-object-type-vs-variable-type"><span class="std std-ref">Object Type vs Variable Type</span></a>.</p>
+<p>We will use the following definitions in this section:</p>
+<div class="highlight-java"><div class="highlight"><pre><span></span><span class="c1">// Teacher.java</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Teacher</span><span class="o">{</span>
+
+    <span class="kd">public</span> <span class="kt">int</span> <span class="n">numOfYearsTeaching</span><span class="o">;</span>
+
+<span class="o">}</span>
+
+<span class="c1">// CSTeacher.java</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">CSTeacher</span> <span class="kd">extends</span> <span class="n">Teacher</span><span class="o">{</span>
+
+    <span class="kd">public</span> <span class="kt">int</span> <span class="n">numOfYearsTeachingCS</span><span class="o">;</span>
+
+<span class="o">}</span>
+</pre></div>
+</div>
+<p><em>Downcasting</em> is the technique of typecasting a superclass into a subclass.  Consider this snippet of
+code:</p>
+<div class="highlight-java"><div class="highlight"><pre><span></span><span class="n">Teacher</span> <span class="n">mr_k</span> <span class="o">=</span> <span class="k">new</span> <span class="n">CSTeacher</span><span class="o">();</span>
+<span class="n">CSTeacher</span> <span class="n">mr_brown</span> <span class="o">=</span> <span class="k">new</span> <span class="n">CSTeacher</span><span class="o">();</span>
+<span class="kt">int</span> <span class="n">numOfYearsForK</span> <span class="o">=</span> <span class="o">(</span><span class="n">CSTeacher</span><span class="o">)</span> <span class="n">mr_k</span><span class="o">.</span><span class="na">numOfYearsTeachingCS</span><span class="o">;</span>
+<span class="kt">int</span> <span class="n">numOfYearsForBrown</span> <span class="o">=</span> <span class="o">(</span><span class="n">CSTeacher</span><span class="o">)</span> <span class="n">mr_brown</span><span class="o">.</span><span class="na">numOfYearsTeachingCS</span><span class="o">;</span>
+</pre></div>
+</div>
+<p>If you test this snippet of code, you will find that the third line give you a compile time error.  Why is
+that?</p>
+<p>During compile time, <code class="docutils literal"><span class="pre">mr_k</span></code> only has access to the methods and variables of the <code class="docutils literal"><span class="pre">Teacher</span></code> class.
+Since <code class="docutils literal"><span class="pre">Teacher</span></code> does not have the <code class="docutils literal"><span class="pre">numOfYearsTeachingCS</span></code> attribute, an exception is thrown.  To fix
+this type of error, you would need to tell Java to treat <code class="docutils literal"><span class="pre">mr_k</span></code> as an instance of <code class="docutils literal"><span class="pre">CSTeacher</span></code> instead
+of <code class="docutils literal"><span class="pre">Teacher</span></code>:</p>
+<div class="highlight-java"><div class="highlight"><pre><span></span><span class="kt">int</span> <span class="n">numOfYearsForK</span> <span class="o">=</span> <span class="o">((</span><span class="n">CSTeacher</span><span class="o">)</span> <span class="n">mr_k</span><span class="o">).</span><span class="na">numOfYearsTeachingCS</span><span class="o">;</span>
+</pre></div>
+</div>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">Because dot operator take precedence over the type casting operator, the following line will still
+produce the error: <code class="docutils literal"><span class="pre">int</span> <span class="pre">numOfYearsForK</span> <span class="pre">=</span> <span class="pre">(CSTeacher)</span> <span class="pre">mr_k.numOfYearsTeachingCS;</span></code>.</p>
+</div>
+<p>Since <code class="docutils literal"><span class="pre">mr_brown</span></code> is already of variable type <code class="docutils literal"><span class="pre">CSTeacher</span></code>, we can simply write:</p>
+<div class="highlight-java"><div class="highlight"><pre><span></span><span class="kt">int</span> <span class="n">numOfYearsForBrown</span> <span class="o">=</span> <span class="n">mr_brown</span><span class="o">.</span><span class="na">numOfYearsTeachingCS</span><span class="o">;</span>
+</pre></div>
+</div>
+<div class="admonition danger">
+<p class="first admonition-title">Danger</p>
+<p class="last">Do <strong>NOT</strong> confuse this with <a class="reference internal" href="java_polymorphism.html#tutorial-apcs-ap-java-polymorphism-dynamic-polymorphism"><span class="std std-ref">Dynamic Polymorphism</span></a>.</p>
+</div>
 </div>
 <div class="section" id="the-usage-of-super">
 <span id="tutorial-apcs-ap-java-inheritance-the-usage-of-super"></span><h2>The Usage of Super<a class="headerlink" href="#the-usage-of-super" title="Permalink to this headline">¶</a></h2>
+<p>Sometimes you would need to call the methods in the superclass.  To do this, you will need the <code class="docutils literal"><span class="pre">super</span></code>
+keyword.</p>
+<dl class="glossary docutils">
+<dt id="term-super">super</dt>
+<dd>A Java keyword that may only be used inside an instance of a subclass and refers to the superclass.</dd>
+</dl>
+<p>The <code class="docutils literal"><span class="pre">super</span></code> keyword allows us to <em>partially override</em> a method:</p>
+<div class="highlight-java"><div class="highlight"><pre><span></span><span class="kd">public</span> <span class="n">String</span> <span class="nf">speak</span><span class="o">(){</span>
+    <span class="kd">super</span><span class="o">.</span><span class="na">speak</span><span class="o">();</span>
+    <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&quot;I am a subclass&quot;</span><span class="o">);</span>
+<span class="o">}</span>
+</pre></div>
+</div>
+<p>In the <code class="docutils literal"><span class="pre">speak()</span></code> method above, we are invoking the <code class="docutils literal"><span class="pre">speak()</span></code> method of the superclass so that we don&#8217;t
+have to copy the code from the <code class="docutils literal"><span class="pre">speak()</span></code> method of the superclass.</p>
+<p>The <code class="docutils literal"><span class="pre">super</span></code> keyword may also be used to call the parent constructor.  Since constructors are never
+inherited, if the subclass does not have a constructor, the superclass default constructor would be
+generated.  If the only constructor written in the superclass takes parameters, a compile time error will
+result.</p>
+<p>Invoking the parent constructor is similar to calling a method from the superclass.  Here is an
+example:</p>
+<div class="highlight-java"><div class="highlight"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">SuperClass</span><span class="o">{</span>
+
+    <span class="kd">public</span> <span class="nf">SuperClass</span><span class="o">(){</span>
+         <span class="n">String</span> <span class="n">summary</span> <span class="o">=</span> <span class="s">&quot;I am a class&quot;</span><span class="o">;</span>
+         <span class="n">String</span> <span class="n">description</span> <span class="o">=</span> <span class="s">&quot;I am a superclass&quot;</span><span class="o">;</span>
+         <span class="kt">int</span><span class="o">[]</span> <span class="n">prediction</span> <span class="o">=</span> <span class="o">{</span><span class="mi">1</span><span class="o">,</span> <span class="mi">2</span><span class="o">,</span> <span class="mi">3</span><span class="o">,</span> <span class="mi">4</span><span class="o">,</span> <span class="mi">5</span><span class="o">};</span>
+    <span class="o">}</span>
+
+<span class="o">}</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">SubClass</span> <span class="kd">extends</span> <span class="n">SuperClass</span><span class="o">{</span>
+
+    <span class="kd">public</span> <span class="nf">SubClass</span><span class="o">(){</span>
+        <span class="kd">super</span><span class="o">();</span>
+        <span class="n">String</span> <span class="n">description</span> <span class="o">=</span> <span class="s">&quot;I am a subclass&quot;</span><span class="o">;</span>
+    <span class="o">}</span>
+
+<span class="o">}</span>
+</pre></div>
+</div>
+<p>Notice how in this example, we invoked <code class="docutils literal"><span class="pre">super()</span></code> which executes the statements inside the body of the
+default constructor for the superclass.  To invoke a superclass constructor with parameters, simply pass
+the corresponding parameters when you invoke <code class="docutils literal"><span class="pre">super()</span></code>.  For example, you might write something like:</p>
+<div class="highlight-java"><div class="highlight"><pre><span></span><span class="kd">super</span><span class="o">(</span><span class="n">name</span><span class="o">,</span> <span class="n">grade</span><span class="o">,</span> <span class="n">id</span><span class="o">);</span>
+</pre></div>
+</div>
+<div class="admonition tip">
+<p class="first admonition-title">Tip</p>
+<p class="last">When you write <code class="docutils literal"><span class="pre">super</span></code>, you are referring to the superclass.  When you write <code class="docutils literal"><span class="pre">super()</span></code>, you are
+referring to the default constructor of the superclass.  Access the other constructors of the
+superclass by passing arguments to <code class="docutils literal"><span class="pre">super()</span></code>.</p>
+</div>
 </div>
 </div>
 

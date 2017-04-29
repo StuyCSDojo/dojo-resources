@@ -1,5 +1,4 @@
 StuyCS Guides
-
 =============
 
 * :ref:`intro_cs1`
@@ -25,7 +24,6 @@ Intro to Computer Science 2
 .. toctree::
    :maxdepth: 3
 
-   
 .. _apcs:
 
 AP Computer Science
@@ -56,7 +54,6 @@ System Level Programming
 .. toctree::
    :maxdepth: 3
 
-   
 .. _graphics:
 
 Computer Graphics
@@ -71,4 +68,3 @@ Software Development
 .. toctree::
    :maxdepth: 3
 
-   

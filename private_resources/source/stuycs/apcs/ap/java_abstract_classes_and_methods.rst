@@ -18,7 +18,7 @@ Overview
       A method without a body (merely the return type and the signature).
 
    Abstract Class
-      A class that represents something *abstract* like an idea.
+      A class that represents something *abstract*, like an idea.
    
 Some of the methods inside an abstract class may be undefined because there is no valid definition for
 them.  These methods must be defined in the subclasses unless the subclass is *abstract* as well.  This
