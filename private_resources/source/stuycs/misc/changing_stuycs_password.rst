@@ -12,6 +12,8 @@ Instructions
 For security purposes, you should change your password after receiving the login credentials for the
 StuyCS accounts.
 
+0. If you are currently in the Dojo, call over a member of the Dojo staff to walk you through the next few steps.
+
 1. Open up a terminal (press ``Ctrl-Alt-t``)
 
 .. image:: ../images/misc/changing-stuycs-password/terminal.png
@@ -44,12 +46,13 @@ StuyCS accounts.
 
 .. image:: ../images/misc/changing-stuycs-password/new-password-prompt.png
 
-8. If you are in the Dojo, go to Room 301 and let the computer science teachers know that you just
-   resetted your password.  If you are in the presence of your teacher, let them know that you changed
+8. If you are in the Dojo, let the Dojo staff member (that you called over in step 0) know that you just
+   resetted your password.  If you are in the presence of your teacher, let him/her know that you changed
    your password.
 
-   There are changing-stuycss that the teacher(s) need to do before your new password is recognized by the system.
+   There are steps that the teacher(s) need to do before your new password is recognized by the system.
 
-9. After the teachers have made the necessary changing-stuycss, it is in your best interest to try logging
-   in with your new password.  If it works, **congratulations!**  Otherwise, speak to the CS teachers for
-   what you should do.
+.. important::
+   After the teachers have made the necessary changes, **log in** with your new password.  If it works,
+   **congratulations!**  Otherwise, let your teacher or the Dojo staff member know that the password change
+   attempt was not successful.
