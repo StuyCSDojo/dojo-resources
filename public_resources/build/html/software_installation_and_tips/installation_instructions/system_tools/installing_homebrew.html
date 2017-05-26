@@ -307,8 +307,10 @@
 <li class="toctree-l1"><a class="reference internal" href="../../../stuycs/misc.html">Misc</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../../stuycs/misc/firefox_already_running.html">Firefox Already Running Error</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../stuycs/misc/proxy_settings.html">Stuy Proxy Settings</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../stuycs/misc/change_password.html">Changing Password</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../stuycs/misc/change_password.html#instructions">Instructions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../stuycs/misc/changing_stuycs_password.html">Changing StuyCS Password</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../stuycs/misc/changing_stuycs_password.html#instructions">Instructions</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -446,9 +448,14 @@ $ sudo chgrp staff /usr/local
 $ brew doctor
 // You should now see a message like the following:
 Your system is ready to brew.
+
+// Next step is to install cask to expand the number of applications you can install
+// with homebrew
+$ brew tap caskroom/cask
+$ brew tap buo/cask-upgrade
 </pre></div>
 </div>
-<p>That&#8217;s it!  You have successfully installed Homebrew!</p>
+<p>That&#8217;s it!  You have successfully installed Homebrew (and Cask)!</p>
 </div>
 </div>
 

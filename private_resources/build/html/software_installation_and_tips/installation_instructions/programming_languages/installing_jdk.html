@@ -323,8 +323,10 @@
 <li class="toctree-l1"><a class="reference internal" href="../../../stuycs/misc.html">Misc</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../../stuycs/misc/firefox_already_running.html">Firefox Already Running Error</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../stuycs/misc/proxy_settings.html">Stuy Proxy Settings</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../stuycs/misc/change_password.html">Changing Password</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../stuycs/misc/change_password.html#instructions">Instructions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../stuycs/misc/changing_stuycs_password.html">Changing Password</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../stuycs/misc/changing_stuycs_password.html#instructions">Instructions</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -440,9 +442,53 @@
 </ul>
 <div class="section" id="linux">
 <span id="installation-programming-languages-java-linux"></span><h2>Linux<a class="headerlink" href="#linux" title="Permalink to this headline">¶</a></h2>
+<p>Writing Java programs would require you to install the <strong>Java JDK (Java Development Kit)</strong> while running
+Java programs would require you to install the <strong>Java JRE (Java Runtime)</strong>.  This guide would cover how to
+install the <strong>Java JDK</strong>.</p>
+<ul>
+<li><p class="first">Ubuntu/Mint/Debian</p>
+<div class="highlight-none"><div class="highlight"><pre><span></span>sudo apt-get install openjdk-8-jdk openjdk-8-jre
+</pre></div>
+</div>
+</li>
+<li><p class="first">Fedora</p>
+<div class="highlight-none"><div class="highlight"><pre><span></span>su -c &quot;yum install java-1.8.0-openjdk-devel java-1.8.0-openjdk&quot;
+</pre></div>
+</div>
+</li>
+<li><p class="first">Other Distros, you probably know how...</p>
+</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>The current version of this guide assumes you want to install Java 8.  To install a different version
+of Java, simply replace the <code class="docutils literal"><span class="pre">8</span></code> in <code class="docutils literal"><span class="pre">openjdk-8-jdk</span></code> and the <code class="docutils literal"><span class="pre">8</span></code> in <code class="docutils literal"><span class="pre">openjdk-8-jre</span></code> for Debian
+system with the latest version of Java.</p>
+<p class="last">For Fedora, replace the <code class="docutils literal"><span class="pre">8</span></code> in <code class="docutils literal"><span class="pre">java-1.8.0-openjdk-devel</span></code> and the <code class="docutils literal"><span class="pre">8</span></code> in <code class="docutils literal"><span class="pre">java-1.8.0-openjdk</span></code>
+with the latest version of Java.</p>
+</div>
 </div>
 <div class="section" id="mac-osx">
 <span id="installation-programming-languages-java-mac-osx"></span><h2>Mac OSX<a class="headerlink" href="#mac-osx" title="Permalink to this headline">¶</a></h2>
+<p>Writing Java programs would require you to install the <strong>Java JDK (Java Development Kit)</strong> while running
+Java programs would require you to install the <strong>Java JRE (Java Runtime)</strong>.  This guide would cover how to
+install the <strong>Java JDK</strong>.</p>
+<p>We are going to be installing the <strong>Java JDK</strong> via Homebrew:</p>
+<ol class="arabic">
+<li><p class="first">Install Homebrew following the <a class="reference internal" href="../system_tools/installing_homebrew.html#installation-system-tools-homebrew"><span class="std std-ref">Installing Homebrew</span></a> guide if it is not already
+installed (near the bottom, you will also find instructions for installing cask and brew-cask-upgrade)</p>
+</li>
+<li><p class="first">Install Java by executing the following command in the terminal:</p>
+<div class="highlight-none"><div class="highlight"><pre><span></span>$ brew cask install java
+</pre></div>
+</div>
+</li>
+</ol>
+<p>Note: In the future, update Java with the following command:</p>
+<div class="highlight-none"><div class="highlight"><pre><span></span>$ brew update
+$ brew cu
+</pre></div>
+</div>
 </div>
 <div class="section" id="windows">
 <span id="installation-programming-languages-java-windows"></span><h2>Windows<a class="headerlink" href="#windows" title="Permalink to this headline">¶</a></h2>

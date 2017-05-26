@@ -11,11 +11,61 @@ Installing Java JDK
 
 Linux
 -----
+Writing Java programs would require you to install the **Java JDK (Java Development Kit)** while running
+Java programs would require you to install the **Java JRE (Java Runtime)**.  This guide would cover how to
+install the **Java JDK**.
+
+.. highlight:: none
+
+* Ubuntu/Mint/Debian
+  ::
+
+     sudo apt-get install openjdk-8-jdk openjdk-8-jre
+
+* Fedora
+  ::
+
+     su -c "yum install java-1.8.0-openjdk-devel java-1.8.0-openjdk"
+
+* Other Distros, you probably know how...
+
+.. highlight:: python
+
+.. note::
+   The current version of this guide assumes you want to install Java 8.  To install a different version
+   of Java, simply replace the ``8`` in ``openjdk-8-jdk`` and the ``8`` in ``openjdk-8-jre`` for Debian
+   system with the latest version of Java.
+
+   For Fedora, replace the ``8`` in ``java-1.8.0-openjdk-devel`` and the ``8`` in ``java-1.8.0-openjdk``
+   with the latest version of Java.
 
 .. _installation_programming_languages_java_mac_osx:
 
 Mac OSX
 -------
+
+.. highlight:: none
+
+Writing Java programs would require you to install the **Java JDK (Java Development Kit)** while running
+Java programs would require you to install the **Java JRE (Java Runtime)**.  This guide would cover how to
+install the **Java JDK**.
+
+We are going to be installing the **Java JDK** via Homebrew:
+
+1. Install Homebrew following the :ref:`installation_system_tools_homebrew` guide if it is not already
+   installed (near the bottom, you will also find instructions for installing cask and brew-cask-upgrade)
+2. Install Java by executing the following command in the terminal:
+   ::
+
+      $ brew cask install java
+
+Note: In the future, update Java with the following command:
+::
+
+   $ brew update
+   $ brew cu
+
+.. highlight:: python
 
 .. _installation_programming_languages_java_windows:
 

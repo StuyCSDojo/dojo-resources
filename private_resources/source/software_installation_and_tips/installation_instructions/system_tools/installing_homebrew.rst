@@ -40,4 +40,8 @@ terminal.  If you do not get an error, you are set to go!
    // You should now see a message like the following:
    Your system is ready to brew.
 
-That's it!  You have successfully installed Homebrew!
+   // Next step is to install cask to expand the number of applications you can install with homebrew
+   $ brew tap caskroom/cask
+   $ brew tap buo/cask-upgrade
+
+That's it!  You have successfully installed Homebrew (and Cask)!

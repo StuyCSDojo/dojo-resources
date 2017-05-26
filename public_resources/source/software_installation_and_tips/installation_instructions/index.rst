@@ -22,6 +22,7 @@ Programming Languages
 .. toctree::
    :maxdepth: 2
 
+   programming_languages/installing_jdk
    programming_languages/installing_python
 
 .. _installing_programming_tools:

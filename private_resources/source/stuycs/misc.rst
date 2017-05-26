@@ -5,4 +5,4 @@ Misc
 
    misc/firefox_already_running
    misc/proxy_settings
-   misc/change_password
+   misc/changing_stuycs_password
