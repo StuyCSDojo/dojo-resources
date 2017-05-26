@@ -12,6 +12,9 @@ Instructions
 For security purposes, you should change your password after receiving the login credentials for the
 StuyCS accounts.
 
+.. tip::
+   Need help coming up with a password?  Check `this XKCD <https://xkcd.com/936/>`_ for help.
+
 0. If you are currently in the Dojo, call over a member of the Dojo staff to walk you through the next few steps.
 
 1. Open up a terminal (press ``Ctrl-Alt-t``)
@@ -53,6 +56,6 @@ StuyCS accounts.
    There are steps that the teacher(s) need to do before your new password is recognized by the system.
 
 .. important::
-   After the teachers have made the necessary changes, **log in** with your new password.  If it works,
-   **congratulations!**  Otherwise, let your teacher or the Dojo staff member know that the password change
-   attempt was not successful.
+   After the teachers have made the necessary changes, you **MUST** log out and then log in with your new
+   password.  If it works, **congratulations!**  Otherwise, let your teacher or the Dojo staff member know
+   that the password change attempt was not successful.
