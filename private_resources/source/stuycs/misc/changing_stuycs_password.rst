@@ -1,11 +1,11 @@
-Changing Password
-=================
+Changing StuyCS Password
+========================
 
 *Written by PChan on 2017-05-25*
 
-* :ref:`change_password_instructions`
+* :ref:`changing_stuycs_password_instructions`
 
-.. _change_password_instructions:
+.. _changing_stuycs_password_instructions:
 
 Instructions
 ------------
@@ -38,19 +38,19 @@ StuyCS accounts.
 
 .. image:: ../images/misc/changing-stuycs-password/nfs-prompt.png
 
-6. To changing-stuycs your password, enter ``passwd`` and press enter.  You will then be prompted for your
-   current password.  Like before, you won't be able to see the password as you typed it, but just press
-   ``enter`` when you are done.
+6. To change your password, enter ``passwd`` and press enter.  You will then be prompted for your current
+   password.  Like before, you won't be able to see the password as you type it, but just press ``enter``
+   when you are done.
 
 .. image:: ../images/misc/changing-stuycs-password/passwd-command.png
 
 7. After you enter your current password, you will be prompted for your new password twice.  Like before,
-   you won't be able to see the password as you typed it, but just press ``enter`` when you are done.
+   you won't be able to see the password as you type it, but just press ``enter`` when you are done.
 
 .. image:: ../images/misc/changing-stuycs-password/new-password-prompt.png
 
 8. If you are in the Dojo, let the Dojo staff member (that you called over in step 0) know that you just
-   resetted your password.  If you are in the presence of your teacher, let him/her know that you changed
+   reset your password.  If you are in the presence of your teacher, let him/her know that you changed
    your password.
 
    There are steps that the teacher(s) need to do before your new password is recognized by the system.
