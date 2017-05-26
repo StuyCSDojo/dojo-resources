@@ -28,7 +28,7 @@ Debian/Ubuntu/Mint
 ^^^^^^^^^^^^^^^^^^
 * Import the public key for the MongoDB apt repository
   ::
-     
+
      $ sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 0C49F3730359A14518585931BC711F9BA15703C6
 
 * Add the repository url to the list of sources to pull packages from:
@@ -37,7 +37,7 @@ Debian/Ubuntu/Mint
     ::
 
        $ echo "deb [ arch=amd64 ] http://repo.mongodb.org/apt/ubuntu "$(lsb_release -sc)"/mongodb-org/3.4 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-3.4.list
-    
+
   * On Ubuntu 16.04:
     ::
 
@@ -45,7 +45,7 @@ Debian/Ubuntu/Mint
 
   * On Debian 7 & 8:
     ::
-  
+
        $ echo "deb http://repo.mongodb.org/apt/debian "$(lsb_release -sc)"/mongodb-org/3.4 main" | sudo tee /etc/apt/sources.list.d/mongodb-3.4.list
 
 * Install MongoDB
@@ -71,11 +71,11 @@ Debian/Ubuntu/Mint
      >> //you are now in the mongo shell
 
 .. _installation_programming_tools_mongodb_linux_fedora:
-     
+
 Fedora
 ^^^^^^
 * Add the MongoDB Yum Repository
-  
+
   * Create and open the file ``/etc/yum.repos.d/mongodb.repo`` with your favorite text editor (you will
     need sudo)
     ::
@@ -100,7 +100,7 @@ Fedora
   ::
 
      $ sudo /etc/init.d/mongod restart
-     
+
      // Configure MongoDB to auto start on boot
      $ sudo chkconfig mongod on
 
@@ -110,7 +110,7 @@ Fedora
      $ mongo
      MongoDB shell version: 3.4.2
      >> //you are now in the mongo shell
-     
+
 .. _installation_programming_tools_mongodb_mac_osx:
 
 Mac OSX
@@ -132,6 +132,8 @@ Mac OSX
 
      $ sudo mkdir -p /data/db
      $ sudo chmod 755 /data/db
+     $ sudo chown $(whoami) /data/db
+     $ sudo chgrp staff /data/db
 
 * Run the MongoDB server and try connecting to it
   ::

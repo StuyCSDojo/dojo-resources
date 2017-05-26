@@ -45,12 +45,12 @@ would know how to install Git themselves.
        git version 2.11.0        // sample output
   * Configure your Git username and email
     ::
-       
+
        $ git config --global user.name "<your name>"    // your name in quotes
        $ git config --global user.email "<your email>"  // your git email in quotes
   * Check out the :ref:`tutorials_programming_tools_git_introduction_to_git` guide for pointers on using
-    Emacs
-       
+    Git
+
 * For Fedora:
 
   * Check if Git is installed
@@ -72,12 +72,12 @@ would know how to install Git themselves.
 
   * Configure your Git username and email
     ::
-       
+
        $ git config --global user.name "<your name>"    // your name in quotes
        $ git config --global user.email "<your email>"  // your git email in quotes
   * Check out the :ref:`tutorials_programming_tools_git_introduction_to_git` guide for pointers on using
-    Emacs
-       
+    Git
+
 .. _installation_programming_tools_git_mac_osx:
 
 Mac OSX
@@ -93,7 +93,7 @@ terminal:
 .. note::
    Even if Git is already installed, you might want to install a newer version of Git which may have new
    features, security fixes, and etc.
-   
+
 There are a couple of ways to installing Git:
 
 * Homebrew
@@ -102,7 +102,7 @@ There are a couple of ways to installing Git:
 
   * Install Git via Homebrew
     ::
-	 
+
        $ brew install git
   * Verify that Git is installed
     ::
@@ -111,26 +111,26 @@ There are a couple of ways to installing Git:
        git version 2.9.2        // sample output
   * Configure your Git username and email
     ::
-       
+
        $ git config --global user.name "<your name>"    // your name in quotes
        $ git config --global user.email "<your email>"  // your git email in quotes
   * Check out the :ref:`tutorials_programming_tools_git_introduction_to_git` guide for pointers on using
-    Emacs
-    
+    Git
+
 * MacPort
-  
+
   * Update MacPorts
     ::
-	 
+
        $ sudo port selfupdate
   * Search for Git and variants
     ::
-       
+
        $ port search git
        $ port variants git
   * Install Git with bash completion and docs
     ::
-       
+
        $ sudo port install git +bash_completion+doc
   * Verify that Git is installed
     ::
@@ -139,12 +139,12 @@ There are a couple of ways to installing Git:
        git version 2.9.2        // sample output
   * Configure your Git username and email
     ::
-       
+
        $ git config --global user.name "<your name>"    // your name in quotes
        $ git config --global user.email "<your email>"  // your git email in quotes
   * Check out the :ref:`tutorials_programming_tools_git_introduction_to_git` guide for pointers on using
-    Emacs
-    
+    Git
+
 .. _installation_programming_tools_git_windows:
 
 Windows
@@ -168,4 +168,4 @@ For Windows, we are going to install Git Bash which provides a Bash emulation wi
      $ git config --global user.name "<your name>"    // your name in quotes
      $ git config --global user.email "<your email>"  // your git email in quotes
 * Check out the :ref:`tutorials_programming_tools_git_introduction_to_git` guide for pointers on using
-  Emacs
+  Git

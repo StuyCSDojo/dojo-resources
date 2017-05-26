@@ -19,6 +19,6 @@ are the steps to reach success:
 
 Here is how it should look like:
 
-.. image:: ../images/network/proxy_settings.png
+.. image:: ../images/misc/proxy/proxy_settings.png
 
 When you have verify that it is correct, you may close the network window.

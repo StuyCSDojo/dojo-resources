@@ -7,14 +7,14 @@ StuyCS Guides
 * :ref:`systems`
 * :ref:`graphics`
 * :ref:`softdev`
-    
+
 .. _intro_cs1:
 
 Intro to Computer Science 1
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 .. toctree::
    :maxdepth: 3
-   
+
    intro_cs1/recursion_introduction
 
 .. _intro_cs2:
@@ -46,7 +46,7 @@ AP Computer Science
    apcs/ap/mergesort
    apcs/ap/quicksort
    apcs/ap/sequential_binary_search
-   
+
 .. _systems:
 
 System Level Programming
@@ -67,4 +67,3 @@ Software Development
 ^^^^^^^^^^^^^^^^^^^^
 .. toctree::
    :maxdepth: 3
-
