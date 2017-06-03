@@ -1,103 +1,102 @@
-from flask import (Blueprint, flash, get_flashed_messages, jsonify,
-                   redirect, render_template, request, session, url_for)
-from functools import wraps
+import flask
+import functools
 
-from lib.database import DBManager
-from utils import redirect_back
+import AuthManager
+import security_utils
 
-security = Blueprint('security', __name__)
-db_manager = DBManager('dojo_website')
+security = flask.Blueprint('security', __name__)
+auth_manager = AuthManager.AuthManager('dojo_website')
 
-def login_required(admin_required = False, developer_required = False):
+def login_required(admin_required=False, developer_required=False):
     def actual_decorator(function):
-        @wraps(function)
+        @functools.wraps(function)
         def wrapper(*args, **kwargs):
+            flask.session['next'] = flask.request.url
+
             if is_logged_in(admin_required, developer_required):
                 return function(*args, **kwargs)
             else:
-                session['next'] = request.url
-                return redirect(url_for('security.login_form'))
+                return flask.redirect(flask.url_for('security.login_form'))
         return wrapper
     return actual_decorator
 
-def is_logged_in(admin_required = False, developer_required = False):
-    username = session.get('username')
-    
+def is_logged_in(admin_required=False, developer_required=False):
+    username = flask.session.get('username')
+
     if not username:
         return False
-    elif developer_required and db_manager.is_developer(username):
+    elif developer_required and auth_manager.is_developer(username):
         return True
-    elif admin_required and db_manager.is_admin(username):
+    elif admin_required and auth_manager.is_admin(username):
         return True
-    elif not (admin_required or developer_required) and db_manager.is_registered(username):
+    elif not (admin_required or developer_required) and auth_manager.is_registered(username):
         return True
-    elif (admin_required and not db_manager.is_admin(username)) or (developer_required and not db_manager.is_developer(username)):
+    elif (admin_required and not auth_manager.is_admin(username)) or (developer_required and not auth_manager.is_developer(username)):
         return False
     else:
-        session.pop('username')
+        flask.session.pop('username')
         return False
 
-@security.route('/testing/logged_in/')
+@security.route('/logged_in/')
 def logged_in():
-    print session.get('username')
-    return jsonify(result=True if session.get('username') else False)
-    
+    return flask.jsonify(result=True if flask.session.get('username') else False)
+
 @security.route('/testing/register/')
 def register_form():
     if is_logged_in():
-        return redirect(url_for('public_views.home'))
+        return flask.redirect(flask.url_for('public_views.home'))
     else:
-        return render_template('register.html')
-            
-@security.route('/testing/register/', methods = ['POST'])
-def register():
-    username = request.form.get('username')
-    password = request.form.get('password')
-    confirm_password = request.form.get('confirm_password')
-    
-    if not username or not password or not confirm_password:
-        flash('Please fill out all fields!')
-        return redirect(url_for('security.register_form'))
+        return flask.render_template('register.html')
 
-    results = db_manager.register(username, password, confirm_password)
-    flash(results[1])
+@security.route('/testing/register/', methods=['POST'])
+def register():
+    username = flask.request.form.get('username')
+    password = flask.request.form.get('password')
+    confirm_password = flask.request.form.get('confirm_password')
+
+    if not username or not password or not confirm_password:
+        flask.flash('Please fill out all fields!')
+        return flask.redirect(flask.url_for('security.register_form'))
+
+    results = auth_manager.register(username, password, confirm_password)
+    flask.flash(results[1])
 
     if results[0]:
-        return redirect(url_for('security.login_form'))
+        return flask.redirect(flask.url_for('security.login_form'))
     else:
-        return redirect(url_for('security.register_form'))
+        return flask.redirect(flask.url_for('security.register_form'))
 
 @security.route('/testing/login/')
 def login_form():
     if is_logged_in():
-        return redirect(url_for('public_views.home'))
+        return flask.redirect(flask.url_for('public_views.home'))
     else:
-        return render_template('login.html')
+        return flask.render_template('login.html')
 
-@security.route('/testing/login/', methods = ['POST'])
+@security.route('/testing/login/', methods=['POST'])
 def login():
-    username = request.form.get('username')
-    password = request.form.get('password')
-    
-    if not username or not password:
-        flash('Please fill out all fields!')
-        return redirect(url_for('security.login_form'))
-    else:
-        results = db_manager.login(username, password)
-        
-        if results[0]:
-            session['username'] = username
-            return redirect_back()
-        else:
-            flash(results[1])
-            return redirect(url_for('security.login_form'))
+    username = flask.request.form.get('username')
+    password = flask.request.form.get('password')
 
-@security.route('/testing/logout/')
+    if not username or not password:
+        flask.flash('Please fill out all fields!')
+        return flask.redirect(flask.url_for('security.login_form'))
+    else:
+        results = auth_manager.login(username, password)
+
+        if results[0]:
+            flask.session['username'] = username
+            return security_utils.redirect_back()
+        else:
+            flask.flash(results[1])
+            return flask.redirect(flask.url_for('security.login_form'))
+
+@security.route('/testign/logout/')
 def logout():
     if is_logged_in():
-        session.pop('username')
+        flask.session.pop('username')
 
-        if 'next' in session:
-            session.pop('next')
+        if 'next' in flask.session:
+            flask.session.pop('next')
 
-    return redirect(url_for('public_views.home'))
+    return flask.redirect(flask.url_for('public_views.home'))
