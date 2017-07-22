@@ -5,7 +5,7 @@ Tutorials for Using Various Software
 * :ref:`programming_tools_tutorials`
 * :ref:`remote_file_transfer_tutorials`
 * :ref:`system_tutorials`
-  
+
 
 .. _languages:
 
@@ -15,7 +15,7 @@ Languages
    :maxdepth: 2
 
    languages/bash_tutorial
-  
+
 .. _programming_tools_tutorials:
 
 Programming Tools
@@ -25,6 +25,7 @@ Programming Tools
 
    programming_tools/emacs_tutorial
    programming_tools/git_tutorial
+   programming_tools/git_fix_commit_tutorial
    programming_tools/terminal_tutorial
    programming_tools/vim_tutorial
 
