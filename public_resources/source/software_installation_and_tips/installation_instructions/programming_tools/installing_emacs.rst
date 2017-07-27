@@ -15,7 +15,7 @@ Installing Emacs
 
   * :ref:`installation_programming_tools_emacs_windows_x86`
   * :ref:`installation_programming_tools_emacs_windows_x64`
-  
+
 .. _installation_programming_tools_emacs_linux:
 
 Linux
@@ -35,34 +35,34 @@ would know how to install Emacs themselves.
     * Try to add the Ubuntu Elisp ppa:
       ::
 
-	 $ sudo add-apt-repository ppa:ubuntu-elisp/ppa
+         $ sudo add-apt-repository ppa:ubuntu-elisp/ppa
 
     * If you get ``sudo: add-apt-repostiory: command not found``, run the following:
       ::
 
-	 $ sudo apt-get install software-properties-common
+         $ sudo apt-get install software-properties-common
 
       Try to add the Ubuntu Elisp ppa again
     * Execute the following commands to update the package listing and install Emacs
       ::
-	 
-	 $ sudo apt-get update
-	 $ sudo apt-get install emacs-snapshot emacs-snapshot-el
+
+         $ sudo apt-get update
+         $ sudo apt-get install emacs-snapshot emacs-snapshot-el
     * Optional: Allow you to execute ``emacs-snapshot`` by running ``emacs``
       ::
 
-	 $ sudo ln -s /usr/bin/emacs-snapshot /usr/bin/emacs
+         $ sudo ln -s /usr/bin/emacs-snapshot /usr/bin/emacs
     * Run Emacs via the following command:
       |br|
       Do note that the ``&`` is only necessary when running the program in the background.
       ::
 
-	 $ emacs-snapshot &     // if you did not run the optional step
-	 $ emacs &              // if you did run the optional step
+         $ emacs-snapshot &     // if you did not run the optional step
+         $ emacs &              // if you did run the optional step
 
     * Check out the :ref:`tutorials_programming_tools_emacs_introduction_to_emacs` guide for pointers on
       using Emacs
-	 
+
 * For Fedora:
 
   * Install Emacs 24 via the following commands:
@@ -79,7 +79,7 @@ would know how to install Emacs themselves.
 
   * Check out the :ref:`tutorials_programming_tools_emacs_introduction_to_emacs` guide for pointers on
     using Emacs
-  
+
 .. _installation_programming_tools_emacs_mac_osx:
 
 Mac OSX
@@ -101,13 +101,14 @@ Run Emacs via the following command:
 
 Check out the :ref:`tutorials_programming_tools_emacs_introduction_to_emacs` guide for pointers on using
 Emacs.
-   
+
 .. _installation_programming_tools_emacs_windows:
 
 Windows
 -------
-Check the `OS version that you are running <http://support.microsoft.com/kb/827218/en-US>`_, then
-determine which set of instructions to follow.
+Check the `OS version that you are running
+<https://support.microsoft.com/en-us/help/13443/windows-which-operating-system>`_,
+then determine which set of instructions to follow.
 
 .. _installation_programming_tools_emacs_windows_x86:
 
@@ -120,7 +121,7 @@ determine which set of instructions to follow.
    runemacs.exe.
 4. Check out the :ref:`tutorials_programming_tools_emacs_introduction_to_emacs` guide for pointers on
    using Emacs
-   
+
 .. _installation_programming_tools_emacs_windows_x64:
 
 64-bit
