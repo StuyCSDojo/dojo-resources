@@ -35,6 +35,8 @@ AP Computer Science
    apcs/ap/java_introductory_features
    apcs/ap/java_conditionals
    apcs/ap/java_loops_structure
+   apcs/ap/arrays
+   apcs/ap/arraylists
    apcs/ap/java_inheritance
    apcs/ap/java_abstract_classes_and_methods
    apcs/ap/java_interfaces

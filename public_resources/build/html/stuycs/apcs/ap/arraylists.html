@@ -1,0 +1,809 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+            <title>Introduction to Arraylists</title>
+        
+
+        
+        
+
+        
+
+        
+        
+            
+
+        
+
+        
+        
+            <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+        
+
+        
+
+        
+
+        <link rel="stylesheet" href="../../../_static/bootstrap-glyphicons.css" type="text/css" />
+        <link rel="stylesheet" href="../../../_static/main.css" type="text/css" />
+        <link rel="stylesheet" href="../../../_static/button.css" type="text/css" />
+        <script
+            src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+            integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc="
+            crossorigin="anonymous"></script>
+        <script src="../../../_static/button.js"></script>
+        <script src="../../../_static/set_target.js"></script>
+                <link rel="index" title="Index"
+                      href="../../../genindex.html"/>
+                <link rel="search" title="Search" href="../../../search.html"/>
+            <link rel="top" title="Dojo Resources 1.0.2 documentation" href="../../../index.html"/>
+                <link rel="up" title="StuyCS Guides" href="../../stuycs_guides.html"/>
+                <link rel="next" title="Inheritance" href="java_inheritance.html"/>
+                <link rel="prev" title="Introduction to Arrays" href="arrays.html"/> 
+
+        
+        <script src="../../../_static/js/modernizr.min.js"></script>
+
+    </head>
+
+    <body class="wy-body-for-nav" role="document">
+
+         
+        <div class="wy-grid-for-nav">
+
+            
+            <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+                <div class="wy-side-scroll">
+                    <div class="wy-side-nav-search">
+                        
+
+                            
+                                    <a href="https://dojo.stuycs.org"class="icon icon-home"> Dojo Website
+                            
+
+                            
+                                    </a>
+
+                                    
+                                        
+                                        
+                                            <div class="version">
+                                                1.0.2
+                                            </div>
+                                        
+                                    
+
+                                    
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search Dojo Resources" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+                        
+                    </div>
+
+                    <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                        
+                            
+                            
+                                <p class="caption"><span class="caption-text">Language Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://docs.racket-lang.org/">Racket</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://ccl.northwestern.edu/netlogo/docs/dictionary.html">NetLogo</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://www.w3.org/TR/2014/REC-html5-20141028/">HTML</a></li>
+<li class="toctree-l1"><a class="reference external" href="http://www.w3schools.com/">Web W3schools</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://docs.python.org/2/library/index.html">Python 2.7</a></li>
+<li class="toctree-l1"><a class="reference external" href="http://rgruet.free.fr/PQR27/PQR2.7.html">Python 2.7 Quick Reference</a></li>
+<li class="toctree-l1"><a class="reference external" href="http://docs.oracle.com/javase/7/docs/api/">Java 7 API</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://docs.oracle.com/javase/7/docs/api">Java 7 AP subset API</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://processing.org/reference">Processing</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Guides and Tutorials</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../stuycs_guides.html">StuyCS Guides</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../stuycs_guides.html#intro-to-computer-science-1">Intro to Computer Science 1</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../intro_cs1/recursion_introduction.html">Introduction to Recursion</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../intro_cs1/recursion_introduction.html#definitions">Definitions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../intro_cs1/recursion_introduction.html#tips-for-finding-the-recursive-reduction">Tips for Finding the Recursive Reduction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../intro_cs1/recursion_introduction.html#tips-for-finding-the-base-case">Tips for Finding the Base Case</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../intro_cs1/recursion_introduction.html#what-is-a-recursive-function">What is a Recursive Function</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../intro_cs1/recursion_introduction.html#tips-for-writing-recursive-functions">Tips for Writing Recursive Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../intro_cs1/recursion_introduction.html#sample-workflow-for-recursion">Sample Workflow for Recursion</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../intro_cs1/recursion_introduction.html#what-is-an-iterative-style-recursive-function">What is an Iterative-Style Recursive Function</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../intro_cs1/recursion_introduction.html#what-are-state-variables">What are State Variables</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../intro_cs1/recursion_introduction.html#tips-for-writing-iterative-style-recursive-functions">Tips for Writing Iterative-Style Recursive Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../intro_cs1/recursion_introduction.html#sample-workflow-for-iterative-style-recursion">Sample Workflow for Iterative-Style Recursion</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../stuycs_guides.html#intro-to-computer-science-2">Intro to Computer Science 2</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../stuycs_guides.html#ap-computer-science">AP Computer Science</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="java_introduction.html">Introducing Java</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="java_introduction.html#what-is-java">What is Java</a></li>
+<li class="toctree-l4"><a class="reference internal" href="java_introduction.html#jvm-and-java-bytecode">JVM and Java Bytecode</a></li>
+<li class="toctree-l4"><a class="reference internal" href="java_introduction.html#writing-and-compiling-java-source-files">Writing and Compiling Java Source Files</a></li>
+<li class="toctree-l4"><a class="reference internal" href="java_introduction.html#running-java-files">Running Java Files</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="java_introductory_features.html">Basic Java Features</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="java_introductory_features.html#data-types">Data Types</a></li>
+<li class="toctree-l4"><a class="reference internal" href="java_introductory_features.html#tutorial-apcs-ap-introductory-java-features-identifiers">Identifiers</a></li>
+<li class="toctree-l4"><a class="reference internal" href="java_introductory_features.html#operators">Operators</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="java_conditionals.html">Conditionals</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="java_conditionals.html#the-basic-if-statement">The Basic if Statement</a></li>
+<li class="toctree-l4"><a class="reference internal" href="java_conditionals.html#tips-and-warnings">Tips and Warnings</a></li>
+<li class="toctree-l4"><a class="reference internal" href="java_conditionals.html#extended-if-statements">Extended if Statements</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="java_loops_structure.html">Basic Loops Structure</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="java_loops_structure.html#loops-overview">Loops Overview</a></li>
+<li class="toctree-l4"><a class="reference internal" href="java_loops_structure.html#while-loops">While Loops</a></li>
+<li class="toctree-l4"><a class="reference internal" href="java_loops_structure.html#for-loops">For Loops</a></li>
+<li class="toctree-l4"><a class="reference internal" href="java_loops_structure.html#for-loop-vs-while-loop">For Loop vs While Loop</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="arrays.html">Introduction to Arrays</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="arrays.html#brief-overview">Brief Overview</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arrays.html#declaring-arrays">Declaring Arrays</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arrays.html#accessing-elements">Accessing Elements</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arrays.html#looping-over-arrays">Looping Over Arrays</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arrays.html#modifying-arrays">Modifying Arrays</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arrays.html#arrays-as-parameters">Arrays as Parameters</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arrays.html#searching-for-an-element">Searching for an Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arrays.html#extending-arrays">Extending Arrays</a></li>
+</ul>
+</li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Introduction to Arraylists</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#brief-overview">Brief Overview</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#declaring-arraylists">Declaring ArrayLists</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#printing-arraylists">Printing ArrayLists</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#adding-to-arraylists">Adding to ArrayLists</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#accessing-elements">Accessing Elements</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#modifying-arraylists">Modifying ArrayLists</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#looping-over-arraylists">Looping Over ArrayLists</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#autoboxing-and-unboxing">Autoboxing and Unboxing</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#arraylists-as-parameters">ArrayLists as Parameters</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#searching-for-an-element">Searching for an Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#arraylists-vs-arrays">ArrayLists vs Arrays</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#essential-methods-reference">Essential Methods Reference</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="java_inheritance.html">Inheritance</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="java_inheritance.html#overview">Overview</a></li>
+<li class="toctree-l4"><a class="reference internal" href="java_inheritance.html#is-a-relationship">&#8220;Is-A&#8221; Relationship</a></li>
+<li class="toctree-l4"><a class="reference internal" href="java_inheritance.html#extend-ing-a-class">(Extend)ing a Class</a></li>
+<li class="toctree-l4"><a class="reference internal" href="java_inheritance.html#rules-regarding-subclasses">Rules Regarding Subclasses</a></li>
+<li class="toctree-l4"><a class="reference internal" href="java_inheritance.html#overriding-methods">Overriding Methods</a></li>
+<li class="toctree-l4"><a class="reference internal" href="java_inheritance.html#object-type-vs-variable-type">Object Type vs Variable Type</a></li>
+<li class="toctree-l4"><a class="reference internal" href="java_inheritance.html#downcasting">Downcasting</a></li>
+<li class="toctree-l4"><a class="reference internal" href="java_inheritance.html#the-usage-of-super">The Usage of Super</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="java_abstract_classes_and_methods.html">Abstract Classes and Methods</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="java_abstract_classes_and_methods.html#overview">Overview</a></li>
+<li class="toctree-l4"><a class="reference internal" href="java_abstract_classes_and_methods.html#defining-abstract-classes-and-methods">Defining Abstract Classes and Methods</a></li>
+<li class="toctree-l4"><a class="reference internal" href="java_abstract_classes_and_methods.html#key-takeaways">Key Takeaways</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="java_interfaces.html">Interfaces</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="java_interfaces.html#overview">Overview</a></li>
+<li class="toctree-l4"><a class="reference internal" href="java_interfaces.html#defining-interfaces">Defining Interfaces</a></li>
+<li class="toctree-l4"><a class="reference internal" href="java_interfaces.html#using-an-interface">Using an Interface</a></li>
+<li class="toctree-l4"><a class="reference internal" href="java_interfaces.html#calling-methods-of-an-interface">Calling Methods of An Interface</a></li>
+<li class="toctree-l4"><a class="reference internal" href="java_interfaces.html#key-takeaways">Key Takeaways</a></li>
+<li class="toctree-l4"><a class="reference internal" href="java_interfaces.html#the-comparable-interface">The Comparable Interface</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="java_polymorphism.html">Static vs Dynamic Polymorphism</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="java_polymorphism.html#static-polymorphism">Static Polymorphism</a></li>
+<li class="toctree-l4"><a class="reference internal" href="java_polymorphism.html#dynamic-polymorphism">Dynamic Polymorphism</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="big_oh_notation.html">Big Oh Notation</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="big_oh_notation.html#brief-overview">Brief Overview</a></li>
+<li class="toctree-l4"><a class="reference internal" href="big_oh_notation.html#mathematical-context">Mathematical Context</a></li>
+<li class="toctree-l4"><a class="reference internal" href="big_oh_notation.html#big-oh-notation-description">Big Oh Notation Description</a></li>
+<li class="toctree-l4"><a class="reference internal" href="big_oh_notation.html#guide-to-runtime-analysis">Guide to Runtime Analysis</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="selection_sort.html">Selection Sort</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="selection_sort.html#key-idea-finding-the-minimum">Key Idea: Finding the Minimum</a></li>
+<li class="toctree-l4"><a class="reference internal" href="selection_sort.html#the-general-algorithm">The General Algorithm</a></li>
+<li class="toctree-l4"><a class="reference internal" href="selection_sort.html#exercises">Exercises</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="insertion_sort.html">Insertion Sort</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="insertion_sort.html#definitions">Definitions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="insertion_sort.html#key-idea-sorting-a-hand-of-cards">Key Idea: Sorting a Hand of Cards</a></li>
+<li class="toctree-l4"><a class="reference internal" href="insertion_sort.html#the-general-algorithm">The General Algorithm</a></li>
+<li class="toctree-l4"><a class="reference internal" href="insertion_sort.html#exercises">Exercises</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../recursion_refresher.html">Recursion: A Refresher</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../recursion_refresher.html#definitions">Definitions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../recursion_refresher.html#tips-for-finding-the-recursive-reduction">Tips for Finding the Recursive Reduction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../recursion_refresher.html#tips-for-finding-the-base-case">Tips for Finding the Base Case</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../recursion_refresher.html#what-is-a-recursive-function">What is a Recursive Function</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../recursion_refresher.html#example-of-recursion">Example of Recursion</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../recursion_refresher.html#what-is-an-iterative-style-recursive-function">What is an Iterative-Style Recursive Function</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../recursion_refresher.html#what-are-state-variables">What are State Variables</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../recursion_refresher.html#example-of-iterative-style-recursion">Example of Iterative Style Recursion</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="mergesort.html">MergeSort</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="mergesort.html#key-idea-sorting-two-sorted-lists">Key Idea: Sorting Two Sorted Lists</a></li>
+<li class="toctree-l4"><a class="reference internal" href="mergesort.html#the-general-algorithm">The General Algorithm</a></li>
+<li class="toctree-l4"><a class="reference internal" href="mergesort.html#exercises">Exercises</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="quicksort.html">QuickSort</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="quicksort.html#key-idea-partitioning">Key Idea: Partitioning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="quicksort.html#the-general-algorithm">The General Algorithm</a></li>
+<li class="toctree-l4"><a class="reference internal" href="quicksort.html#exercises">Exercises</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="sequential_binary_search.html">Sequential vs Binary Search</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="sequential_binary_search.html#sequential-search">Sequential Search</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sequential_binary_search.html#binary-search">Binary Search</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sequential_binary_search.html#summary">Summary</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../stuycs_guides.html#system-level-programming">System Level Programming</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../stuycs_guides.html#computer-graphics">Computer Graphics</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../stuycs_guides.html#software-development">Software Development</a><ul class="simple">
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../software_installation_and_tips/software.html">Software and Tools</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../software_installation_and_tips/installation_instructions/index.html">Installing Software</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../software_installation_and_tips/installation_instructions/index.html#file-transfer-utilities">File Transfer Utilities</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../software_installation_and_tips/installation_instructions/file_transfer_utilities/installing_ssh_programs.html">Installing SSH Programs</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../software_installation_and_tips/installation_instructions/index.html#programming-languages">Programming Languages</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../software_installation_and_tips/installation_instructions/programming_languages/installing_jdk.html">Installing Java JDK</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../software_installation_and_tips/installation_instructions/programming_languages/installing_python.html">Installing Python and Pip</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../software_installation_and_tips/installation_instructions/index.html#programming-tools">Programming Tools</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../software_installation_and_tips/installation_instructions/programming_tools/installing_emacs.html">Installing Emacs</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../software_installation_and_tips/installation_instructions/programming_tools/installing_git.html">Installing Git</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../software_installation_and_tips/installation_instructions/programming_tools/installing_make.html">Installing Make</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../software_installation_and_tips/installation_instructions/programming_tools/installing_mongodb.html">Installing MongoDB</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../software_installation_and_tips/installation_instructions/index.html#system-tools">System Tools</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../software_installation_and_tips/installation_instructions/system_tools/installing_homebrew.html">Installing Homebrew</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../software_installation_and_tips/software_tutorials/index.html">Tutorials for Using Various Software</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../software_installation_and_tips/software_tutorials/index.html#languages">Languages</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../software_installation_and_tips/software_tutorials/languages/bash_tutorial.html">Introduction to Bash</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../software_installation_and_tips/software_tutorials/index.html#programming-tools">Programming Tools</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../software_installation_and_tips/software_tutorials/programming_tools/emacs_tutorial.html">Introduction to Emacs</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../software_installation_and_tips/software_tutorials/programming_tools/git_tutorial.html">Introduction to Git</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../software_installation_and_tips/software_tutorials/programming_tools/git_fix_commit_tutorial.html">Tutorial: Fixing Commits Linked to No one</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../software_installation_and_tips/software_tutorials/programming_tools/terminal_tutorial.html">How to Use the Terminal</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../software_installation_and_tips/software_tutorials/programming_tools/vim_tutorial.html">Introduction to Vim</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../software_installation_and_tips/software_tutorials/index.html#remote-file-transfer">Remote File Transfer</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../software_installation_and_tips/software_tutorials/remote_file_transfer/ssh_tutorial.html">Introduction to SSH</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../software_installation_and_tips/software_tutorials/remote_file_transfer/ssh_keys_tutorial.html">Guide to SSH Keys</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../software_installation_and_tips/software_tutorials/remote_file_transfer/remote_file_transfer_tutorial.html">Introduction to Remote File Transfer</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../software_installation_and_tips/software_tutorials/index.html#system">System</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../software_installation_and_tips/software_tutorials/system/modifying_windows_path_tutorial.html">Modifying Windows Path</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../misc.html">Misc</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../misc/firefox_already_running.html">Firefox Already Running Error</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../misc/proxy_settings.html">Stuy Proxy Settings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../misc/changing_stuycs_password.html">Changing StuyCS Password</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../misc/changing_stuycs_password.html#instructions">Instructions</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Useful Links</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../useful_links.html">Intro to Computer Science 1</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../useful_links.html#intro-to-computer-science-2">Intro to Computer Science 2</a><ul>
+<li class="toctree-l2"><a class="reference external" href="http://pythontutor.com/">Python Visualizer</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../useful_links.html#ap-computer-science">AP Computer Science</a><ul>
+<li class="toctree-l2"><a class="reference external" href="http://cscircles.cemc.uwaterloo.ca/java_visualize/">Java Visualizer</a></li>
+<li class="toctree-l2"><a class="reference external" href="/public_resources/nqueens-sketchpad#://">NQueens SketchPad</a></li>
+<li class="toctree-l2"><a class="reference external" href="/public_resources/knights-tour-sketchpad#://">Knight Tours SketchPad</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../useful_links.html#systems-level-programming">Systems Level Programming</a><ul>
+<li class="toctree-l2"><a class="reference external" href="http://cdecl.org/">C-English Translator</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../useful_links.html#computer-graphics">Computer Graphics</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../useful_links.html#software-development">Software Development</a><ul>
+<li class="toctree-l2"><a class="reference external" href="https://jsfiddle.net/">JS Fiddle</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../useful_links.html#general-software">General Software</a><ul>
+<li class="toctree-l2"><a class="reference external" href="https://www.emacswiki.org">Emacs Wiki</a></li>
+<li class="toctree-l2"><a class="reference external" href="http://vim.wikia.com/wiki/Vim_Tips_Wiki">Vim Tips Wiki</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Extra</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../image.html">StuyCS</a></li>
+</ul>
+
+                            
+                        
+                    </div>
+                </div>
+                
+            </nav>
+
+            <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+                
+                <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+                    
+                        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+                        <a href="../../../index.html">Dojo Resources</a>
+                    
+                </nav>
+
+
+
+                
+                <div class="wy-nav-content">
+                    <div class="rst-content">
+                        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html">Resources</a> &raquo;</li>
+        
+          <li><a href="../../stuycs_guides.html">StuyCS Guides</a> &raquo;</li>
+        
+      <li>Introduction to Arraylists</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+                        <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+                            <div itemprop="articleBody">
+                                
+  <div class="section" id="introduction-to-arraylists">
+<h1>Introduction to Arraylists<a class="headerlink" href="#introduction-to-arraylists" title="Permalink to this headline">¶</a></h1>
+<p><em>Written by PChan on 2017-09-02</em></p>
+<ul class="simple">
+<li><a class="reference internal" href="#tutorial-apcs-ap-arraylists-overview"><span class="std std-ref">Brief Overview</span></a></li>
+<li><a class="reference internal" href="#tutorial-apcs-ap-arraylists-declaring-arraylists"><span class="std std-ref">Declaring ArrayLists</span></a></li>
+<li><a class="reference internal" href="#tutorial-apcs-ap-arraylists-printing-arraylists"><span class="std std-ref">Printing ArrayLists</span></a></li>
+<li><a class="reference internal" href="#tutorial-apcs-ap-arraylists-adding-to-arraylists"><span class="std std-ref">Adding to ArrayLists</span></a></li>
+<li><a class="reference internal" href="#tutorial-apcs-ap-arraylists-accessing-elements"><span class="std std-ref">Accessing Elements</span></a></li>
+<li><a class="reference internal" href="#tutorial-apcs-ap-arraylists-modifying-arraylists"><span class="std std-ref">Modifying ArrayLists</span></a></li>
+<li><a class="reference internal" href="#tutorial-apcs-ap-arraylists-looping-over-arraylists"><span class="std std-ref">Looping Over ArrayLists</span></a></li>
+<li><a class="reference internal" href="#tutorial-apcs-ap-arraylists-autoboxing-and-unboxing"><span class="std std-ref">Autoboxing and Unboxing</span></a></li>
+<li><a class="reference internal" href="#tutorial-apcs-ap-arraylists-arraylists-as-parameters"><span class="std std-ref">ArrayLists as Parameters</span></a></li>
+<li><a class="reference internal" href="#tutorial-apcs-ap-arraylists-searching-for-an-element"><span class="std std-ref">Searching for an Element</span></a></li>
+<li><a class="reference internal" href="#tutorial-apcs-ap-arraylists-arraylists-vs-arrays"><span class="std std-ref">ArrayLists vs Arrays</span></a></li>
+<li><a class="reference internal" href="#tutorial-apcs-ap-arraylists-essential-methods-reference"><span class="std std-ref">Essential Methods Reference</span></a></li>
+</ul>
+<div class="section" id="brief-overview">
+<span id="tutorial-apcs-ap-arraylists-overview"></span><h2>Brief Overview<a class="headerlink" href="#brief-overview" title="Permalink to this headline">¶</a></h2>
+<p>After learning about arrays, you might be annoyed with their limitation and the need to resize them
+after they are filled. Like arrays, ArrayLists can only hold one type of items with the further
+restriction of limiting the items to objects.  However, they are dynamic in length <a class="footnote-reference" href="#id2" id="id1">[1]</a>.</p>
+<table class="docutils footnote" frame="void" id="id2" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id1">[1]</a></td><td>Note: ArrayLists is essentially a wrapper class for arrays that resize the underlying array for you
+when necessary.</td></tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="declaring-arraylists">
+<span id="tutorial-apcs-ap-arraylists-declaring-arraylists"></span><h2>Declaring ArrayLists<a class="headerlink" href="#declaring-arraylists" title="Permalink to this headline">¶</a></h2>
+<p>Unlike arrays, you need to import ArrayList before you can use it:</p>
+<div class="highlight-java"><div class="highlight"><pre><span></span><span class="c1">// Insert this at the top of the file</span>
+<span class="kn">import</span> <span class="nn">java.utils.ArrayList</span><span class="o">;</span>
+</pre></div>
+</div>
+<p>The syntax for declaring an ArrayList is as follows: <code class="docutils literal"><span class="pre">ArrayList&lt;type&gt;</span> <span class="pre">name</span> <span class="pre">=</span> <span class="pre">new</span>
+<span class="pre">ArrayList&lt;type&gt;();</span></code>.  Here <code class="docutils literal"><span class="pre">type</span></code> refers to an Object type.  For example:</p>
+<div class="highlight-java"><div class="highlight"><pre><span></span><span class="c1">// Declare an ArrayList of Integers</span>
+<span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Integer</span><span class="o">&gt;</span> <span class="n">a</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Integer</span><span class="o">&gt;();</span>
+</pre></div>
+</div>
+<p>ArrayLists may <strong>only</strong> hold objects and so the following declaration is invalid:</p>
+<div class="highlight-java"><div class="highlight"><pre><span></span><span class="c1">// Attempt to declare an ArrayList of ints</span>
+<span class="n">ArrayList</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">a</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;();</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="printing-arraylists">
+<span id="tutorial-apcs-ap-arraylists-printing-arraylists"></span><h2>Printing ArrayLists<a class="headerlink" href="#printing-arraylists" title="Permalink to this headline">¶</a></h2>
+<p>Since ArrayLists are objects, you can see their contents by invoking their toString methods.  Use
+the following syntax:</p>
+<div class="highlight-java"><div class="highlight"><pre><span></span><span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">object</span><span class="o">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="adding-to-arraylists">
+<span id="tutorial-apcs-ap-arraylists-adding-to-arraylists"></span><h2>Adding to ArrayLists<a class="headerlink" href="#adding-to-arraylists" title="Permalink to this headline">¶</a></h2>
+<p>There are three ways to add a new element: insert it at the beginning, insert it in the middle, or
+insert it at the end.  This is accomplished via the <code class="docutils literal"><span class="pre">add()</span></code> method which takes two form:</p>
+<div class="highlight-java"><div class="highlight"><pre><span></span><span class="c1">// Appending to the end</span>
+<span class="n">arraylist_name</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">E</span> <span class="n">element</span><span class="o">)</span>
+
+<span class="c1">// Insert at an index</span>
+<span class="n">arraylist_name</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="kt">int</span> <span class="n">index</span><span class="o">,</span> <span class="n">E</span> <span class="n">element</span><span class="o">)</span>
+</pre></div>
+</div>
+<p><strong>Exercise:</strong> Take these two methods for a test drive.  Here are a few guidelines:</p>
+<ol class="arabic simple">
+<li>How would you insert at the beginning?  The middle?  The end?</li>
+<li>What happens when you insert at a non-existing index?</li>
+<li>What if you specify a negative index?</li>
+</ol>
+</div>
+<div class="section" id="accessing-elements">
+<span id="tutorial-apcs-ap-arraylists-accessing-elements"></span><h2>Accessing Elements<a class="headerlink" href="#accessing-elements" title="Permalink to this headline">¶</a></h2>
+<p>ArrayLists use the <code class="docutils literal"><span class="pre">get()</span></code> method instead of the bracket notation.  The syntax is:
+<code class="docutils literal"><span class="pre">arraylist_name.get(index)</span></code>.  Here are a few examples:</p>
+<div class="highlight-java"><div class="highlight"><pre><span></span><span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">a</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;();</span>
+<span class="n">a</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="s">&quot;hello&quot;</span><span class="o">);</span>
+<span class="n">a</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="s">&quot;bye&quot;</span><span class="o">);</span>
+<span class="n">a</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="mi">0</span><span class="o">);</span>         <span class="c1">// &quot;hello&quot;</span>
+<span class="n">a</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="mi">1</span><span class="o">);</span>         <span class="c1">// &quot;bye&quot;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="modifying-arraylists">
+<span id="tutorial-apcs-ap-arraylists-modifying-arraylists"></span><h2>Modifying ArrayLists<a class="headerlink" href="#modifying-arraylists" title="Permalink to this headline">¶</a></h2>
+<p>There are two ways of modifying ArrayLists: <em>changing</em> an element and <em>removing</em> an element.  We
+will discuss how to change an element first.</p>
+<p>To change an element, you would simply invoke the <code class="docutils literal"><span class="pre">set()</span></code> method.  Here is the syntax along with a
+few examples:</p>
+<div class="highlight-java"><div class="highlight"><pre><span></span><span class="c1">// Syntax</span>
+<span class="n">arraylist_name</span><span class="o">.</span><span class="na">set</span><span class="o">(</span><span class="kt">int</span> <span class="n">index</span><span class="o">,</span> <span class="n">E</span> <span class="n">element</span><span class="o">)</span>
+
+<span class="c1">// Examples</span>
+<span class="n">list</span><span class="o">.</span><span class="na">set</span><span class="o">(</span><span class="mi">0</span><span class="o">,</span> <span class="s">&quot;Bye&quot;</span><span class="o">)</span>    <span class="c1">// Change the first element of list to &quot;Bye&quot;</span>
+<span class="n">list</span><span class="o">.</span><span class="na">set</span><span class="o">(</span><span class="mi">1</span><span class="o">,</span> <span class="s">&quot;Hello&quot;</span><span class="o">)</span>  <span class="c1">// Change the second element of the list to &quot;Hello&quot;</span>
+</pre></div>
+</div>
+<p>To remove an element, you would need to invoke one of the <code class="docutils literal"><span class="pre">remove()</span></code> methods.  Here are the
+syntax for both methods along with a few examples:</p>
+<div class="highlight-java"><div class="highlight"><pre><span></span><span class="c1">// Syntax</span>
+<span class="n">arraylist_name</span><span class="o">.</span><span class="na">remove</span><span class="o">(</span><span class="kt">int</span> <span class="n">index</span><span class="o">)</span>     <span class="c1">// Remove the element at specified index</span>
+<span class="n">arraylist_name</span><span class="o">.</span><span class="na">remove</span><span class="o">(</span><span class="n">Object</span> <span class="n">o</span><span class="o">)</span>      <span class="c1">// Remove the first occurence of that element</span>
+
+<span class="c1">// Examples</span>
+<span class="n">list</span><span class="o">.</span><span class="na">remove</span><span class="o">(</span><span class="mi">0</span><span class="o">)</span>                       <span class="c1">// Remove the first element in list</span>
+<span class="n">list</span><span class="o">.</span><span class="na">remove</span><span class="o">(</span><span class="s">&quot;hello&quot;</span><span class="o">)</span>                 <span class="c1">// Remove the first occurence of &quot;hello&quot; in list</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="looping-over-arraylists">
+<span id="tutorial-apcs-ap-arraylists-looping-over-arraylists"></span><h2>Looping Over ArrayLists<a class="headerlink" href="#looping-over-arraylists" title="Permalink to this headline">¶</a></h2>
+<p>Many operations you do with ArrayLists would involve looping over them. Whether you are populating
+an ArrayList or modifying an ArrayList, knowing how to loop over them can make it easier and the
+impossible possible.</p>
+<p>One important bit of information is the length of the ArrayList which can be accessed with
+<code class="docutils literal"><span class="pre">&lt;arraylist_name&gt;.size()</span></code>. For example:</p>
+<div class="highlight-java"><div class="highlight"><pre><span></span><span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">list</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;();</span>
+<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&quot;The size is &quot;</span> <span class="o">+</span> <span class="n">list</span><span class="o">.</span><span class="na">size</span><span class="o">())</span>  <span class="c1">// The size is 0</span>
+
+<span class="n">list</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="s">&quot;hello&quot;</span><span class="o">);</span>
+<span class="n">list</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="s">&quot;bye&quot;</span><span class="o">);</span>
+<span class="n">list</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="s">&quot;food&quot;</span><span class="o">);</span>
+<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&quot;The size is &quot;</span> <span class="o">+</span> <span class="n">list</span><span class="o">.</span><span class="na">size</span><span class="o">())</span>  <span class="c1">// The size is 3</span>
+</pre></div>
+</div>
+<p><strong>Exercise:</strong> Now that we know how to retrieve the size of an ArrayList, how would you use that
+information to loop over the ArrayList?</p>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">Arrays has <code class="docutils literal"><span class="pre">array_name.length</span></code> while ArrayLists utilizes <code class="docutils literal"><span class="pre">arraylist_name.size()</span></code>.  This is
+one of the most common errors.</p>
+</div>
+</div>
+<div class="section" id="autoboxing-and-unboxing">
+<span id="tutorial-apcs-ap-arraylists-autoboxing-and-unboxing"></span><h2>Autoboxing and Unboxing<a class="headerlink" href="#autoboxing-and-unboxing" title="Permalink to this headline">¶</a></h2>
+<p>While ArrayLists can only store objects, Java is smart enough to convert primitives into their
+corresponding wrapper classes and vice versa under certain circumstances.  These mechanisms are
+known as auto-boxing and unboxing respectively.</p>
+<p><strong>Auto-boxing</strong> is the concept of &#8220;boxing&#8221; the primitive into the wrapper class when the Java
+compiler encounters a primitive, but expects an instance of the wrapper class.  This automatic
+conversion explains why the following code compiles without errors:</p>
+<div class="highlight-java"><div class="highlight"><pre><span></span><span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Integer</span><span class="o">&gt;</span> <span class="n">a</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Integer</span><span class="o">&gt;();</span>
+<span class="k">for</span><span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="o">;</span> <span class="n">i</span><span class="o">++){</span>
+    <span class="n">a</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">i</span><span class="o">);</span>
+<span class="o">}</span>
+</pre></div>
+</div>
+<p><strong>Tip:</strong> Try it out for yourself and see if it compiles.</p>
+<p>Here we are able to add <em>ints</em> to an ArrayList of <em>Integers</em>.  During runtime, the Java compiler
+creates an <em>Integer</em> object from <em>i</em> and adds that to <em>a</em>.</p>
+<p>Similarly when the Java compiler encounters an instance of the wrapper class but expects a
+primitive, it would convert the instance of the wrapper class to a primitve.  This conversion is
+known as <strong>unboxing</strong> and explains why the following code also compiles without errors:</p>
+<div class="highlight-java"><div class="highlight"><pre><span></span><span class="c1">// Assume we have an ArrayList, list, filled with Integers</span>
+<span class="kt">int</span> <span class="n">sum</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">for</span><span class="o">(</span><span class="n">Integer</span> <span class="n">i</span><span class="o">:</span> <span class="n">list</span><span class="o">){</span>
+    <span class="n">sum</span> <span class="o">+=</span> <span class="n">i</span><span class="o">;</span>
+<span class="o">}</span>
+</pre></div>
+</div>
+<p><strong>Tip:</strong> Try it out for yourself and see if it compiles.</p>
+<p>Here we are able to add <em>Integers</em> as if they are <em>ints</em> because during runtime, the Java compiler
+generates an <em>int</em> from <em>i</em> by invoking the <code class="docutils literal"><span class="pre">intValue()</span></code> method.</p>
+</div>
+<div class="section" id="arraylists-as-parameters">
+<span id="tutorial-apcs-ap-arraylists-arraylists-as-parameters"></span><h2>ArrayLists as Parameters<a class="headerlink" href="#arraylists-as-parameters" title="Permalink to this headline">¶</a></h2>
+<p>Now that you know how to modify ArrayLists, let us look at the effects of modifying an ArrayList
+when you pass it through a function. This would be left as an exercise for you, but here are some
+guidelines:</p>
+<ol class="arabic simple">
+<li>Write a function that takes an ArrayList as a parameter. Inside the function, modify the
+ArrayList but do not return it.</li>
+<li>Inside the main method, initialize an ArrayList. Print the ArrayList and then call the function
+giving it the ArrayList you just initalized as the argument.</li>
+<li>Try printing out the ArrayList afterward. Did anything change?</li>
+</ol>
+<p><strong>Reflection:</strong> Compare your findings with what happens if you passed a primitive (boolean, int, etc)
+through a function. What does this tells you about ArrayList? What benefits does this offer? Cons?</p>
+</div>
+<div class="section" id="searching-for-an-element">
+<span id="tutorial-apcs-ap-arraylists-searching-for-an-element"></span><h2>Searching for an Element<a class="headerlink" href="#searching-for-an-element" title="Permalink to this headline">¶</a></h2>
+<p>Sometimes you might want to check to see if an element exists in the ArrayList or maybe you want to
+find the position of an element.</p>
+<p>One way to do this is via a linear search.  A linear search involves looping through every element
+of the ArrayList and checking to see if the element at each position matches what you are looking
+for.  Once found, the position or the element at that position can be returned.</p>
+<p><strong>Exercise:</strong> Try implementing a linear search for the ArrayList that would return the position of
+the element that you are trying to find.</p>
+<p>While ArrayLists also have a method for finding the index of an element, it would deepen your
+learning experience if you try the exercise above first.  Here is the syntax and a few examples of
+the method:</p>
+<div class="highlight-java"><div class="highlight"><pre><span></span><span class="c1">// Syntax</span>
+<span class="n">arraylist_name</span><span class="o">.</span><span class="na">indexOf</span><span class="o">(</span><span class="n">Object</span> <span class="n">o</span><span class="o">)</span>
+
+<span class="c1">// Examples</span>
+<span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Integer</span><span class="o">&gt;</span> <span class="n">list</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Integer</span><span class="o">&gt;();</span>
+<span class="n">list</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="mi">3</span><span class="o">);</span>
+<span class="n">list</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="mi">2</span><span class="o">);</span>
+<span class="n">list</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="mi">1</span><span class="o">);</span>
+
+<span class="n">list</span><span class="o">.</span><span class="na">indexOf</span><span class="o">(</span><span class="mi">3</span><span class="o">);</span>        <span class="c1">// 0</span>
+<span class="n">list</span><span class="o">.</span><span class="na">indexOf</span><span class="o">(</span><span class="mi">1</span><span class="o">);</span>        <span class="c1">// 2</span>
+<span class="n">list</span><span class="o">.</span><span class="na">indexOf</span><span class="o">(</span><span class="mi">4</span><span class="o">);</span>        <span class="c1">// -1 (searching for elements not in the ArrayLists would result in -1)</span>
+</pre></div>
+</div>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">Remember that in Computer Science, we start counting at 0.  Hence the first element is at index 0.</p>
+</div>
+</div>
+<div class="section" id="arraylists-vs-arrays">
+<span id="tutorial-apcs-ap-arraylists-arraylists-vs-arrays"></span><h2>ArrayLists vs Arrays<a class="headerlink" href="#arraylists-vs-arrays" title="Permalink to this headline">¶</a></h2>
+<p>ArrayLists and arrays are both containers for one data type.  However, there are many differences
+between them that you should be aware of when choosing which data structure to use:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="29%" />
+<col width="35%" />
+<col width="35%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">&nbsp;</th>
+<th class="head">ArrayLists</th>
+<th class="head">Arrays</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Data Type</td>
+<td>may only store Objects</td>
+<td>may store Objects or
+primitives</td>
+</tr>
+<tr class="row-odd"><td>Length</td>
+<td>are dynamic in length</td>
+<td>have fixed length</td>
+</tr>
+<tr class="row-even"><td>Size</td>
+<td>have the <code class="docutils literal"><span class="pre">size()</span></code>
+method</td>
+<td>have the <code class="docutils literal"><span class="pre">length</span></code>
+property</td>
+</tr>
+<tr class="row-odd"><td>Accessing Elements</td>
+<td>have the <code class="docutils literal"><span class="pre">get()</span></code>
+method</td>
+<td>have the bracket
+notation: <code class="docutils literal"><span class="pre">[]</span></code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="essential-methods-reference">
+<span id="tutorial-apcs-ap-arraylists-essential-methods-reference"></span><h2>Essential Methods Reference<a class="headerlink" href="#essential-methods-reference" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils">
+<dt><code class="docutils literal"><span class="pre">boolean</span></code> add(<em>E e</em>)</dt>
+<dd>Appends element <em>e</em> to the end of the list.  Returns true if successful.</dd>
+<dt><code class="docutils literal"><span class="pre">void</span></code> add(<em>int index, E e</em>)</dt>
+<dd>Inserts element <em>e</em> at specified index of the list.</dd>
+<dt><code class="docutils literal"><span class="pre">void</span></code> clear()</dt>
+<dd>Removes all elements from the list.</dd>
+<dt><code class="docutils literal"><span class="pre">boolean</span></code> contains(<em>Object o</em>)</dt>
+<dd>Returns true if <em>o</em> is the list.
+Example: <code class="docutils literal"><span class="pre">l.contains(&quot;string&quot;);</span></code></dd>
+<dt><code class="docutils literal"><span class="pre">E</span></code> get(<em>int index</em>)</dt>
+<dd>Gets element at the specified index of the list.</dd>
+<dt><code class="docutils literal"><span class="pre">int</span></code> indexOf(<em>Object o</em>)</dt>
+<dd>Gets the first instance of <em>o</em> in the list.</dd>
+<dt><code class="docutils literal"><span class="pre">int</span></code> lastIndexOf(<em>Object o</em>)</dt>
+<dd>Gets the last instance of <em>o</em> in the list.</dd>
+<dt><code class="docutils literal"><span class="pre">E</span></code> remove(<em>int index</em>)</dt>
+<dd>Removes and returns the element at the specified index of the list.</dd>
+<dt><code class="docutils literal"><span class="pre">boolean</span></code> remove(<em>Object o</em>)</dt>
+<dd>Removes the first instance of <em>o</em> in the list.  Returns true if successful.</dd>
+<dt><code class="docutils literal"><span class="pre">E</span></code> set(<em>int index, E element</em>)</dt>
+<dd>Replaces the element at specified index with new element.  Returns the original element.</dd>
+<dt><code class="docutils literal"><span class="pre">int</span></code> size()</dt>
+<dd>Returns how many elements are in the list</dd>
+<dt><code class="docutils literal"><span class="pre">Object[]</span></code> toArray()</dt>
+<dd>Returns an array with the exact elements of the list.</dd>
+</dl>
+</div>
+</div>
+
+
+                            </div>
+                            <div class="articleComments">
+                                
+                            </div>
+                        </div>
+                        <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="java_inheritance.html" class="btn btn-neutral float-right" title="Inheritance" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="arrays.html" class="btn btn-neutral" title="Introduction to Arrays" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, PChan, Kenneth, Jackie, Shakil, Jake, Leo, WX.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+                    </div>
+                </div>
+                
+            </section>
+            
+        </div>
+	
+	<div class="rst-versions" data-toggle="rst-versions">
+	    <form action="/logout" id="button_form">
+            </form>
+	</div>
+        
+
+
+        
+
+            <script type="text/javascript">
+             var DOCUMENTATION_OPTIONS = {
+                 URL_ROOT:'../../../',
+                 VERSION:'1.0.2',
+                 COLLAPSE_INDEX:false,
+                 FILE_SUFFIX:'.html',
+                 HAS_SOURCE:  true,
+                 SOURCELINK_SUFFIX: ''
+             };
+            </script>
+                <script type="text/javascript" src="../../../_static/jquery.js"></script>
+                <script type="text/javascript" src="../../../_static/underscore.js"></script>
+                <script type="text/javascript" src="../../../_static/doctools.js"></script>
+                <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+        
+
+        
+        
+            <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+        
+
+        
+        
+            <script type="text/javascript">
+             jQuery(function () {
+                 SphinxRtdTheme.StickyNav.enable();
+             });
+            </script>
+         
+
+    </body>
+</html>

@@ -1,0 +1,610 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+            <title>Conditionals</title>
+        
+
+        
+        
+
+        
+
+        
+        
+            
+
+        
+
+        
+        
+            <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
+        
+
+        
+
+        
+
+        <link rel="stylesheet" href="../../../../_static/bootstrap-glyphicons.css" type="text/css" />
+        <link rel="stylesheet" href="../../../../_static/main.css" type="text/css" />
+        <link rel="stylesheet" href="../../../../_static/button.css" type="text/css" />
+        <script
+            src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+            integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc="
+            crossorigin="anonymous"></script>
+        <script src="../../../../_static/button.js"></script>
+        <script src="../../../../_static/set_target.js"></script>
+                <link rel="index" title="Index"
+                      href="../../../../genindex.html"/>
+                <link rel="search" title="Search" href="../../../../search.html"/>
+            <link rel="top" title="Dojo Resources 1.0.2 documentation" href="../../../../index.html"/> 
+
+        
+        <script src="../../../../_static/js/modernizr.min.js"></script>
+
+    </head>
+
+    <body class="wy-body-for-nav" role="document">
+
+         
+        <div class="wy-grid-for-nav">
+
+            
+            <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+                <div class="wy-side-scroll">
+                    <div class="wy-side-nav-search">
+                        
+
+                            
+                                    <a href="https://dojo.stuycs.org"class="icon icon-home"> Dojo Website
+                            
+
+                            
+                                    </a>
+
+                                    
+                                        
+                                        
+                                            <div class="version">
+                                                1.0.2
+                                            </div>
+                                        
+                                    
+
+                                    
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search Dojo Resources" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+                        
+                    </div>
+
+                    <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                        
+                            
+                            
+                                <p class="caption"><span class="caption-text">Language Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://docs.racket-lang.org/">Racket</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://ccl.northwestern.edu/netlogo/docs/dictionary.html">NetLogo</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://www.w3.org/TR/2014/REC-html5-20141028/">HTML</a></li>
+<li class="toctree-l1"><a class="reference external" href="http://www.w3schools.com/">Web W3schools</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://docs.python.org/2/library/index.html">Python 2.7</a></li>
+<li class="toctree-l1"><a class="reference external" href="http://rgruet.free.fr/PQR27/PQR2.7.html">Python 2.7 Quick Reference</a></li>
+<li class="toctree-l1"><a class="reference external" href="http://docs.oracle.com/javase/7/docs/api/">Java 7 API</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://docs.oracle.com/javase/7/docs/api">Java 7 AP subset API</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://processing.org/reference">Processing</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Guides and Tutorials</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../stuycs_guides.html">StuyCS Guides</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../stuycs_guides.html#intro-to-computer-science-1">Intro to Computer Science 1</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../intro_cs1/recursion_introduction.html">Introduction to Recursion</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../intro_cs1/recursion_introduction.html#definitions">Definitions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../intro_cs1/recursion_introduction.html#tips-for-finding-the-recursive-reduction">Tips for Finding the Recursive Reduction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../intro_cs1/recursion_introduction.html#tips-for-finding-the-base-case">Tips for Finding the Base Case</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../intro_cs1/recursion_introduction.html#what-is-a-recursive-function">What is a Recursive Function</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../intro_cs1/recursion_introduction.html#tips-for-writing-recursive-functions">Tips for Writing Recursive Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../intro_cs1/recursion_introduction.html#sample-workflow-for-recursion">Sample Workflow for Recursion</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../intro_cs1/recursion_introduction.html#what-is-an-iterative-style-recursive-function">What is an Iterative-Style Recursive Function</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../intro_cs1/recursion_introduction.html#what-are-state-variables">What are State Variables</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../intro_cs1/recursion_introduction.html#tips-for-writing-iterative-style-recursive-functions">Tips for Writing Iterative-Style Recursive Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../intro_cs1/recursion_introduction.html#sample-workflow-for-iterative-style-recursion">Sample Workflow for Iterative-Style Recursion</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../stuycs_guides.html#intro-to-computer-science-2">Intro to Computer Science 2</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../stuycs_guides.html#ap-computer-science">AP Computer Science</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../ap/java_introduction.html">Introducing Java</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../ap/java_introduction.html#what-is-java">What is Java</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../ap/java_introduction.html#jvm-and-java-bytecode">JVM and Java Bytecode</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../ap/java_introduction.html#writing-and-compiling-java-source-files">Writing and Compiling Java Source Files</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../ap/java_introduction.html#running-java-files">Running Java Files</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../ap/java_introductory_features.html">Basic Java Features</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../ap/java_introductory_features.html#data-types">Data Types</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../ap/java_introductory_features.html#tutorial-apcs-ap-introductory-java-features-identifiers">Identifiers</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../ap/java_introductory_features.html#operators">Operators</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../ap/java_conditionals.html">Conditionals</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../ap/java_conditionals.html#the-basic-if-statement">The Basic if Statement</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../ap/java_conditionals.html#tips-and-warnings">Tips and Warnings</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../ap/java_conditionals.html#extended-if-statements">Extended if Statements</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../ap/java_loops_structure.html">Basic Loops Structure</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../ap/java_loops_structure.html#loops-overview">Loops Overview</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../ap/java_loops_structure.html#while-loops">While Loops</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../ap/java_loops_structure.html#for-loops">For Loops</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../ap/java_loops_structure.html#for-loop-vs-while-loop">For Loop vs While Loop</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../ap/java_inheritance.html">Inheritance</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../ap/java_inheritance.html#overview">Overview</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../ap/java_inheritance.html#is-a-relationship">&#8220;Is-A&#8221; Relationship</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../ap/java_inheritance.html#extend-ing-a-class">(Extend)ing a Class</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../ap/java_inheritance.html#rules-regarding-subclasses">Rules Regarding Subclasses</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../ap/java_inheritance.html#overriding-methods">Overriding Methods</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../ap/java_inheritance.html#object-type-vs-variable-type">Object Type vs Variable Type</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../ap/java_inheritance.html#downcasting">Downcasting</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../ap/java_inheritance.html#the-usage-of-super">The Usage of Super</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../ap/java_abstract_classes_and_methods.html">Abstract Classes and Methods</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../ap/java_abstract_classes_and_methods.html#overview">Overview</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../ap/java_abstract_classes_and_methods.html#defining-abstract-classes-and-methods">Defining Abstract Classes and Methods</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../ap/java_abstract_classes_and_methods.html#key-takeaways">Key Takeaways</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../ap/java_interfaces.html">Interfaces</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../ap/java_interfaces.html#overview">Overview</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../ap/java_interfaces.html#defining-interfaces">Defining Interfaces</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../ap/java_interfaces.html#using-an-interface">Using an Interface</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../ap/java_interfaces.html#calling-methods-of-an-interface">Calling Methods of An Interface</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../ap/java_interfaces.html#key-takeaways">Key Takeaways</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../ap/java_interfaces.html#the-comparable-interface">The Comparable Interface</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../ap/java_polymorphism.html">Static vs Dynamic Polymorphism</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../ap/java_polymorphism.html#static-polymorphism">Static Polymorphism</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../ap/java_polymorphism.html#dynamic-polymorphism">Dynamic Polymorphism</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../ap/big_oh_notation.html">Big Oh Notation</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../ap/big_oh_notation.html#brief-overview">Brief Overview</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../ap/big_oh_notation.html#mathematical-context">Mathematical Context</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../ap/big_oh_notation.html#big-oh-notation-description">Big Oh Notation Description</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../ap/big_oh_notation.html#guide-to-runtime-analysis">Guide to Runtime Analysis</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../ap/selection_sort.html">Selection Sort</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../ap/selection_sort.html#key-idea-finding-the-minimum">Key Idea: Finding the Minimum</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../ap/selection_sort.html#the-general-algorithm">The General Algorithm</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../ap/selection_sort.html#exercises">Exercises</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../ap/insertion_sort.html">Insertion Sort</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../ap/insertion_sort.html#definitions">Definitions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../ap/insertion_sort.html#key-idea-sorting-a-hand-of-cards">Key Idea: Sorting a Hand of Cards</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../ap/insertion_sort.html#the-general-algorithm">The General Algorithm</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../ap/insertion_sort.html#exercises">Exercises</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../recursion_refresher.html">Recursion: A Refresher</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../recursion_refresher.html#definitions">Definitions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../recursion_refresher.html#tips-for-finding-the-recursive-reduction">Tips for Finding the Recursive Reduction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../recursion_refresher.html#tips-for-finding-the-base-case">Tips for Finding the Base Case</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../recursion_refresher.html#what-is-a-recursive-function">What is a Recursive Function</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../recursion_refresher.html#example-of-recursion">Example of Recursion</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../recursion_refresher.html#what-is-an-iterative-style-recursive-function">What is an Iterative-Style Recursive Function</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../recursion_refresher.html#what-are-state-variables">What are State Variables</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../recursion_refresher.html#example-of-iterative-style-recursion">Example of Iterative Style Recursion</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../ap/mergesort.html">MergeSort</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../ap/mergesort.html#key-idea-sorting-two-sorted-lists">Key Idea: Sorting Two Sorted Lists</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../ap/mergesort.html#the-general-algorithm">The General Algorithm</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../ap/mergesort.html#exercises">Exercises</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../ap/quicksort.html">QuickSort</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../ap/quicksort.html#key-idea-partitioning">Key Idea: Partitioning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../ap/quicksort.html#the-general-algorithm">The General Algorithm</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../ap/quicksort.html#exercises">Exercises</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../ap/sequential_binary_search.html">Sequential vs Binary Search</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../ap/sequential_binary_search.html#sequential-search">Sequential Search</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../ap/sequential_binary_search.html#binary-search">Binary Search</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../ap/sequential_binary_search.html#summary">Summary</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../stuycs_guides.html#system-level-programming">System Level Programming</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../stuycs_guides.html#computer-graphics">Computer Graphics</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../stuycs_guides.html#software-development">Software Development</a><ul class="simple">
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../software_installation_and_tips/software.html">Software and Tools</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../../software_installation_and_tips/installation_instructions/index.html">Installing Software</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../software_installation_and_tips/installation_instructions/index.html#file-transfer-utilities">File Transfer Utilities</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../../software_installation_and_tips/installation_instructions/file_transfer_utilities/installing_ssh_programs.html">Installing SSH Programs</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../software_installation_and_tips/installation_instructions/index.html#programming-languages">Programming Languages</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../../software_installation_and_tips/installation_instructions/programming_languages/installing_jdk.html">Installing Java JDK</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../software_installation_and_tips/installation_instructions/programming_languages/installing_python.html">Installing Python and Pip</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../software_installation_and_tips/installation_instructions/index.html#programming-tools">Programming Tools</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../../software_installation_and_tips/installation_instructions/programming_tools/installing_emacs.html">Installing Emacs</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../software_installation_and_tips/installation_instructions/programming_tools/installing_git.html">Installing Git</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../software_installation_and_tips/installation_instructions/programming_tools/installing_make.html">Installing Make</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../software_installation_and_tips/installation_instructions/programming_tools/installing_mongodb.html">Installing MongoDB</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../software_installation_and_tips/installation_instructions/index.html#system-tools">System Tools</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../../software_installation_and_tips/installation_instructions/system_tools/installing_homebrew.html">Installing Homebrew</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../software_installation_and_tips/software_tutorials/index.html">Tutorials for Using Various Software</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../software_installation_and_tips/software_tutorials/index.html#languages">Languages</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../../software_installation_and_tips/software_tutorials/languages/bash_tutorial.html">Introduction to Bash</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../software_installation_and_tips/software_tutorials/index.html#programming-tools">Programming Tools</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../../software_installation_and_tips/software_tutorials/programming_tools/emacs_tutorial.html">Introduction to Emacs</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../software_installation_and_tips/software_tutorials/programming_tools/git_tutorial.html">Introduction to Git</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../software_installation_and_tips/software_tutorials/programming_tools/git_fix_commit_tutorial.html">Tutorial: Fixing Commits Linked to No one</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../software_installation_and_tips/software_tutorials/programming_tools/terminal_tutorial.html">How to Use the Terminal</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../software_installation_and_tips/software_tutorials/programming_tools/vim_tutorial.html">Introduction to Vim</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../software_installation_and_tips/software_tutorials/index.html#remote-file-transfer">Remote File Transfer</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../../software_installation_and_tips/software_tutorials/remote_file_transfer/ssh_tutorial.html">Introduction to SSH</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../software_installation_and_tips/software_tutorials/remote_file_transfer/ssh_keys_tutorial.html">Guide to SSH Keys</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../software_installation_and_tips/software_tutorials/remote_file_transfer/remote_file_transfer_tutorial.html">Introduction to Remote File Transfer</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../software_installation_and_tips/software_tutorials/index.html#system">System</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../../software_installation_and_tips/software_tutorials/system/modifying_windows_path_tutorial.html">Modifying Windows Path</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../misc.html">Misc</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../misc/firefox_already_running.html">Firefox Already Running Error</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../misc/proxy_settings.html">Stuy Proxy Settings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../misc/changing_stuycs_password.html">Changing StuyCS Password</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../misc/changing_stuycs_password.html#instructions">Instructions</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Useful Links</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../useful_links.html">Intro to Computer Science 1</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../useful_links.html#intro-to-computer-science-2">Intro to Computer Science 2</a><ul>
+<li class="toctree-l2"><a class="reference external" href="http://pythontutor.com/">Python Visualizer</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../useful_links.html#ap-computer-science">AP Computer Science</a><ul>
+<li class="toctree-l2"><a class="reference external" href="http://cscircles.cemc.uwaterloo.ca/java_visualize/">Java Visualizer</a></li>
+<li class="toctree-l2"><a class="reference external" href="/public_resources/nqueens-sketchpad#://">NQueens SketchPad</a></li>
+<li class="toctree-l2"><a class="reference external" href="/public_resources/knights-tour-sketchpad#://">Knight Tours SketchPad</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../useful_links.html#systems-level-programming">Systems Level Programming</a><ul>
+<li class="toctree-l2"><a class="reference external" href="http://cdecl.org/">C-English Translator</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../useful_links.html#computer-graphics">Computer Graphics</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../useful_links.html#software-development">Software Development</a><ul>
+<li class="toctree-l2"><a class="reference external" href="https://jsfiddle.net/">JS Fiddle</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../useful_links.html#general-software">General Software</a><ul>
+<li class="toctree-l2"><a class="reference external" href="https://www.emacswiki.org">Emacs Wiki</a></li>
+<li class="toctree-l2"><a class="reference external" href="http://vim.wikia.com/wiki/Vim_Tips_Wiki">Vim Tips Wiki</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Extra</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../image.html">StuyCS</a></li>
+</ul>
+
+                            
+                        
+                    </div>
+                </div>
+                
+            </nav>
+
+            <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+                
+                <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+                    
+                        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+                        <a href="../../../../index.html">Dojo Resources</a>
+                    
+                </nav>
+
+
+
+                
+                <div class="wy-nav-content">
+                    <div class="rst-content">
+                        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../../index.html">Resources</a> &raquo;</li>
+        
+      <li>Conditionals</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+                        <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+                            <div itemprop="articleBody">
+                                
+  <div class="section" id="conditionals">
+<h1>Conditionals<a class="headerlink" href="#conditionals" title="Permalink to this headline">¶</a></h1>
+<p><em>Written by PChan on 2017-04-15</em></p>
+<ul class="simple">
+<li><a class="reference internal" href="#tutorial-apcs-ap-java-conditionals-if-statements"><span class="std std-ref">The Basic if Statement</span></a></li>
+<li><a class="reference internal" href="#tutorial-apcs-ap-java-conditionals-if-statements-tips-and-warnings"><span class="std std-ref">Tips and Warnings</span></a><ul>
+<li><a class="reference internal" href="#tutorial-apcs-ap-java-conditionals-if-statements-tips-and-warnings-nested-if-statements"><span class="std std-ref">Nested if Statements</span></a></li>
+<li><a class="reference internal" href="#tutorial-apcs-ap-java-conditionals-if-statements-tips-and-warnings-conditionals-without-braces"><span class="std std-ref">Conditionals Without Braces</span></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#tutorial-apcs-ap-java-conditionals-extended-if-statements"><span class="std std-ref">Extended if Statements</span></a></li>
+</ul>
+<div class="section" id="the-basic-if-statement">
+<span id="tutorial-apcs-ap-java-conditionals-if-statements"></span><h2>The Basic if Statement<a class="headerlink" href="#the-basic-if-statement" title="Permalink to this headline">¶</a></h2>
+<p>The general structure of the <code class="docutils literal"><span class="pre">if</span></code> statement...</p>
+<div class="highlight-java"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="o">(</span><span class="n">Boolean</span> <span class="n">Expression</span><span class="o">){</span>
+    <span class="c1">// Code to run if Boolean Expression is true</span>
+<span class="o">}</span>
+</pre></div>
+</div>
+<p>The body of the <code class="docutils literal"><span class="pre">if</span></code> statement would only be evaluated if <em>Boolean Expression</em> is true. While the
+following snippet is legal, it is typically bad practice:</p>
+<div class="highlight-java"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="o">(</span><span class="kc">true</span><span class="o">){</span>
+    <span class="c1">// Your code here...</span>
+<span class="o">}</span>
+</pre></div>
+</div>
+<p>Since the code would always evaluate, you can move the body of the <code class="docutils literal"><span class="pre">if</span></code> statement outside of the <code class="docutils literal"><span class="pre">if</span></code>
+statement.  Similarly, don&#8217;t write <code class="docutils literal"><span class="pre">if</span> <span class="pre">(false){}</span></code>.</p>
+<p>Next, we would take a look at the <code class="docutils literal"><span class="pre">if</span> <span class="pre">...</span> <span class="pre">else</span></code> statement:</p>
+<div class="highlight-java"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="o">(</span><span class="n">BE</span><span class="o">){</span>
+    <span class="c1">// Code to evaluate if BE is true</span>
+<span class="o">}</span>
+<span class="k">else</span><span class="o">{</span>
+    <span class="c1">// Code to evaluate if BE is false</span>
+<span class="o">}</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last"><em>BE</em> is simply an abbreviation for <em>Boolean Expression</em></p>
+</div>
+<p>If the BE is true, the body of the <code class="docutils literal"><span class="pre">if</span></code> statement would be evaluated, but the body of the <code class="docutils literal"><span class="pre">else</span></code>
+statement would be ignored.  If the BE is false, the body of the <code class="docutils literal"><span class="pre">if</span></code> statement would be ignored, and
+the body of the <code class="docutils literal"><span class="pre">else</span></code> statement would be evaluated.</p>
+</div>
+<div class="section" id="tips-and-warnings">
+<span id="tutorial-apcs-ap-java-conditionals-if-statements-tips-and-warnings"></span><h2>Tips and Warnings<a class="headerlink" href="#tips-and-warnings" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="nested-if-statements">
+<span id="tutorial-apcs-ap-java-conditionals-if-statements-tips-and-warnings-nested-if-statements"></span><h3>Nested if Statements<a class="headerlink" href="#nested-if-statements" title="Permalink to this headline">¶</a></h3>
+<p>Here is a tip when writing nested <code class="docutils literal"><span class="pre">if</span></code> statements:</p>
+<div class="highlight-java"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="o">(</span><span class="n">Boolean</span> <span class="n">Expr1</span><span class="o">){</span>
+    <span class="k">if</span> <span class="o">(</span><span class="n">Boolean</span> <span class="n">Expr2</span><span class="o">){</span>
+         <span class="c1">// Code to evaluate if Boolean Expr1 and Boolean Expr2 are true</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</pre></div>
+</div>
+<p>The above snippet of code can be rewritten as:</p>
+<div class="highlight-java"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="o">(</span><span class="n">Boolean</span> <span class="n">Expr1</span> <span class="o">&amp;&amp;</span> <span class="n">Boolean</span> <span class="n">Expr2</span><span class="o">){</span>
+    <span class="c1">// Code to evaluate if Boolean Expr1 and Boolean Expr2 are true</span>
+<span class="o">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="conditionals-without-braces">
+<span id="tutorial-apcs-ap-java-conditionals-if-statements-tips-and-warnings-conditionals-without-braces"></span><h3>Conditionals Without Braces<a class="headerlink" href="#conditionals-without-braces" title="Permalink to this headline">¶</a></h3>
+<p>Sometimes you might find some Java code written like the following:</p>
+<div class="highlight-java"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="o">(</span><span class="n">BE</span><span class="o">)</span>
+    <span class="c1">//singular statement to run</span>
+</pre></div>
+</div>
+<p>When there is only one statement in the body of a conditional, you can leave out the braces.  Do note that
+any statements indented similarly would be evaluated every single time.</p>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">The usage of this feature is not recommended as it can introduce errors later when you add more
+statements to the body.  Always use braces and save yourself hours of headaches.</p>
+</div>
+</div>
+</div>
+<div class="section" id="extended-if-statements">
+<span id="tutorial-apcs-ap-java-conditionals-extended-if-statements"></span><h2>Extended if Statements<a class="headerlink" href="#extended-if-statements" title="Permalink to this headline">¶</a></h2>
+<p>Do you remember the <code class="docutils literal"><span class="pre">cond</span></code> statement in Scheme?</p>
+<div class="highlight-racket"><div class="highlight"><pre><span></span><span class="p">(</span><span class="k">cond</span>
+  <span class="p">((</span><span class="n">&lt;BE&gt;</span><span class="p">)</span> <span class="n">&lt;things</span> <span class="n">to</span> <span class="n">do&gt;</span><span class="p">)</span>
+  <span class="p">((</span><span class="n">&lt;BE&gt;</span><span class="p">)</span> <span class="n">&lt;things</span> <span class="n">to</span> <span class="n">do&gt;</span><span class="p">)</span>
+  <span class="p">((</span><span class="n">&lt;BE&gt;</span><span class="p">)</span> <span class="n">&lt;things</span> <span class="n">to</span> <span class="n">do&gt;</span><span class="p">)</span>
+  <span class="p">(</span><span class="k">else</span> <span class="p">(</span><span class="n">&lt;things</span> <span class="n">to</span> <span class="n">do&gt;</span><span class="p">)))</span>
+</pre></div>
+</div>
+<p>Or maybe the <code class="docutils literal"><span class="pre">elif</span></code> statement in Python...</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="o">&lt;</span><span class="n">BE</span><span class="o">&gt;</span><span class="p">:</span>
+    <span class="o">&lt;</span><span class="n">things</span> <span class="n">to</span> <span class="n">do</span><span class="o">&gt;</span>
+<span class="k">elif</span> <span class="o">&lt;</span><span class="n">BE</span><span class="o">&gt;</span><span class="p">:</span>
+    <span class="o">&lt;</span><span class="n">things</span> <span class="n">to</span> <span class="n">do</span><span class="o">&gt;</span>
+<span class="k">elif</span> <span class="o">&lt;</span><span class="n">BE</span><span class="o">&gt;</span><span class="p">:</span>
+    <span class="o">&lt;</span><span class="n">things</span> <span class="n">to</span> <span class="n">do</span><span class="o">&gt;</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="o">&lt;</span><span class="n">things</span> <span class="n">to</span> <span class="n">do</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<p>The <code class="docutils literal"><span class="pre">cond</span></code> statement in Scheme or the <code class="docutils literal"><span class="pre">elif</span></code> statement in Python allows you to test multiple
+conditionals without nesting if statements.</p>
+<p>The Java equivalence would be:</p>
+<div class="highlight-java"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="o">(</span><span class="n">Boolean</span> <span class="n">Expr</span><span class="o">){</span>
+    <span class="c1">// Code to execute if Boolean Expr is true</span>
+<span class="o">}</span>
+<span class="k">else</span> <span class="k">if</span> <span class="o">(</span><span class="n">Boolean</span> <span class="n">Expr1</span><span class="o">){</span>
+    <span class="c1">// Code to execute if Boolean Expr1 is true</span>
+<span class="o">}</span>
+<span class="k">else</span><span class="o">{</span>
+    <span class="c1">// Code to execute if none of the previous BEs is true</span>
+<span class="o">}</span>
+</pre></div>
+</div>
+<p>Between the <code class="docutils literal"><span class="pre">if</span></code> statement and the <code class="docutils literal"><span class="pre">else</span></code> statement, you can add as many <code class="docutils literal"><span class="pre">else</span> <span class="pre">if</span></code> statements as you
+wish.  As soon as one of the conditional in the chain is triggered, the body of that conditional would be
+evaluated and control is passed to the first statement after the else block.  If none of the conditionals
+are triggered, the <code class="docutils literal"><span class="pre">else</span></code> block would be evaluated.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">If you want all the conditionals to be evaluated, you would utilize a series of <code class="docutils literal"><span class="pre">if</span></code> statements
+rather than <code class="docutils literal"><span class="pre">if</span></code> and <code class="docutils literal"><span class="pre">else</span> <span class="pre">if</span></code> statements.</p>
+</div>
+</div>
+</div>
+
+
+                            </div>
+                            <div class="articleComments">
+                                
+                            </div>
+                        </div>
+                        <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, PChan, Kenneth, Jackie, Shakil, Jake, Leo, WX.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+                    </div>
+                </div>
+                
+            </section>
+            
+        </div>
+	
+	<div class="rst-versions" data-toggle="rst-versions">
+	    <form action="/logout" id="button_form">
+            </form>
+	</div>
+        
+
+
+        
+
+            <script type="text/javascript">
+             var DOCUMENTATION_OPTIONS = {
+                 URL_ROOT:'../../../../',
+                 VERSION:'1.0.2',
+                 COLLAPSE_INDEX:false,
+                 FILE_SUFFIX:'.html',
+                 HAS_SOURCE:  true,
+                 SOURCELINK_SUFFIX: ''
+             };
+            </script>
+                <script type="text/javascript" src="../../../../_static/jquery.js"></script>
+                <script type="text/javascript" src="../../../../_static/underscore.js"></script>
+                <script type="text/javascript" src="../../../../_static/doctools.js"></script>
+                <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+        
+
+        
+        
+            <script type="text/javascript" src="../../../../_static/js/theme.js"></script>
+        
+
+        
+        
+            <script type="text/javascript">
+             jQuery(function () {
+                 SphinxRtdTheme.StickyNav.enable();
+             });
+            </script>
+         
+
+    </body>
+</html>

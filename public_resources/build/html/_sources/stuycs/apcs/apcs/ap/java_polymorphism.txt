@@ -1,0 +1,71 @@
+Static vs Dynamic Polymorphism
+==============================
+
+*Written by PChan on 2017-04-19*
+
+* :ref:`tutorial_apcs_ap_java_polymorphism_static_polymorphism`
+* :ref:`tutorial_apcs_ap_java_polymorphism_dynamic_polymorphism`
+
+.. highlight:: java
+
+.. _tutorial_apcs_ap_java_polymorphism_static_polymorphism:
+	       
+Static Polymorphism
+-------------------
+**Static polymorphism** is achieved through method overloading.  *Method overloading* is the concept of
+defining multiple methods with the same name, but taking different parameters.  Java figures out at
+compile-time which method to call in such cases based on method signatures:
+::
+
+   // We will only show method signature here
+
+   public int convert(double, double);
+   public int convert(int, double);
+
+   public static void main(String[] args){
+       convert(3, 2.0);
+       convert(3.0, 2.0);
+   }
+
+.. _tutorial_apcs_ap_java_polymorphism_dynamic_polymorphism:
+   
+Dynamic Polymorphism
+--------------------
+Dynamic polymorphism is achieved through method overriding: Java figures out during run-time whether to
+call the overridden method or the method in the super class.
+::
+
+   public class Animal{
+       public void speak(){
+           System.out.println("I don't know what I should say...");
+       }
+   }
+
+   public class Cat extends Animal{
+       public void speak(){
+           System.out.println("Mew!");
+       }
+   }
+
+   public class Test{
+       public static void main(String[] args){
+           Animal a = new Animal();
+           Animal b = new Cat();
+           a.speak();  // What do you think is printed here?
+           b.speak();  // What do you think is printed here?
+       }
+   }
+
+.. highlight:: none
+   
+Even though both ``a`` and ``b`` are of variable type ``Animal``, Java will invoke the method of the
+object type.  Hence, the output will be:
+::
+
+   I don't know what to say...
+   Mew!
+
+.. danger::
+   Do **NOT** confuse this with :ref:`tutorial_apcs_ap_java_inheritance_downcasting`.
+   
+.. highlight:: python
