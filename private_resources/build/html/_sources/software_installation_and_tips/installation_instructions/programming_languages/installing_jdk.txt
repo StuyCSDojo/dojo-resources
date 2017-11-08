@@ -11,9 +11,8 @@ Installing Java JDK
 
 Linux
 -----
-Writing Java programs would require you to install the **Java JDK (Java Development Kit)** while running
-Java programs would require you to install the **Java JRE (Java Runtime)**.  This guide would cover how to
-install the **Java JDK**.
+Writing Java programs requires installing the **Java JDK (Java Development Kit)** while running Java programs would
+require you to install the **Java JRE (Java Runtime)**.  This guide would cover how to install the **Java JDK**.
 
 .. highlight:: none
 
@@ -46,9 +45,8 @@ Mac OSX
 
 .. highlight:: none
 
-Writing Java programs would require you to install the **Java JDK (Java Development Kit)** while running
-Java programs would require you to install the **Java JRE (Java Runtime)**.  This guide would cover how to
-install the **Java JDK**.
+Writing Java programs requires installing the **Java JDK (Java Development Kit)** while running Java programs would
+require you to install the **Java JRE (Java Runtime)**.  This guide would cover how to install the **Java JDK**.
 
 We are going to be installing the **Java JDK** via Homebrew:
 
@@ -71,9 +69,8 @@ Note: In the future, update Java with the following command:
 
 Windows
 -------
-Writing Java programs would require you to install the **Java JDK (Java Development Kit)** while running
-Java programs would require you to install the **Java JRE (Java Runtime)**.  This guide would cover how to
-install the **Java JDK**.
+Writing Java programs requires installing the **Java JDK (Java Development Kit)** while running Java programs would
+require you to install the **Java JRE (Java Runtime)**.  This guide would cover how to install the **Java JDK**.
 
 Download the JDK
 ^^^^^^^^^^^^^^^^
@@ -88,7 +85,15 @@ Download the JDK
       green.
 
 .. tip::
-   To find out whether you are using x32 or x64 bit OS, check out `this guide from Microsoft <http://support.microsoft.com/kb/827218/en-US>`_.
+   To find out whether you are using x32 or x64 bit OS, check out `this guide from Microsoft <https://support.microsoft.com/en-us/help/13443/windows-which-operating-system>`_.  To clarify, those with 32-bit operating system (as shown below)
+   should download Oracle's "Windows **x86**" Java.  Those with 64-bit operating system should download Oracle's
+   "Windows **x64**" Java.
+
+.. figure:: ../../images/installation_instructions/programming_languages/java/operating-system-type.png
+   :align: center
+   :width: 450
+
+   The operating system type is underlined in orange.  Ignore the processor type.
 
 3. The latest version of the **Java JDK** is found right underneath the description at the top.  Accept
    the license agreement and download the appropriate version for your operating system.
@@ -103,8 +108,7 @@ Download the JDK
 .. warning::
    Note that the version number in the screenshot may differ from the ones you see.
 
-4. Run the executable that you just downloaded.  The installer would install both the **Java JDK** and the
-   **Java JRE**.
+4. Run the executable that you just downloaded. It will install both the **Java JDK** and the **Java JRE**.
 5. Add the **Java JRE** and the **Java JDK** to your system path.  If you are not sure how to do so...
 
    * Using Windows Explorer, navigate to ``C:\Program Files\Java`` where you will find a directory for the
@@ -115,11 +119,6 @@ Download the JDK
      * ``C:\Program Files\Java\<jdk_directory>\bin`` (<jdk_directory> is the name of the jdk directory)
      * ``C:\Program Files\Java\<jre_directory>\bin`` (<jre_directory> is the name of the jre directory)
 
-
-5. Add the **Java JRE** and the **Java JDK** to your system path.
-
-   If you are not sure how to do so, read
-   the :ref:`tutorials_system_windows_path_modifying_windows_path` guide and then add the bin folders of
-   the two folders in ``C:\Program Files\Java`` to your path.
-6. Fire up a new command prompt and try the following commands: ``javac --version`` and ``java --version``
+6. Close any open Command Prompt windows. Open a new Command Prompt window by pressing the ``Windows`` key, then
+   typing *cmd* ``enter``.  Try the following commands: ``javac -version`` and ``java -version``
 7. If you did not get a commmand not found error, congratulations!!!

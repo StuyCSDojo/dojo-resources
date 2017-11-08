@@ -13,7 +13,7 @@ Inheritance
 * :ref:`tutorial_apcs_ap_java_inheritance_the_usage_of_super`
 
 .. highlight:: java
-  
+
 .. _tutorial_apcs_ap_java_inheritance_overview:
 
 Overview
@@ -39,9 +39,9 @@ Proper usage of inheritance gives us multiple benefits:
 
 Inheritance is based off the *is-a* relationship.  When we say that A *is-a* B, we are saying that A
 inherits the characteristics of B.
-	   
+
 .. _tutorial_apcs_ap_java_inheritance_extending_a_class:
-  
+
 (Extend)ing a Class
 -------------------
 To define a subclass, we use the ``extends`` keyword.  The general syntax is shown below:
@@ -52,10 +52,10 @@ To define a subclass, we use the ``extends`` keyword.  The general syntax is sho
    }
 
 .. warning::
-   Each subclass might only *extend* one superclass. 
-   
+   Each subclass might only *extend* one superclass.
+
 .. _tutorial_apcs_ap_java_inheritance_rules_regarding_subclasses:
-   
+
 Rules Regarding Subclasses
 --------------------------
 * Subclasses may add new variables and methods
@@ -80,7 +80,7 @@ Here is an example:
        public void speak(){
            System.out.println("I am a panda!");
        }
-       
+
    }
 
    public class BluePanda extends Panda{
@@ -88,7 +88,7 @@ Here is an example:
        public void speak(){
            System.out.println("I am a blue panda!");
        }
-       
+
    }
 
 In the example above, the ``BluePanda`` class *overrides* the ``speak()`` method of the ``Panda`` class.
@@ -112,7 +112,7 @@ We would get the following output:
    :ref:`tutorial_apcs_ap_java_polymorphism_static_polymorphism`.
 
 .. _tutorial_apcs_ap_java_inheritance_object_type_vs_variable_type:
-	
+
 Object Type vs Variable Type
 ----------------------------
 In Java, it is possible to declare a variable with a different type than the type of its value.
@@ -123,7 +123,7 @@ In Java, it is possible to declare a variable with a different type than the typ
       Refers to the true type of an object
 
    Variable Type
-      Refers to the type of the variable 
+      Refers to the type of the variable
 
 Let's take a look at this snippet of code:
 ::
@@ -134,7 +134,7 @@ Let's take a look at this snippet of code:
        public Animal(){
            name = "Animal";
        }
-       
+
    }
 
    // Cat.java
@@ -146,7 +146,7 @@ Let's take a look at this snippet of code:
 
        public static void main(String[] args){
            Animal tom = new Cat();
-	   Cat jerry = new Animal();
+           Cat jerry = new Animal();
        }
    }
 
@@ -175,25 +175,25 @@ We will use the following definitions in this section:
    public class Teacher{
 
        public int numOfYearsTeaching;
-          
+
    }
 
    // CSTeacher.java
    public class CSTeacher extends Teacher{
 
        public int numOfYearsTeachingCS;
-   
+
    }
 
 *Downcasting* is the technique of typecasting a superclass into a subclass.  Consider this snippet of
 code:
 ::
-   
+
    Teacher mr_k = new CSTeacher();
    CSTeacher mr_brown = new CSTeacher();
-   int numOfYearsForK = (CSTeacher) mr_k.numOfYearsTeachingCS;
+   int numOfYearsForK = mr_k.numOfYearsTeachingCS;
    int numOfYearsForBrown = (CSTeacher) mr_brown.numOfYearsTeachingCS;
-   
+
 If you test this snippet of code, you will find that the third line give you a compile time error.  Why is
 that?
 
@@ -208,7 +208,7 @@ of ``Teacher``:
 .. warning::
    Because dot operator take precedence over the type casting operator, the following line will still
    produce the error: ``int numOfYearsForK = (CSTeacher) mr_k.numOfYearsTeachingCS;``.
-   
+
 Since ``mr_brown`` is already of variable type ``CSTeacher``, we can simply write:
 ::
 
@@ -216,7 +216,7 @@ Since ``mr_brown`` is already of variable type ``CSTeacher``, we can simply writ
 
 .. danger::
    Do **NOT** confuse this with :ref:`tutorial_apcs_ap_java_polymorphism_dynamic_polymorphism`.
-   
+
 .. _tutorial_apcs_ap_java_inheritance_the_usage_of_super:
 
 The Usage of Super
@@ -254,9 +254,9 @@ example:
        public SuperClass(){
             String summary = "I am a class";
             String description = "I am a superclass";
-	    int[] prediction = {1, 2, 3, 4, 5};
+            int[] prediction = {1, 2, 3, 4, 5};
        }
-   
+
    }
 
    public class SubClass extends SuperClass{
@@ -265,7 +265,7 @@ example:
            super();
            String description = "I am a subclass";
        }
-   
+
    }
 
 Notice how in this example, we invoked ``super()`` which executes the statements inside the body of the
@@ -279,5 +279,5 @@ the corresponding parameters when you invoke ``super()``.  For example, you migh
    When you write ``super``, you are referring to the superclass.  When you write ``super()``, you are
    referring to the default constructor of the superclass.  Access the other constructors of the
    superclass by passing arguments to ``super()``.
-   
+
 .. highlight:: python

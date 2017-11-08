@@ -11,7 +11,7 @@ Conditionals
 * :ref:`tutorial_apcs_ap_java_conditionals_extended_if_statements`
 
 .. highlight:: java
-  
+
 .. _tutorial_apcs_ap_java_conditionals_if_statements:
 
 The Basic if Statement
@@ -33,7 +33,7 @@ following snippet is legal, it is typically bad practice:
 
 Since the code would always evaluate, you can move the body of the ``if`` statement outside of the ``if``
 statement.  Similarly, don't write ``if (false){}``.
-   
+
 Next, we would take a look at the ``if ... else`` statement:
 ::
 
@@ -77,7 +77,7 @@ The above snippet of code can be rewritten as:
    }
 
 .. _tutorial_apcs_ap_java_conditionals_if_statements_tips_and_warnings_conditionals_without_braces:
-   
+
 Conditionals Without Braces
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Sometimes you might find some Java code written like the following:
@@ -87,7 +87,7 @@ Sometimes you might find some Java code written like the following:
        //singular statement to run
 
 When there is only one statement in the body of a conditional, you can leave out the braces.  Do note that
-any statements indented similarly would be evaluated every single time.
+any other statements indented similarly would be evaluated every single time.
 
 .. warning::
    The usage of this feature is not recommended as it can introduce errors later when you add more
@@ -110,7 +110,7 @@ Do you remember the ``cond`` statement in Scheme?
      (else (<things to do>)))
 
 .. highlight:: python
-     
+
 Or maybe the ``elif`` statement in Python...
 ::
 
@@ -122,9 +122,9 @@ Or maybe the ``elif`` statement in Python...
        <things to do>
    else:
        <things to do>
-       
+
 .. highlight:: java
-     
+
 The ``cond`` statement in Scheme or the ``elif`` statement in Python allows you to test multiple
 conditionals without nesting if statements.
 
@@ -148,6 +148,6 @@ are triggered, the ``else`` block would be evaluated.
 
 .. note::
    If you want all the conditionals to be evaluated, you would utilize a series of ``if`` statements
-   rather than ``if`` and ``else if`` statements.   
+   rather than ``if`` and ``else if`` statements.
 
 .. highlight:: python

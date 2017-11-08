@@ -7,14 +7,14 @@ StuyCS Guides
 * :ref:`systems`
 * :ref:`graphics`
 * :ref:`softdev`
-    
+
 .. _intro_cs1:
 
 Intro to Computer Science 1
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 .. toctree::
    :maxdepth: 3
-   
+
    intro_cs1/recursion_introduction
 
 .. _intro_cs2:
@@ -37,6 +37,11 @@ AP Computer Science
    apcs/ap/java_introductory_features
    apcs/ap/java_conditionals
    apcs/ap/java_loops_structure
+   apcs/ap/arrays
+   apcs/ap/arraylists
+   apcs/ap/linked_lists
+   apcs/ap/queues
+   apcs/ap/stacks
    apcs/ap/java_inheritance
    apcs/ap/java_abstract_classes_and_methods
    apcs/ap/java_interfaces
@@ -48,7 +53,7 @@ AP Computer Science
    apcs/ap/mergesort
    apcs/ap/quicksort
    apcs/ap/sequential_binary_search
-   
+
 .. _systems:
 
 System Level Programming
