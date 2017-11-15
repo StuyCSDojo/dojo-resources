@@ -2,6 +2,7 @@ Tutorials for Using Various Software
 ====================================
 
 * :ref:`languages`
+* :ref:`productivity`
 * :ref:`programming_tools_tutorials`
 * :ref:`remote_file_transfer_tutorials`
 * :ref:`system_tutorials`
@@ -15,6 +16,15 @@ Languages
    :maxdepth: 2
 
    languages/bash_tutorial
+
+.. _productivity:
+
+Productivity
+------------
+.. toctree::
+   :maxdepth: 2
+
+   productivity/gsuite
 
 .. _programming_tools_tutorials:
 

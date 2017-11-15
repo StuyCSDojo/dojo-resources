@@ -33,9 +33,9 @@ To install Pip (Python package manager):
 
      $ sudo dnf upgrade python-setuptools
      $ sudo dnf install python-pip python-wheels
-     
+
 * On other distros, you probably already know how...`
-     
+
 .. _installation_programming_languages_python_pip_mac_osx:
 
 Mac OSX
@@ -70,11 +70,11 @@ Windows
 -------
 .. important::
    Make sure to install **version 2.7.x** instead of **version 3.6.x**!
-   
+
 Generally, you will install Python 2.7 from `here <https://www.python.org/downloads/release>`_.  Simply
 click on the **Download Python 2.7.x** (where x is an int) button.  Scroll down to the very bottom and
 download the appropriate version for your computer.  To find out whether you are using x32 or x64 bit OS,
-check out `this guide from Microsoft <http://support.microsoft.com/kb/827218/en-US>`_.
+check out `this guide from Microsoft <https://support.microsoft.com/en-us/help/13443/windows-which-operating-system>`_.
 
 When you run the executable, pay attention on the Customize Python screen (screenshot below).  Make sure
 that the following features are selected (check the tip below if you are not sure):
@@ -93,7 +93,7 @@ that the following features are selected (check the tip below if you are not sur
 The default options for the rest of the process is fine.  Lastly, make sure to add Pip to your path.  That
 is read the instructions in :ref:`tutorials_system_windows_path_modifying_windows_path` guide and add
 ``C:\Python27\Scripts`` to your path.  Congratulation!
-	   
+
 Alternative
 ^^^^^^^^^^^
 An alternative to vanilla Python is `Anaconda <https://www.continuum.io/downloads#windows>`_. which has a

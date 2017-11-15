@@ -147,7 +147,8 @@ Mac OSX
 
 Windows
 -------
-* Download the appropriate version for your platform.  Not sure?  Check `here <http://support.microsoft.com/kb/827218/en-US>`_:
+* Download the appropriate version for your platform.  Not sure?  Check `here
+  <https://support.microsoft.com/en-us/help/13443/windows-which-operating-system>`_:
 
   * On x86 platforms, download the `x86 version here <http://downloads.mongodb.org/win32/mongodb-win32-i386-v3.0-latest.zip>`_
   * On x64 platforms, download the latest version of `MongoDB here <https://www.mongodb.org/dl/win32/x86_64-2008plus-ssl>`_ (zip version)
