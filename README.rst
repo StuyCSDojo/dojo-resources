@@ -62,8 +62,8 @@ The first time you run the Flask app, make sure you:
      $ python
      >>> from AuthManager import AuthManager
      >>> auth_manager = AuthManager('dojo_website')
-     >>> auth_manager.make_admin(<your username>)
-     (True, 'User is now an admin!')
+     >>> auth_manager.make_developer(<your username>)
+     (True, 'User is now a developer!')
      >>> exit()
 
 * Run the Flask app again
